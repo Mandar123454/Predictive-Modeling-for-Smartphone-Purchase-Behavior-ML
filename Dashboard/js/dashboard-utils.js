@@ -98,20 +98,55 @@ class DashboardUtils {
      * Make API request with error handling and retry logic
      */
     static async fetchAPI(url, options = {}, retries = 2) {
+        // Check if we're on Netlify or running locally without backend
+        const isNetlify = window.location.hostname.includes('netlify.app');
+        const isLocalWithoutBackend = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        
         try {
-            const response = await fetch(url, options);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error ${response.status}: ${response.statusText}`);
+            // Use static data on Netlify or local environment without backend
+            if ((isNetlify || isLocalWithoutBackend) && url.includes('/api/')) {
+                const endpoint = url.split('/api/')[1].split('?')[0];
+                const staticUrl = `./data/${endpoint}.json`;
+                console.log(`Using static data: ${staticUrl}`);
+                
+                const response = await fetch(staticUrl, {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error ${response.status}: ${response.statusText}`);
+                }
+                
+                return await response.json();
+            } else {
+                // Regular API request
+                const response = await fetch(url, options);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error ${response.status}: ${response.statusText}`);
+                }
+                
+                return await response.json();
             }
-            
-            return await response.json();
         } catch (error) {
             if (retries > 0) {
                 console.warn(`API request failed, retrying... (${retries} attempts left)`);
                 await new Promise(resolve => setTimeout(resolve, 1000));
                 return await DashboardUtils.fetchAPI(url, options, retries - 1);
             } else {
+                // If we're on Netlify or local without backend, try to load a fallback JSON
+                if (isNetlify || isLocalWithoutBackend) {
+                    console.warn('Attempting to load fallback data');
+                    try {
+                        const fallbackResponse = await fetch('./data/fallback.json');
+                        if (fallbackResponse.ok) {
+                            return await fallbackResponse.json();
+                        }
+                    } catch (fallbackError) {
+                        console.error('Failed to load fallback data', fallbackError);
+                    }
+                }
                 throw error;
             }
         }

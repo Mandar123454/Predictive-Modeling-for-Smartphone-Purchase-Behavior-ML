@@ -2,8 +2,18 @@
  * Main JavaScript for Smartphone Purchase Prediction Dashboard
  */
 
-// Set API base URL (will be overridden by static-data-provider.js when on Netlify)
+// Set default API base URL (will be overridden by static-data-provider.js when needed)
 window.apiBaseUrl = '/api';
+
+// Check if we're on Netlify or running locally without backend
+const isNetlify = window.location.hostname.includes('netlify.app');
+const isLocalWithoutBackend = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+// Update API base URL if needed
+if (isNetlify || isLocalWithoutBackend) {
+    window.apiBaseUrl = './data';
+    console.log('Setting API base URL to:', window.apiBaseUrl);
+}
 
 // DOM Elements
 const totalRecordsEl = document.getElementById('total-records');

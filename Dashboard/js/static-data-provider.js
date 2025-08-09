@@ -4,21 +4,36 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're running on Netlify
+    // Always activate static data when on Netlify OR when running locally without a backend
     const isNetlify = window.location.hostname.includes('netlify.app');
+    const isLocalWithoutBackend = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const useStaticData = isNetlify || isLocalWithoutBackend;
     
-    if (isNetlify) {
-        console.log('Running on Netlify - using static data');
+    if (useStaticData) {
+        console.log('Using static data for API calls');
         
         // Override the API base URL to use static JSON
-        window.apiBaseUrl = './data';
+        window.apiBaseUrl = isNetlify ? './data' : './data';
+        
+        // Prevent the error modal from showing
+        const errorContainer = document.getElementById('error-container');
+        if (errorContainer) {
+            errorContainer.style.display = 'none';
+        }
         
         // Override the fetch function for API calls
         const originalFetch = window.fetch;
         window.fetch = function(url, options) {
             // If this is an API call
-            if (url.includes('/api/')) {
-                const endpoint = url.split('/api/')[1].split('?')[0];
+            if (url.includes('/api/') || url.startsWith('/api/')) {
+                let endpoint = '';
+                
+                if (url.includes('/api/')) {
+                    endpoint = url.split('/api/')[1].split('?')[0];
+                } else if (url.startsWith('/api/')) {
+                    endpoint = url.substring(5).split('?')[0];
+                }
+                
                 console.log(`Redirecting API call to static JSON for: ${endpoint}`);
                 
                 // Map API endpoints to static JSON files
