@@ -1,5 +1,0 @@
-# This file tells Netlify to skip automatic build detection
-# and only use the explicitly configured build settings
-
-[build]
-  ignore = "exit 0"  # Skip automatic build detection

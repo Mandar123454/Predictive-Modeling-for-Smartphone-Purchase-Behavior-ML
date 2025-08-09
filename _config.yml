@@ -1,0 +1,9 @@
+# GitHub Pages Configuration
+# This file ensures that GitHub Pages knows this is a static site
+
+# Specify the base path if deploying to a project site (username.github.io/repo-name)
+# Leave empty for user/organization sites (username.github.io)
+baseurl: ""
+
+# Specify the build settings
+markdown: kramdown

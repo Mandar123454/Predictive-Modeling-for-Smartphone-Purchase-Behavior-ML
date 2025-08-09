@@ -24,7 +24,7 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 ├── Dashboard/           # Frontend web application
 │   ├── css/             # Stylesheets
 │   ├── js/              # JavaScript files
-│   ├── data/            # Static JSON data for Netlify deployment
+│   ├── data/            # Static JSON data for GitHub Pages deployment
 │   └── index.html       # Main dashboard page
 ├── Data/                # Dataset files
 │   ├── smartphone_purchased_data.csv        # Original dataset
@@ -40,14 +40,16 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 └── app.py              # Flask application serving the API
 ```
 
-### Deployment to Netlify
+### Deployment to GitHub Pages
 
-This dashboard is designed to be deployed as a static site on Netlify with the following setup:
+This dashboard is designed to be deployed as a static site on GitHub Pages with the following setup:
 
 1. Prepare static data files in the `Dashboard/data/` directory for API responses
-2. Connect your GitHub repository to Netlify
-3. Configure the build settings:
-   - Build command: `cp -r Dashboard/* .`
+2. Push your repository to GitHub
+3. Configure GitHub Pages in repository settings:
+   - Go to Settings > Pages
+   - Set source to your main branch
+   - Set the folder to "/Dashboard"
    - Publish directory: `Dashboard`
 4. Deploy!
 
