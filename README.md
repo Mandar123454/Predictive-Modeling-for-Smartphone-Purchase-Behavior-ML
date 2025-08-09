@@ -2,7 +2,6 @@
 
 An interactive dashboard for analyzing smartphone purchase patterns and predicting customer purchase behavior based on demographic and financial data.
 
-
 ## Features
 
 - **Purchase Prediction**: Get real-time predictions on whether a user will purchase a smartphone based on their demographics and financial information
@@ -40,8 +39,7 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 │   └── Main Notebook.ipynb         # Model training and evaluation
 └── app.py              # Flask application serving the API
 ```
-
-
+```
 ### Deployment to Netlify
 
 This dashboard is designed to be deployed as a static site on Netlify with the following setup:
@@ -87,8 +85,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Dataset source: [provide source information if applicable]
-- Inspiration: [any projects or research that inspired this work]
