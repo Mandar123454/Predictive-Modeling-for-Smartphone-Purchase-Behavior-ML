@@ -1,0 +1,68 @@
+/**
+ * Force visibility styles for GitHub Pages
+ * This ensures all dashboard elements are visible and errors are hidden
+ */
+
+/* Error container */
+#error-container,
+.error-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Loading overlay */
+#loading-overlay,
+.loading-overlay {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Charts */
+canvas,
+canvas.chart,
+.chart-container,
+.chart-wrapper {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 200px !important;
+}
+
+/* Dashboard sections */
+.analysis-section,
+#overview,
+#demographics,
+#prediction,
+#comparison,
+#insights {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Dashboard cards */
+.stats-card,
+.chart-card,
+.info-card,
+.prediction-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Navigation */
+.nav {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
