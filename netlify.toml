@@ -2,12 +2,12 @@
 [build]
   # Directory with the static files
   publish = "Dashboard"
-  # No build command - just serve static files
-  command = ""
-  # Skip all dependency detection and installation
+  # Use a simple build command that just lists files and doesn't require Python
+  command = "ls -la Dashboard"
+  # Skip dependency detection
   ignore_dependencies = true
   
-# Skip ALL dependency installation entirely
+# Skip automatic environment setup
 [build.environment]
   # Disable all package managers
   NETLIFY_USE_YARN = "false"
@@ -15,12 +15,7 @@
   NETLIFY_USE_PNPM = "false"
   NETLIFY_USE_YARN_INSTALL = "false"
   NETLIFY_USE_PACKAGER = "false"
-  NODE_VERSION = "none"
-  PYTHON_VERSION = "off"
-  RUBY_VERSION = "off"
-  PHP_VERSION = "off"
-  HUGO_VERSION = "off"
-  JAVA_VERSION = "off"
+  # Don't try to set these to "off" or "none" - just remove them entirely
 
 # Redirects for SPA (Single Page Application)
 [[redirects]]
