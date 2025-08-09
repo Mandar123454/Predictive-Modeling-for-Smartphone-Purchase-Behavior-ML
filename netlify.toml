@@ -2,18 +2,25 @@
 [build]
   # Directory with the static files
   publish = "Dashboard"
-  # Simple shell script build command
-  command = "bash netlify-build.sh"
+  # No build command - just serve static files
+  command = ""
+  # Skip all dependency detection and installation
+  ignore_dependencies = true
   
-# Skip Python dependency installation entirely
+# Skip ALL dependency installation entirely
 [build.environment]
+  # Disable all package managers
   NETLIFY_USE_YARN = "false"
   NETLIFY_USE_NPM = "false"
   NETLIFY_USE_PNPM = "false"
   NETLIFY_USE_YARN_INSTALL = "false"
   NETLIFY_USE_PACKAGER = "false"
-  # Skip Python dependency installation
+  NODE_VERSION = "none"
   PYTHON_VERSION = "off"
+  RUBY_VERSION = "off"
+  PHP_VERSION = "off"
+  HUGO_VERSION = "off"
+  JAVA_VERSION = "off"
 
 # Redirects for SPA (Single Page Application)
 [[redirects]]
