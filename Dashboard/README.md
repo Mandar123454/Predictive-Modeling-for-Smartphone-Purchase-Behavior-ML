@@ -45,19 +45,6 @@ Dashboard/
    - Feature importance visualization
    - Key findings and insights
 
-## Setup Instructions
-
-1. Make sure you have Python installed (version 3.7 or higher)
-2. Install required packages:
-   ```
-   pip install flask flask-cors pandas numpy scikit-learn
-   ```
-3. Run the Flask API:
-   ```
-   cd Dashboard
-   python app.py
-   ```
-4. Open `index.html` in a web browser or access via http://localhost:5000
 
 ## Data Sources
 
