@@ -1,0 +1,70 @@
+/* Specific fixes for insight charts */
+
+/* Fix for Feature Influence Analysis */
+#correlation-heatmap-chart-container {
+  display: block !important;
+  min-height: 300px;
+  width: 100% !important;
+}
+
+#correlation-heatmap-chart {
+  display: block !important;
+  height: 300px !important;
+  width: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Feature Influence Analysis specific styling */
+.correlation-container .chart-header h3 {
+  color: #6366f1 !important; /* Different color to distinguish from demographic feature chart */
+  font-weight: 700;
+}
+
+/* Fix for Marketing Impact chart */
+#marketing-impact-chart {
+  display: block !important;
+  height: 300px !important;
+  width: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Fix for Demographics Probability chart */
+#demographics-probability-chart {
+  display: block !important;
+  height: 300px !important;
+  width: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Ensure chart headers are properly aligned and visible */
+.chart-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.chart-header h3 {
+  margin-bottom: 5px !important;
+  color: var(--text-color, #ffffff);
+}
+
+body:not(.dark-mode) .chart-header h3,
+.light-mode .chart-header h3 {
+  color: var(--light-text-color, #333333) !important;
+}
+
+.chart-header .chart-subtitle,
+.chart-header .chart-description {
+  margin-top: 0 !important;
+  opacity: 0.8;
+}
+
+/* Fix for chart description in Demographics section */
+.chart-card.wide .chart-description {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}

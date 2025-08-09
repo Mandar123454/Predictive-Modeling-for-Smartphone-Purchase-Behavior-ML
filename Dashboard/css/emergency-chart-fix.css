@@ -1,0 +1,72 @@
+/* Emergency chart visibility fixes */
+.chart-card canvas,
+#correlation-heatmap-chart,
+#marketing-impact-chart,
+#demographics-probability-chart {
+    display: block !important;
+    height: 300px !important;
+    width: 100% !important;
+    min-height: 300px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 100 !important;
+    margin: 0 auto !important;
+}
+
+/* Ensure the containers are visible */
+.chart-card,
+#correlation-heatmap-chart-container,
+.chart-container {
+    display: block !important;
+    min-height: 300px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    padding: 10px !important;
+}
+
+/* Fix alignment in chart headers */
+.chart-card .chart-header {
+    display: block !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+}
+
+/* Override any potentially interfering styles */
+.chart-card.wide h3,
+.chart-card .chart-description,
+.chart-card .chart-subtitle {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* Make the chart container flex to work better with responsive charts */
+.demographic-insights .chart-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+/* Ensure insights cards display properly */
+.demographic-insights .chart-card {
+    flex: 1 1 300px !important;
+    margin: 10px !important;
+    max-width: 100% !important;
+}
+
+/* Center wide cards */
+.chart-card.wide {
+    flex: 1 1 100% !important;
+}
+
+/* Charts background to debug visibility */
+.dev-mode .chart-card canvas {
+    background: rgba(255, 0, 0, 0.05);
+}
+
+/* Set explicit dimensions for the demographics probability chart */
+#demographics-probability-chart {
+    min-height: 400px !important;
+    height: 400px !important;
+}

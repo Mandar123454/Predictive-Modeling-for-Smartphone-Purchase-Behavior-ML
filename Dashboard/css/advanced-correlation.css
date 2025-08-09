@@ -1,0 +1,102 @@
+/* Advanced Correlation Chart Styling */
+.correlation-container {
+    position: relative;
+    padding: 20px !important;
+    margin-top: 15px;
+    height: auto !important;
+}
+
+.correlation-container .chart-header {
+    margin-bottom: 15px;
+}
+
+.correlation-container .chart-subtitle {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+#correlation-heatmap-chart-container {
+    height: 380px !important;
+    width: 100% !important;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.correlation-enhanced-tooltip {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.95);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    max-width: 320px;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.correlation-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.correlation-legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.correlation-legend-color {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.correlation-legend-label {
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+.chart-interaction-tip {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 12px;
+    color: #64748b;
+    font-style: italic;
+    background: rgba(15, 23, 42, 0.05);
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-interaction-tip i {
+    margin-right: 5px;
+    color: #3b82f6;
+}
+
+/* Dark mode specific styles */
+.dark-mode .correlation-container {
+    background-color: #1e293b;
+}
+
+.dark-mode .correlation-container .chart-subtitle {
+    color: #94a3b8;
+}
+
+.dark-mode .chart-interaction-tip {
+    background: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+}
+
+.dark-mode .correlation-legend-label {
+    color: #e2e8f0;
+}

@@ -1,0 +1,42 @@
+/* Styling for brand prediction text */
+#predicted-brand {
+    font-weight: 700;
+    color: #4f46e5; /* Indigo color that stands out */
+    text-transform: none; /* Preserve brand capitalization */
+}
+
+.dark-mode #predicted-brand {
+    color: #818cf8; /* Lighter indigo for dark mode */
+    text-shadow: 0 0 2px rgba(129, 140, 248, 0.4); /* Subtle glow effect */
+}
+
+/* Brand prediction hover effect */
+#predicted-brand:hover {
+    text-decoration: underline;
+    cursor: pointer; /* Hint that this could be clickable in future */
+}
+
+/* Brand prediction with probability indicator */
+.high-prob #predicted-brand {
+    color: #10b981; /* Green for high probability */
+}
+
+.dark-mode .high-prob #predicted-brand {
+    color: #34d399; /* Lighter green for dark mode */
+}
+
+.medium-prob #predicted-brand {
+    color: #f59e0b; /* Amber for medium probability */
+}
+
+.dark-mode .medium-prob #predicted-brand {
+    color: #fbbf24; /* Lighter amber for dark mode */
+}
+
+.low-prob #predicted-brand {
+    color: #ef4444; /* Red for low probability */
+}
+
+.dark-mode .low-prob #predicted-brand {
+    color: #f87171; /* Lighter red for dark mode */
+}

@@ -1,0 +1,25 @@
+/* Completely hide the theme toggle button without affecting layout */
+.theme-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+/* Hide the theme toggle button content too */
+.theme-toggle button {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide any reference to theme toggle in the entire sidebar */
+.sidebar .theme-toggle {
+    display: none !important;
+}

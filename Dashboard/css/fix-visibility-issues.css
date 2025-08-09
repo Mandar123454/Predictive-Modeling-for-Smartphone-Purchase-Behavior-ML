@@ -1,0 +1,67 @@
+/* Hide the theme toggle button completely */
+.theme-toggle {
+    display: none !important;
+}
+
+/* Alternatively if we want to keep the space but hide the button:
+.theme-toggle button {
+    display: none !important;
+}
+*/
+
+/* Enhanced feature influence chart container */
+.feature-influence-chart-container {
+    width: 100% !important;
+    height: 500px !important; /* Increased height */
+    max-height: 600px !important;
+    margin: 0 auto !important;
+}
+
+/* Make feature influence section more prominent */
+.feature-influence-container {
+    padding: 30px !important;
+    margin-bottom: 40px !important;
+}
+
+/* Two-column layout for feature influence analysis section */
+.feature-influence-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* Two equal columns */
+    gap: 30px !important;
+    margin-top: 20px !important;
+}
+
+/* For smaller screens, stack the columns */
+@media (max-width: 768px) {
+    .feature-influence-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Enhance the feature influence chart appearance */
+.feature-influence-chart-wrapper {
+    background-color: #1e1e1e !important;
+    border-radius: 10px !important;
+    border: 1px solid #333 !important;
+    padding: 20px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Enhance key findings section */
+.key-findings {
+    background-color: #1e1e1e !important;
+    border-radius: 10px !important;
+    border: 1px solid #333 !important;
+    padding: 25px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+.key-findings h3 {
+    color: #60a5fa !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #333 !important;
+    padding-bottom: 10px !important;
+}

@@ -1,0 +1,45 @@
+/* Special styling for heatmap charts */
+.chart-card.wide canvas#demographics-heatmap-chart {
+    height: 300px !important;
+}
+
+/* Add a subtle border around the heatmap for better visual separation */
+.chart-card.wide {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .chart-card.wide {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Legend styling improvements for heatmaps */
+.heatmap-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.heatmap-legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.heatmap-legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.heatmap-legend-label {
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+.dark-mode .heatmap-legend-label {
+    color: var(--text-light);
+}

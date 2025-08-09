@@ -1,0 +1,75 @@
+/* Enhanced Feature Influence Chart for Demographics Section */
+
+/* Chart container in demographics section */
+#feature-influence-chart {
+    height: 450px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.chart-card.wide.feature-influence-container {
+    padding: 20px !important;
+    margin-bottom: 25px !important;
+}
+
+/* Two-column layout for feature influence analysis in demographics section */
+.feature-influence-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px !important;
+    margin-top: 20px !important;
+    align-items: flex-start !important;
+}
+
+/* Make chart container larger in demographics section */
+.feature-influence-chart-container {
+    width: 65% !important;
+    height: 450px !important;
+    min-height: 400px !important;
+    max-height: 600px !important;
+    position: relative !important;
+}
+
+/* Style the analysis section */
+.feature-influence-analysis {
+    width: 35% !important;
+    padding: 15px !important;
+    background: rgba(30, 41, 59, 0.4) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(99, 102, 241, 0.2) !important;
+}
+
+.feature-influence-analysis h4 {
+    margin-top: 0 !important;
+    color: #60a5fa !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3) !important;
+    padding-bottom: 8px !important;
+}
+
+.feature-influence-analysis ul {
+    padding-left: 1.2rem !important;
+    margin-top: 10px !important;
+}
+
+.feature-influence-analysis li {
+    margin-bottom: 12px !important;
+    color: #e2e8f0 !important;
+    line-height: 1.5 !important;
+}
+
+.feature-influence-analysis li strong {
+    color: #818cf8 !important;
+    font-weight: 600 !important;
+}
+
+/* Chart label improvements */
+.chart-label {
+    text-align: center !important;
+    margin-top: 10px !important;
+    font-size: 0.9rem !important;
+    color: #94a3b8 !important;
+    font-style: italic !important;
+}

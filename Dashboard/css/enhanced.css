@@ -1,0 +1,144 @@
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+    font-size: 24px;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--accent-color);
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error-container {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+    color: #b91c1c;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+.error-container h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.error-container p {
+    margin-bottom: 0;
+}
+
+.error-container pre {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.error-container button {
+    background-color: #b91c1c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.error-container button:hover {
+    background-color: #991b1b;
+}
+
+/* Dashboard theme improvements */
+.dashboard {
+    --primary-gradient: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+}
+
+.kpi-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.kpi-card .kpi-icon {
+    background: var(--primary-gradient);
+    color: white;
+}
+
+.kpi-card .kpi-icon i {
+    color: white;
+}
+
+.nav li:hover, .nav li.active {
+    background: var(--primary-gradient);
+    color: white;
+    border-left-color: white;
+}
+
+.submit-btn {
+    background: var(--primary-gradient);
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.theme-toggle button {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle button:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Card hover effects */
+.chart-card, .insight-card, .prediction-result, .input-form {
+    transition: all 0.3s ease;
+}
+
+.chart-card:hover, .insight-card:hover, .prediction-result:hover, .input-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved headers */
+.section-header h2 {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}

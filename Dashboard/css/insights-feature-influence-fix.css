@@ -1,0 +1,96 @@
+/* Insights Section - Feature Influence Analysis */
+
+/* Container for the feature influence section in insights */
+#insights .feature-influence-container {
+    background-color: #1e293b !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Grid layout for feature influence in insights section */
+#insights .feature-influence-grid {
+    display: grid !important;
+    grid-template-columns: 1.5fr 1fr !important; /* Chart gets more space than text */
+    gap: 25px !important;
+    margin-top: 20px !important;
+    align-items: flex-start !important;
+}
+
+/* Style the chart wrapper for insights section */
+#insights .feature-influence-chart-wrapper {
+    position: relative !important;
+    height: 500px !important; /* Extra height for correlation chart */
+    width: 100% !important;
+}
+
+/* Ensure the correlation heatmap container fills its wrapper */
+#insights #correlation-heatmap-chart-container {
+    height: 100% !important;
+    width: 100% !important;
+    min-height: 450px !important;
+}
+
+/* Ensure the correlation heatmap chart fills its container */
+#insights #correlation-heatmap-chart {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* Style the key findings section */
+#insights .key-findings {
+    padding: 15px !important;
+    background: rgba(30, 41, 59, 0.5) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+}
+
+#insights .key-findings h3 {
+    color: #60a5fa !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3) !important;
+    padding-bottom: 8px !important;
+}
+
+#insights .key-findings ul {
+    padding-left: 1.2rem !important;
+    margin-top: 10px !important;
+}
+
+#insights .key-findings li {
+    margin-bottom: 12px !important;
+    color: #e2e8f0 !important;
+    line-height: 1.5 !important;
+}
+
+#insights .key-findings li strong {
+    color: #818cf8 !important;
+    font-weight: 600 !important;
+}
+
+/* Section header styling */
+#insights .feature-influence-container .section-header h3 {
+    color: #60a5fa !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 5px !important;
+}
+
+#insights .feature-influence-container .chart-subtitle {
+    color: #94a3b8 !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 15px !important;
+    font-style: italic !important;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 992px) {
+    #insights .feature-influence-grid {
+        grid-template-columns: 1fr !important; /* Stack on smaller screens */
+    }
+    
+    #insights .feature-influence-chart-wrapper {
+        height: 400px !important;
+        margin-bottom: 20px !important;
+    }
+}

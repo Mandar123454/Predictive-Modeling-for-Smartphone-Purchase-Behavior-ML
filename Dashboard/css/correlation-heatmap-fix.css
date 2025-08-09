@@ -1,0 +1,148 @@
+/* 
+ * Feature Correlation Heatmap Fixes
+ * This file addresses layout issues with the feature correlation heatmap
+ * and matches styling with the Feature Influence Analysis screenshot
+ */
+
+/* Fix for the correlation heatmap container with improved styling */
+.chart-card canvas#correlation-heatmap-chart {
+    width: 100% !important;
+    height: 350px !important;
+    max-height: none !important;
+    margin: 0 auto;
+    background: rgba(252, 252, 252, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Styled header to match the screenshot */
+.chart-card .chart-header {
+    margin-bottom: 15px;
+}
+
+.chart-card .chart-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827; /* Darker text for better visibility */
+    margin-bottom: 5px;
+    letter-spacing: -0.01em;
+}
+
+.chart-subtitle {
+    font-size: 14px;
+    color: #4b5563; /* Darker subtitle color */
+    margin-top: 0;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+/* Enhanced container styling */
+.chart-card.correlation-container {
+    padding: 24px !important;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Chart container with grid lines matching screenshot */
+#correlation-heatmap-chart-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient(to right, transparent 19.5%, rgba(0,0,0,0.05) 20%, transparent 20.5%, 
+                                transparent 39.5%, rgba(0,0,0,0.05) 40%, transparent 40.5%,
+                                transparent 59.5%, rgba(0,0,0,0.05) 60%, transparent 60.5%,
+                                transparent 79.5%, rgba(0,0,0,0.05) 80%, transparent 80.5%);
+}
+
+/* Fix for small screens */
+@media screen and (max-width: 768px) {
+    .chart-card canvas#correlation-heatmap-chart {
+        height: 300px !important;
+    }
+}
+
+/* Fix for dark mode text visibility with enhanced styling */
+body.dark-mode .chart-card canvas#correlation-heatmap-chart {
+    color: #ffffff !important;
+    background: rgba(30, 30, 46, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .chart-card .chart-header h3 {
+    color: #f1f5f9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .chart-subtitle {
+    color: #cbd5e1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced chart labels in both themes */
+.chart-label {
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+body.dark-mode .chart-label {
+    color: #cbd5e1;
+}
+
+/* Dark mode enhancements */
+body.dark-mode .chart-card.correlation-container {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: #1e293b;
+}
+
+/* Enhanced correlation legend */
+.correlation-legend {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.02);
+}
+
+body.dark-mode .correlation-legend {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* Chart interaction tip styling */
+.chart-interaction-tip {
+    margin-top: 15px !important;
+}
+
+body.dark-mode .chart-interaction-tip {
+    color: #94a3b8 !important;
+    background: rgba(255,255,255,0.05) !important;
+}
+
+/* Enhanced tooltip styling */
+.correlation-enhanced-tooltip {
+    transition: opacity 0.2s ease;
+    line-height: 1.5;
+}
+
+/* Animation for bars */
+@keyframes barGrow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+
+.chart-card canvas#correlation-heatmap-chart {
+    transform-origin: left center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,157 @@
+/* Enhanced animations and transitions for dashboard elements */
+
+/* Smooth fade-in for sections */
+.section-content {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover effects for interactive elements */
+.card, .chart-container, .insight-card {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover, .chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.insight-card:hover {
+    transform: translateX(3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Pulsing effect for important buttons */
+.submit-btn, .action-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: inherit;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.submit-btn:hover:after {
+    transform: scale(1);
+    opacity: 1;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.2; }
+    100% { opacity: 0.5; }
+}
+
+/* Animated loading spinner enhancements */
+.spinner {
+    border: 4px solid rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3b82f6;
+    width: 40px;
+    height: 40px;
+    animation: spinner-rotate 1s linear infinite, spinner-glow 2s ease-in-out infinite;
+}
+
+@keyframes spinner-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spinner-glow {
+    0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); }
+}
+
+/* Animated chart transitions */
+canvas {
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Sidebar menu hover animation */
+.sidebar ul li {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.sidebar ul li:hover:before {
+    width: 100%;
+}
+
+/* Glow effect for inputs when focused */
+input:focus, select:focus, textarea:focus {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important;
+}
+
+/* Loading screen animation enhancement */
+.loading-overlay {
+    animation: fadeInBg 0.5s ease;
+}
+
+@keyframes fadeInBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Card content animation */
+.card-body {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Prediction result animation */
+.prediction-result {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Slide in from the right for insights */
+.insight-card {
+    animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Floating effect for important info cards */
+.floating-card {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}

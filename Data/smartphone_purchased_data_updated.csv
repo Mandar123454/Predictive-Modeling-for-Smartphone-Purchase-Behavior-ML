@@ -1,0 +1,1001 @@
+UserID,Age,Income,Occupation,Education,Location,BrandPreference,CurrentPhone,PurchaseIntent,PurchaseTimeframe,FeaturesImportant,OnlineActivity,PreviousPurchases,PromotionResponse,Target,Feature_Camera,Feature_Battery,Feature_Price,Feature_Performance,Feature_Design
+1,56,45795,Designer,PhD,Ahmedabad,Realme,Realme 7,Yes,2 months,Design,Low,2,Yes,0,0,0,0,0,1
+2,47,97969,Lawyer,Bachelor,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery;Performance,Medium,3,No,0,0,1,0,1,0
+3,32,95725,Doctor,PhD,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Battery,Low,1,No,0,0,1,0,0,0
+4,31,103969,Teacher,Bachelor,Lucknow,Realme,Realme 8,No,,Design,Low,0,Yes,0,0,0,0,0,1
+5,57,119475,Teacher,Master,Kolkata,Apple,iPhone 11,Yes,,Camera;Price,Medium,3,Yes,1,1,0,1,0,0
+6,33,54300,Teacher,PhD,Chennai,Apple,iPhone XR,Yes,6 months,Battery,Low,0,No,1,0,1,0,0,0
+7,41,78190,Manager,PhD,Mumbai,OnePlus,OnePlus 9,No,,Performance,High,0,No,0,0,0,0,1,0
+8,51,82256,Lawyer,PhD,Delhi,Realme,Realme 7,No,,Battery;Performance,Low,2,No,0,0,1,0,1,0
+9,43,36910,Doctor,PhD,Jaipur,Apple,iPhone 11,No,,Price,Medium,4,Yes,0,0,0,1,0,0
+10,32,63827,Designer,PhD,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Performance;Price,High,3,Yes,0,0,0,1,1,0
+11,28,48047,Teacher,PhD,Jaipur,Samsung,Samsung S9,Yes,3 months,Battery;Performance,Low,2,Yes,1,0,1,0,1,0
+12,59,96199,Sales,PhD,Kolkata,Samsung,Samsung S9,Yes,2 months,Design;Performance,Low,0,Yes,0,0,0,0,1,1
+13,45,30854,Designer,Bachelor,Mumbai,OnePlus,OnePlus 8,Yes,6 months,Camera;Battery,Low,4,No,1,1,1,0,0,0
+14,28,110623,Lawyer,Bachelor,Jaipur,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Camera;Battery,Medium,2,Yes,1,1,1,0,0,0
+15,58,114896,Lawyer,PhD,Pune,Samsung,Samsung S20,Yes,1 month,Camera,Low,0,No,1,1,0,0,0,0
+16,18,50932,Designer,PhD,Delhi,Samsung,Samsung S9,Yes,,Camera,High,3,Yes,1,1,0,0,0,0
+17,55,83351,Student,Master,Bengaluru,Samsung,Samsung S20,No,,Price;Camera,Medium,0,Yes,0,1,0,1,0,0
+18,21,53328,Doctor,Bachelor,Hyderabad,OnePlus,OnePlus 7,Yes,6 months,Camera,Low,4,Yes,0,1,0,0,0,0
+19,44,79377,Designer,Master,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Design,Low,0,Yes,0,0,0,0,0,1
+20,45,48589,Designer,Master,Chennai,OnePlus,OnePlus 7,No,,Performance,High,0,Yes,0,0,0,0,1,0
+21,38,36102,Engineer,PhD,Pune,Samsung,Samsung S10,No,,Camera;Design,Low,1,Yes,0,1,0,0,0,1
+22,59,75017,Engineer,Bachelor,Jaipur,OnePlus,OnePlus 8,Yes,2 months,Performance,Medium,3,No,1,0,0,0,1,0
+23,37,32368,Lawyer,Master,Bengaluru,Xiaomi,Xiaomi Mi 10,Yes,6 months,Design;Performance,High,1,No,1,0,0,0,1,1
+24,59,83006,Doctor,PhD,Chennai,Samsung,Samsung S9,Yes,,Price,Medium,2,No,0,0,0,1,0,0
+25,30,47019,Teacher,Master,Bengaluru,Samsung,Samsung S20,No,,Price;Performance,Low,0,No,0,0,0,1,1,0
+26,18,96617,Teacher,Bachelor,Pune,Samsung,Samsung S9,Yes,,Performance,Low,1,Yes,0,0,0,0,1,0
+27,46,91389,Student,Bachelor,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Design;Price,Medium,4,Yes,0,0,0,1,0,1
+28,27,109605,Designer,Master,Hyderabad,Apple,iPhone 11,No,,Battery;Price,Low,1,Yes,0,0,1,1,0,0
+29,49,90890,Student,Master,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Battery,High,1,Yes,0,0,1,0,0,0
+30,46,116027,Sales,Master,Pune,Realme,Realme 7,No,,Price,Medium,1,Yes,0,0,0,1,0,0
+31,24,33267,Teacher,Bachelor,Pune,Realme,Realme 7,No,,Battery;Price,Medium,4,No,0,0,1,1,0,0
+32,52,113042,Lawyer,Master,Mumbai,Realme,Realme 8,No,,Performance,High,3,No,0,0,0,0,1,0
+33,39,96234,Manager,Bachelor,Hyderabad,Xiaomi,Xiaomi Redmi 9,No,,Performance;Design,High,2,Yes,0,0,0,0,1,1
+34,33,116900,Designer,PhD,Jaipur,Xiaomi,Xiaomi Redmi 9,Yes,,Battery;Performance,Medium,1,Yes,0,0,1,0,1,0
+35,28,36801,Sales,Bachelor,Lucknow,Apple,iPhone XR,Yes,1 month,Price,High,4,No,1,0,0,1,0,0
+36,25,43807,Designer,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,No,,Camera,Low,4,Yes,0,1,0,0,0,0
+37,56,55289,Teacher,PhD,Delhi,OnePlus,OnePlus 7,Yes,6 months,Battery;Price,Medium,0,No,1,0,1,1,0,0
+38,42,63591,Engineer,Master,Chennai,Apple,iPhone XR,No,,Price,High,4,Yes,0,0,0,1,0,0
+39,36,43843,Engineer,Master,Jaipur,Samsung,Samsung S10,Yes,,Battery;Camera,High,1,No,0,1,1,0,0,0
+40,29,53959,Student,Bachelor,Ahmedabad,Apple,iPhone 11,Yes,2 months,Price;Battery,High,0,Yes,1,0,1,1,0,0
+41,30,65547,Lawyer,Bachelor,Bengaluru,Realme,Realme 8,No,,Performance;Battery,Low,1,No,0,0,1,0,1,0
+42,22,31015,Engineer,Master,Mumbai,Apple,iPhone 12,Yes,6 months,Performance,Medium,0,Yes,1,0,0,0,1,0
+43,18,30404,Lawyer,PhD,Kolkata,Xiaomi,Xiaomi Redmi 9,No,,Battery,High,1,No,0,0,1,0,0,0
+44,34,86397,Engineer,Master,Mumbai,OnePlus,OnePlus 7,No,,Performance;Price,Low,1,Yes,0,0,0,1,1,0
+45,20,62049,Student,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,,Performance,High,3,No,1,0,0,0,1,0
+46,35,36941,Sales,PhD,Bengaluru,Apple,iPhone XR,No,,Camera;Design,High,4,No,0,1,0,0,0,1
+47,27,85479,Engineer,Master,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Price;Performance,Medium,2,Yes,0,0,0,1,1,0
+48,40,110719,Sales,PhD,Kolkata,Xiaomi,Xiaomi Mi 10,No,,Battery,Medium,1,No,0,0,1,0,0,0
+49,36,87108,Designer,Master,Lucknow,Realme,Realme 8,Yes,1 month,Camera,Low,1,No,1,1,0,0,0,0
+50,39,40478,Lawyer,Master,Mumbai,Apple,iPhone XR,Yes,6 months,Camera;Design,Medium,4,Yes,1,1,0,0,0,1
+51,24,35122,Sales,PhD,Pune,Apple,iPhone 11,No,,Performance,Low,0,No,0,0,0,0,1,0
+52,39,86793,Doctor,Bachelor,Mumbai,Realme,Realme 8,No,,Design;Battery,Low,1,No,0,0,1,0,0,1
+53,57,111264,Student,PhD,Lucknow,Samsung,Samsung S9,Yes,,Battery;Camera,Medium,0,Yes,1,1,1,0,0,0
+54,23,31605,Sales,Master,Ahmedabad,Samsung,Samsung S20,Yes,1 month,Camera,Medium,3,No,1,1,0,0,0,0
+55,47,114471,Doctor,PhD,Jaipur,Apple,iPhone 12,No,,Design;Battery,High,3,Yes,0,0,1,0,0,1
+56,50,75587,Engineer,PhD,Mumbai,Apple,iPhone 11,Yes,6 months,Battery,Low,1,Yes,1,0,1,0,0,0
+57,27,32219,Teacher,Bachelor,Ahmedabad,Apple,iPhone XR,Yes,1 month,Performance,High,0,No,0,0,0,0,1,0
+58,31,97444,Lawyer,PhD,Jaipur,Apple,iPhone 12,Yes,,Price;Battery,High,4,Yes,1,0,1,1,0,0
+59,38,45524,Designer,PhD,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Camera,Medium,2,No,0,1,0,0,0,0
+60,50,117062,Sales,PhD,Mumbai,Samsung,Samsung S9,No,,Price,Low,2,Yes,0,0,0,1,0,0
+61,20,113122,Lawyer,Master,Hyderabad,Realme,Realme 7,No,,Design,High,4,Yes,0,0,0,0,0,1
+62,50,97779,Doctor,Master,Lucknow,Realme,Realme 7,No,,Camera;Battery,Medium,3,Yes,0,1,1,0,0,0
+63,46,50103,Designer,Bachelor,Hyderabad,Xiaomi,Xiaomi Redmi 9,No,,Performance,Medium,3,Yes,0,0,0,0,1,0
+64,27,106325,Doctor,PhD,Lucknow,OnePlus,OnePlus 8,No,,Design;Price,High,2,No,0,0,0,1,0,1
+65,53,110879,Student,Bachelor,Ahmedabad,Realme,Realme 8,No,,Design,Medium,4,Yes,0,0,0,0,0,1
+66,58,33797,Manager,PhD,Mumbai,Realme,Realme 7,Yes,2 months,Performance,Medium,4,Yes,0,0,0,0,1,0
+67,27,69224,Designer,Master,Jaipur,OnePlus,OnePlus 9,No,,Design;Camera,Medium,1,No,0,1,0,0,0,1
+68,41,97526,Student,Master,Chennai,Samsung,Samsung S9,No,,Price,Medium,0,No,0,0,0,1,0,0
+69,37,82853,Doctor,PhD,Ahmedabad,Samsung,Samsung S20,No,,Camera,Low,4,No,0,1,0,0,0,0
+70,46,102847,Lawyer,PhD,Pune,Samsung,Samsung S10,No,,Price;Performance,Medium,2,Yes,0,0,0,1,1,0
+71,18,82487,Designer,PhD,Delhi,OnePlus,OnePlus 8,Yes,,Design;Battery,High,4,Yes,1,0,1,0,0,1
+72,20,60678,Manager,PhD,Ahmedabad,Samsung,Samsung S20,No,,Design,Low,2,No,0,0,0,0,0,1
+73,54,116925,Sales,PhD,Pune,Apple,iPhone 12,No,,Battery,Medium,3,No,0,0,1,0,0,0
+74,18,53236,Student,PhD,Lucknow,Apple,iPhone 12,No,,Price;Battery,High,0,Yes,0,0,1,1,0,0
+75,52,47771,Lawyer,Bachelor,Lucknow,OnePlus,OnePlus 8,No,,Performance;Design,Low,1,No,0,0,0,0,1,1
+76,56,53752,Doctor,Master,Hyderabad,Apple,iPhone 11,No,,Camera;Performance,Medium,1,No,0,1,0,0,1,0
+77,55,56657,Engineer,Bachelor,Jaipur,Apple,iPhone 12,Yes,1 month,Performance,Medium,3,No,1,0,0,0,1,0
+78,27,89052,Engineer,Master,Chennai,Xiaomi,Xiaomi Mi 10,No,,Price;Camera,Low,4,No,0,1,0,1,0,0
+79,43,83276,Designer,PhD,Ahmedabad,OnePlus,OnePlus 7,No,,Design;Camera,Medium,4,Yes,0,1,0,0,0,1
+80,53,104478,Student,PhD,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Performance,High,4,Yes,0,0,0,0,1,0
+81,57,67904,Engineer,Bachelor,Ahmedabad,Apple,iPhone XR,Yes,,Camera,Low,3,Yes,1,1,0,0,0,0
+82,34,79481,Engineer,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery,Medium,0,No,0,0,1,0,0,0
+83,29,107454,Manager,Master,Jaipur,Realme,Realme 8,Yes,,Performance,Medium,4,No,1,0,0,0,1,0
+84,25,113441,Manager,PhD,Pune,Xiaomi,Xiaomi Redmi 9,No,,Performance,Medium,2,No,0,0,0,0,1,0
+85,51,112050,Designer,PhD,Ahmedabad,Apple,iPhone 12,No,,Price,Medium,1,No,0,0,0,1,0,0
+86,59,104859,Doctor,Master,Delhi,OnePlus,OnePlus 8,No,,Performance,High,2,No,0,0,0,0,1,0
+87,46,59629,Engineer,Bachelor,Chennai,Xiaomi,Xiaomi Redmi 9,No,,Price;Design,Medium,3,No,0,0,0,1,0,1
+88,47,115680,Manager,Bachelor,Ahmedabad,Apple,iPhone 11,Yes,1 month,Performance,Low,0,No,1,0,0,0,1,0
+89,54,75028,Manager,Master,Delhi,OnePlus,OnePlus 8,No,,Camera,High,4,No,0,1,0,0,0,0
+90,27,70042,Teacher,Bachelor,Lucknow,Samsung,Samsung S9,No,,Price;Performance,Low,0,No,0,0,0,1,1,0
+91,59,114386,Teacher,Master,Mumbai,OnePlus,OnePlus 9,Yes,2 months,Price,Low,0,Yes,1,0,0,1,0,0
+92,46,95160,Manager,Bachelor,Pune,Xiaomi,Xiaomi Mi 10,No,,Battery;Performance,Low,3,Yes,0,0,1,0,1,0
+93,25,51754,Designer,Master,Pune,Realme,Realme 8,Yes,,Price,Medium,2,No,1,0,0,1,0,0
+94,51,101719,Manager,Bachelor,Mumbai,OnePlus,OnePlus 7,Yes,2 months,Battery,Medium,2,No,1,0,1,0,0,0
+95,48,77638,Teacher,Master,Chennai,Apple,iPhone 11,No,,Camera,Low,2,No,0,1,0,0,0,0
+96,34,61966,Teacher,Bachelor,Bengaluru,OnePlus,OnePlus 8,Yes,3 months,Camera;Battery,High,3,Yes,0,1,1,0,0,0
+97,21,80192,Student,Master,Mumbai,Apple,iPhone 11,Yes,,Camera,Medium,3,No,1,1,0,0,0,0
+98,29,117046,Designer,PhD,Mumbai,OnePlus,OnePlus 9,No,,Price;Camera,High,2,Yes,0,1,0,1,0,0
+99,56,98878,Sales,Bachelor,Hyderabad,Apple,iPhone 12,No,,Battery;Camera,High,3,No,0,1,1,0,0,0
+100,33,58602,Student,Master,Bengaluru,Samsung,Samsung S9,No,,Price,High,2,Yes,0,0,0,1,0,0
+101,42,112711,Student,Master,Ahmedabad,Xiaomi,Xiaomi Mi 10,Yes,1 month,Camera;Design,Low,4,Yes,1,1,0,0,0,1
+102,20,45251,Doctor,PhD,Jaipur,Samsung,Samsung S10,No,,Price;Performance,Low,4,Yes,0,0,0,1,1,0
+103,41,112503,Manager,Bachelor,Mumbai,Realme,Realme 8,No,,Battery;Design,High,0,Yes,0,0,1,0,0,1
+104,39,99298,Lawyer,Bachelor,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Price,High,1,Yes,0,0,0,1,0,0
+105,19,36368,Engineer,Bachelor,Mumbai,Realme,Realme 8,Yes,3 months,Camera;Price,High,1,Yes,1,1,0,1,0,0
+106,28,87660,Manager,PhD,Kolkata,Samsung,Samsung S10,No,,Design,High,2,Yes,0,0,0,0,0,1
+107,28,76163,Lawyer,Master,Lucknow,Apple,iPhone 12,No,,Price,High,3,Yes,0,0,0,1,0,0
+108,30,31560,Designer,PhD,Lucknow,OnePlus,OnePlus 9,No,,Battery,Low,3,No,0,0,1,0,0,0
+109,35,46082,Doctor,Bachelor,Ahmedabad,Samsung,Samsung S20,No,,Battery;Performance,Medium,0,No,0,0,1,0,1,0
+110,47,89321,Designer,Bachelor,Hyderabad,Xiaomi,Xiaomi Mi 10,No,,Performance;Design,Medium,1,No,0,0,0,0,1,1
+111,53,73585,Sales,Master,Hyderabad,Apple,iPhone 12,No,,Battery;Camera,Medium,4,No,0,1,1,0,0,0
+112,52,49975,Student,Master,Delhi,Apple,iPhone 11,No,,Price,Medium,3,Yes,0,0,0,1,0,0
+113,31,100135,Sales,Bachelor,Hyderabad,Apple,iPhone 12,Yes,3 months,Design,Low,0,No,1,0,0,0,0,1
+114,40,82233,Manager,Master,Lucknow,Realme,Realme 8,No,,Performance,High,3,Yes,0,0,0,0,1,0
+115,54,81886,Designer,Bachelor,Mumbai,Samsung,Samsung S20,No,,Performance;Design,Low,4,No,0,0,0,0,1,1
+116,46,110896,Sales,PhD,Kolkata,Realme,Realme 7,Yes,1 month,Price,High,2,Yes,1,0,0,1,0,0
+117,46,45398,Sales,PhD,Pune,Xiaomi,Xiaomi Mi 10,Yes,1 month,Camera,High,1,Yes,0,1,0,0,0,0
+118,46,43669,Designer,PhD,Kolkata,Apple,iPhone XR,No,,Camera;Design,Low,1,No,0,1,0,0,0,1
+119,57,80138,Lawyer,Bachelor,Hyderabad,Samsung,Samsung S9,Yes,,Performance,Medium,1,No,1,0,0,0,1,0
+120,50,103384,Engineer,Bachelor,Jaipur,Realme,Realme 7,Yes,1 month,Camera;Price,Medium,1,No,0,1,0,1,0,0
+121,36,47772,Manager,Bachelor,Ahmedabad,Samsung,Samsung S9,Yes,3 months,Battery,Medium,0,Yes,1,0,1,0,0,0
+122,28,106743,Doctor,Master,Lucknow,Apple,iPhone 11,No,,Camera,High,4,Yes,0,1,0,0,0,0
+123,29,51636,Teacher,Bachelor,Hyderabad,OnePlus,OnePlus 9,No,,Battery;Camera,High,2,Yes,0,1,1,0,0,0
+124,32,86088,Student,PhD,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Price,Low,3,No,0,0,0,1,0,0
+125,46,102430,Student,PhD,Ahmedabad,Apple,iPhone 11,No,,Price,Medium,3,Yes,0,0,0,1,0,0
+126,30,93646,Sales,PhD,Ahmedabad,Samsung,Samsung S10,Yes,,Camera;Design,Medium,4,No,0,1,0,0,0,1
+127,39,53669,Designer,Master,Jaipur,Apple,iPhone XR,No,,Price;Design,High,0,Yes,0,0,0,1,0,1
+128,54,85826,Student,PhD,Lucknow,Samsung,Samsung S10,No,,Performance;Design,Low,2,No,0,0,0,0,1,1
+129,50,47014,Designer,Bachelor,Kolkata,Realme,Realme 7,Yes,2 months,Price,Medium,0,No,1,0,0,1,0,0
+130,38,62117,Designer,PhD,Jaipur,Samsung,Samsung S20,No,,Camera;Design,Medium,4,Yes,0,1,0,0,0,1
+131,57,103379,Manager,Bachelor,Ahmedabad,Samsung,Samsung S20,Yes,,Design,High,2,No,1,0,0,0,0,1
+132,25,103794,Doctor,Bachelor,Lucknow,OnePlus,OnePlus 8,No,,Price,High,3,Yes,0,0,0,1,0,0
+133,53,72828,Designer,PhD,Jaipur,Apple,iPhone 11,No,,Design,Medium,3,No,0,0,0,0,0,1
+134,22,92711,Student,Bachelor,Jaipur,Realme,Realme 8,No,,Performance;Price,High,3,Yes,0,0,0,1,1,0
+135,19,114328,Designer,Master,Jaipur,Samsung,Samsung S9,Yes,3 months,Price,Low,2,No,1,0,0,1,0,0
+136,59,42329,Doctor,Master,Bengaluru,Apple,iPhone 11,No,,Design,Medium,1,Yes,0,0,0,0,0,1
+137,52,102909,Student,Master,Lucknow,Samsung,Samsung S10,Yes,,Design;Price,Low,2,No,0,0,0,1,0,1
+138,30,78244,Teacher,Bachelor,Pune,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Design;Battery,High,4,Yes,1,0,1,0,0,1
+139,46,107866,Doctor,Master,Delhi,OnePlus,OnePlus 9,Yes,,Price;Design,High,0,Yes,1,0,0,1,0,1
+140,38,100984,Student,Master,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Performance,Medium,3,No,0,0,0,0,1,0
+141,55,87009,Sales,Bachelor,Hyderabad,Realme,Realme 7,Yes,3 months,Price;Performance,Low,1,Yes,1,0,0,1,1,0
+142,55,103294,Designer,Master,Delhi,Apple,iPhone 12,No,,Price,High,1,Yes,0,0,0,1,0,0
+143,49,30163,Engineer,PhD,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Camera;Price,High,3,No,0,1,0,1,0,0
+144,52,44056,Designer,Bachelor,Kolkata,Apple,iPhone XR,No,,Price,Medium,0,No,0,0,0,1,0,0
+145,46,72080,Teacher,Master,Lucknow,Xiaomi,Xiaomi Mi 10,No,,Camera,Medium,0,Yes,0,1,0,0,0,0
+146,41,86492,Manager,Bachelor,Mumbai,Realme,Realme 8,Yes,1 month,Performance,Low,0,No,0,0,0,0,1,0
+147,48,78355,Manager,PhD,Bengaluru,OnePlus,OnePlus 9,Yes,1 month,Camera;Performance,Medium,0,Yes,0,1,0,0,1,0
+148,42,65144,Teacher,PhD,Pune,OnePlus,OnePlus 7,Yes,2 months,Price,Low,1,Yes,1,0,0,1,0,0
+149,44,117527,Teacher,Master,Chennai,Xiaomi,Xiaomi Mi 10,Yes,3 months,Design;Performance,Medium,3,Yes,1,0,0,0,1,1
+150,47,44291,Designer,PhD,Mumbai,Realme,Realme 7,No,,Battery;Price,Low,4,Yes,0,0,1,1,0,0
+151,25,53911,Doctor,PhD,Delhi,Xiaomi,Xiaomi Mi 10,Yes,6 months,Performance,Low,4,No,1,0,0,0,1,0
+152,48,76486,Lawyer,Bachelor,Kolkata,OnePlus,OnePlus 7,No,,Performance;Camera,Low,3,No,0,1,0,0,1,0
+153,54,59806,Lawyer,Master,Lucknow,Samsung,Samsung S9,No,,Camera;Design,Low,1,No,0,1,0,0,0,1
+154,56,109578,Manager,Master,Jaipur,Realme,Realme 7,No,,Camera;Price,High,0,No,0,1,0,1,0,0
+155,37,66751,Manager,PhD,Delhi,OnePlus,OnePlus 7,Yes,3 months,Price;Camera,Low,4,Yes,1,1,0,1,0,0
+156,27,94429,Student,Bachelor,Hyderabad,Samsung,Samsung S20,No,,Design,Low,3,No,0,0,0,0,0,1
+157,41,95697,Doctor,Master,Bengaluru,Xiaomi,Xiaomi Mi 10,Yes,,Camera,High,3,No,1,1,0,0,0,0
+158,53,35469,Sales,Bachelor,Delhi,Samsung,Samsung S10,Yes,1 month,Battery;Camera,High,4,Yes,1,1,1,0,0,0
+159,37,60447,Sales,PhD,Kolkata,Xiaomi,Xiaomi Redmi 9,No,,Price;Battery,Medium,4,No,0,0,1,1,0,0
+160,47,36397,Doctor,Bachelor,Kolkata,Samsung,Samsung S20,Yes,,Design;Camera,Medium,4,Yes,1,1,0,0,0,1
+161,22,56201,Student,Master,Delhi,Apple,iPhone 12,No,,Price,Low,3,Yes,0,0,0,1,0,0
+162,48,97155,Lawyer,Bachelor,Hyderabad,Realme,Realme 8,Yes,1 month,Battery;Camera,High,1,Yes,0,1,1,0,0,0
+163,59,37896,Designer,Master,Jaipur,Realme,Realme 8,Yes,1 month,Design;Battery,Medium,2,Yes,0,0,1,0,0,1
+164,35,37927,Manager,PhD,Delhi,Realme,Realme 8,No,,Price;Performance,Low,2,No,0,0,0,1,1,0
+165,54,56928,Manager,PhD,Jaipur,Realme,Realme 8,No,,Price,Low,1,Yes,0,0,0,1,0,0
+166,39,49446,Engineer,Bachelor,Ahmedabad,Realme,Realme 7,No,,Performance;Battery,Medium,1,Yes,0,0,1,0,1,0
+167,23,99184,Teacher,Bachelor,Chennai,Apple,iPhone 11,No,,Performance;Camera,High,3,Yes,0,1,0,0,1,0
+168,57,60651,Manager,Master,Bengaluru,OnePlus,OnePlus 9,No,,Price;Camera,High,3,No,0,1,0,1,0,0
+169,57,48133,Student,Master,Jaipur,Apple,iPhone 11,No,,Price;Design,High,0,Yes,0,0,0,1,0,1
+170,52,51253,Sales,PhD,Jaipur,OnePlus,OnePlus 8,Yes,3 months,Price,Low,0,Yes,0,0,0,1,0,0
+171,57,109057,Teacher,Master,Pune,OnePlus,OnePlus 7,No,,Design;Camera,Medium,4,No,0,1,0,0,0,1
+172,54,97843,Doctor,Master,Kolkata,OnePlus,OnePlus 7,No,,Battery;Performance,Low,4,Yes,0,0,1,0,1,0
+173,45,31125,Teacher,PhD,Delhi,OnePlus,OnePlus 7,No,,Design,Low,4,No,0,0,0,0,0,1
+174,45,79416,Student,Master,Pune,OnePlus,OnePlus 7,No,,Battery,Low,2,No,0,0,1,0,0,0
+175,47,99615,Designer,Master,Mumbai,Realme,Realme 7,Yes,3 months,Performance,Medium,0,No,1,0,0,0,1,0
+176,32,62602,Manager,Bachelor,Hyderabad,Realme,Realme 8,Yes,3 months,Camera;Battery,High,3,No,1,1,1,0,0,0
+177,20,117960,Sales,Master,Chennai,OnePlus,OnePlus 7,Yes,,Battery;Price,High,3,No,1,0,1,1,0,0
+178,50,116661,Manager,PhD,Delhi,OnePlus,OnePlus 9,Yes,3 months,Price;Design,Medium,2,Yes,1,0,0,1,0,1
+179,41,91709,Teacher,Master,Delhi,Samsung,Samsung S20,No,,Performance,Low,0,Yes,0,0,0,0,1,0
+180,36,82142,Student,Master,Ahmedabad,Realme,Realme 7,Yes,2 months,Price,Medium,2,Yes,0,0,0,1,0,0
+181,58,101363,Manager,Master,Jaipur,Realme,Realme 8,Yes,,Price,Low,2,Yes,0,0,0,1,0,0
+182,38,79812,Designer,Bachelor,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Battery,Low,0,Yes,0,0,1,0,0,0
+183,40,62174,Lawyer,Master,Jaipur,OnePlus,OnePlus 8,Yes,2 months,Performance,Medium,3,Yes,1,0,0,0,1,0
+184,20,41093,Student,Master,Ahmedabad,Apple,iPhone 12,No,,Performance,Medium,1,No,0,0,0,0,1,0
+185,36,115371,Teacher,Bachelor,Jaipur,Realme,Realme 7,No,,Design;Battery,Low,4,No,0,0,1,0,0,1
+186,25,67418,Student,Bachelor,Lucknow,Realme,Realme 7,No,,Camera;Performance,Low,4,Yes,0,1,0,0,1,0
+187,34,63623,Designer,PhD,Delhi,Samsung,Samsung S20,No,,Battery,Low,0,Yes,0,0,1,0,0,0
+188,36,74363,Lawyer,Bachelor,Chennai,Realme,Realme 8,No,,Camera,High,0,No,0,1,0,0,0,0
+189,40,82893,Designer,PhD,Delhi,Samsung,Samsung S20,No,,Price;Camera,Medium,1,Yes,0,1,0,1,0,0
+190,45,108931,Engineer,Bachelor,Lucknow,OnePlus,OnePlus 9,No,,Performance;Price,High,4,Yes,0,0,0,1,1,0
+191,35,100194,Doctor,Bachelor,Jaipur,Xiaomi,Xiaomi Redmi 9,No,,Price,High,1,Yes,0,0,0,1,0,0
+192,29,32282,Engineer,PhD,Lucknow,Realme,Realme 7,No,,Performance,High,2,Yes,0,0,0,0,1,0
+193,52,66268,Sales,Bachelor,Chennai,Apple,iPhone 11,No,,Battery;Camera,Medium,2,No,0,1,1,0,0,0
+194,53,115920,Lawyer,PhD,Pune,Xiaomi,Xiaomi Redmi 9,No,,Performance,Medium,1,No,0,0,0,0,1,0
+195,45,74014,Sales,PhD,Mumbai,Samsung,Samsung S10,No,,Price;Camera,Low,0,Yes,0,1,0,1,0,0
+196,22,37069,Lawyer,PhD,Bengaluru,OnePlus,OnePlus 7,Yes,1 month,Camera;Battery,Medium,2,Yes,1,1,1,0,0,0
+197,59,32169,Designer,Bachelor,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Design;Price,Low,2,No,0,0,0,1,0,1
+198,34,89500,Lawyer,Master,Hyderabad,Realme,Realme 7,No,,Price,High,2,Yes,0,0,0,1,0,0
+199,51,86882,Teacher,Bachelor,Chennai,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,4,Yes,0,0,0,0,0,1
+200,51,56762,Student,PhD,Mumbai,OnePlus,OnePlus 8,No,,Design,Medium,3,No,0,0,0,0,0,1
+201,54,105774,Lawyer,PhD,Chennai,Apple,iPhone 12,Yes,6 months,Performance;Camera,Low,0,No,1,1,0,0,1,0
+202,29,43893,Engineer,PhD,Bengaluru,Apple,iPhone 11,No,,Design;Camera,Medium,2,No,0,1,0,0,0,1
+203,34,60386,Designer,Master,Pune,Xiaomi,Xiaomi Redmi 9,No,,Battery,Low,0,Yes,0,0,1,0,0,0
+204,34,32384,Engineer,Bachelor,Ahmedabad,OnePlus,OnePlus 9,No,,Performance,Low,1,Yes,0,0,0,0,1,0
+205,46,35845,Manager,PhD,Kolkata,Apple,iPhone 11,No,,Price,High,0,No,0,0,0,1,0,0
+206,52,107842,Teacher,Master,Mumbai,OnePlus,OnePlus 7,Yes,,Price,Medium,0,No,1,0,0,1,0,0
+207,57,107064,Teacher,Master,Hyderabad,OnePlus,OnePlus 9,No,,Price;Battery,Low,4,Yes,0,0,1,1,0,0
+208,55,52031,Teacher,Bachelor,Delhi,Apple,iPhone 11,Yes,6 months,Price;Performance,Low,3,No,1,0,0,1,1,0
+209,40,100263,Doctor,PhD,Kolkata,Realme,Realme 7,No,,Price,Low,2,Yes,0,0,0,1,0,0
+210,42,60750,Engineer,PhD,Delhi,Apple,iPhone 11,No,,Camera;Price,Medium,3,Yes,0,1,0,1,0,0
+211,32,76101,Doctor,PhD,Hyderabad,Realme,Realme 7,No,,Camera;Battery,High,1,No,0,1,1,0,0,0
+212,58,109563,Engineer,PhD,Jaipur,Samsung,Samsung S10,No,,Design;Performance,Low,4,No,0,0,0,0,1,1
+213,46,71627,Manager,Bachelor,Mumbai,OnePlus,OnePlus 9,No,,Price;Camera,High,2,No,0,1,0,1,0,0
+214,29,62441,Sales,Master,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Design,High,4,Yes,0,0,0,0,0,1
+215,41,119963,Manager,Bachelor,Hyderabad,Samsung,Samsung S10,Yes,6 months,Price,Medium,3,No,1,0,0,1,0,0
+216,35,35355,Engineer,PhD,Jaipur,Realme,Realme 8,No,,Design;Price,High,0,No,0,0,0,1,0,1
+217,40,113692,Teacher,Bachelor,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Price;Battery,High,0,No,0,0,1,1,0,0
+218,52,103016,Engineer,Master,Kolkata,Apple,iPhone XR,Yes,,Performance;Price,High,0,Yes,1,0,0,1,1,0
+219,42,81813,Engineer,Master,Hyderabad,Realme,Realme 7,No,,Price;Camera,Medium,3,Yes,0,1,0,1,0,0
+220,34,107403,Teacher,PhD,Kolkata,Realme,Realme 8,No,,Price;Performance,Medium,4,Yes,0,0,0,1,1,0
+221,24,81955,Engineer,Master,Chennai,Xiaomi,Xiaomi Redmi 9,No,,Performance,High,0,Yes,0,0,0,0,1,0
+222,39,92522,Student,PhD,Jaipur,Realme,Realme 8,No,,Camera,High,0,Yes,0,1,0,0,0,0
+223,49,104707,Teacher,PhD,Kolkata,Samsung,Samsung S9,Yes,2 months,Price;Performance,Medium,2,Yes,0,0,0,1,1,0
+224,57,108915,Sales,PhD,Mumbai,Samsung,Samsung S20,No,,Battery;Design,High,1,No,0,0,1,0,0,1
+225,22,35939,Engineer,PhD,Ahmedabad,Samsung,Samsung S10,Yes,,Price;Performance,Low,1,No,1,0,0,1,1,0
+226,48,97293,Manager,Master,Kolkata,Realme,Realme 8,Yes,1 month,Battery,Medium,3,No,1,0,1,0,0,0
+227,21,89234,Student,PhD,Lucknow,Samsung,Samsung S20,No,,Camera;Battery,Medium,1,Yes,0,1,1,0,0,0
+228,46,33642,Designer,Master,Mumbai,OnePlus,OnePlus 9,No,,Performance;Design,Medium,3,Yes,0,0,0,0,1,1
+229,18,86746,Sales,Bachelor,Hyderabad,Apple,iPhone 11,No,,Performance;Price,Medium,3,Yes,0,0,0,1,1,0
+230,38,48601,Student,Master,Delhi,OnePlus,OnePlus 8,No,,Battery,Low,0,Yes,0,0,1,0,0,0
+231,44,85841,Manager,Bachelor,Jaipur,Realme,Realme 7,Yes,3 months,Battery,Medium,0,No,1,0,1,0,0,0
+232,37,112612,Manager,Master,Hyderabad,Samsung,Samsung S10,No,,Camera;Battery,High,0,Yes,0,1,1,0,0,0
+233,18,117440,Doctor,Master,Ahmedabad,Realme,Realme 7,No,,Battery,Medium,1,No,0,0,1,0,0,0
+234,24,119390,Sales,PhD,Lucknow,Realme,Realme 7,No,,Camera,Low,4,Yes,0,1,0,0,0,0
+235,36,112534,Doctor,Master,Jaipur,OnePlus,OnePlus 8,No,,Design,High,4,No,0,0,0,0,0,1
+236,46,49991,Lawyer,Master,Hyderabad,OnePlus,OnePlus 8,No,,Battery,Low,4,No,0,0,1,0,0,0
+237,23,64148,Engineer,Master,Ahmedabad,Realme,Realme 7,No,,Camera;Performance,High,2,No,0,1,0,0,1,0
+238,58,56564,Designer,PhD,Lucknow,Apple,iPhone 11,Yes,,Design,Medium,3,No,0,0,0,0,0,1
+239,38,32708,Lawyer,Bachelor,Delhi,Apple,iPhone 11,Yes,2 months,Performance;Battery,Low,0,Yes,0,0,1,0,1,0
+240,42,41156,Designer,Master,Mumbai,Samsung,Samsung S20,No,,Performance;Battery,Low,2,No,0,0,1,0,1,0
+241,40,43689,Sales,Bachelor,Jaipur,Samsung,Samsung S10,No,,Performance,Medium,4,No,0,0,0,0,1,0
+242,29,48287,Sales,Bachelor,Delhi,Samsung,Samsung S9,Yes,2 months,Design;Price,High,2,Yes,0,0,0,1,0,1
+243,31,100305,Designer,PhD,Hyderabad,OnePlus,OnePlus 7,No,,Battery,Medium,2,Yes,0,0,1,0,0,0
+244,57,97391,Doctor,PhD,Bengaluru,Xiaomi,Xiaomi Mi 10,Yes,,Camera;Battery,High,2,No,1,1,1,0,0,0
+245,31,41889,Lawyer,PhD,Bengaluru,OnePlus,OnePlus 8,Yes,2 months,Price,Medium,2,Yes,0,0,0,1,0,0
+246,22,40808,Student,Master,Chennai,OnePlus,OnePlus 7,Yes,3 months,Camera,Medium,3,No,0,1,0,0,0,0
+247,24,111486,Sales,Master,Delhi,OnePlus,OnePlus 8,No,,Price;Camera,Medium,0,Yes,0,1,0,1,0,0
+248,46,85312,Teacher,Master,Lucknow,Realme,Realme 8,No,,Performance,Medium,3,Yes,0,0,0,0,1,0
+249,20,75833,Teacher,Bachelor,Bengaluru,Apple,iPhone 11,No,,Battery;Camera,Low,3,Yes,0,1,1,0,0,0
+250,37,94619,Manager,PhD,Pune,Realme,Realme 8,No,,Performance;Design,Medium,0,No,0,0,0,0,1,1
+251,19,59084,Student,Bachelor,Bengaluru,Apple,iPhone XR,Yes,,Battery;Design,High,3,No,1,0,1,0,0,1
+252,45,92912,Engineer,Bachelor,Hyderabad,Samsung,Samsung S9,No,,Design,Medium,0,Yes,0,0,0,0,0,1
+253,44,114021,Teacher,PhD,Hyderabad,OnePlus,OnePlus 7,No,,Battery;Design,Medium,2,No,0,0,1,0,0,1
+254,34,34138,Engineer,Bachelor,Lucknow,Apple,iPhone XR,Yes,2 months,Battery,Low,4,Yes,0,0,1,0,0,0
+255,28,103788,Teacher,PhD,Lucknow,Samsung,Samsung S20,No,,Price;Camera,High,2,Yes,0,1,0,1,0,0
+256,20,30869,Engineer,PhD,Ahmedabad,OnePlus,OnePlus 8,Yes,,Price,Medium,0,No,0,0,0,1,0,0
+257,54,116664,Teacher,PhD,Chennai,Apple,iPhone XR,No,,Camera,Medium,3,Yes,0,1,0,0,0,0
+258,32,77195,Teacher,Master,Kolkata,OnePlus,OnePlus 8,Yes,3 months,Camera;Performance,High,0,No,1,1,0,0,1,0
+259,18,97173,Doctor,Bachelor,Chennai,Samsung,Samsung S10,No,,Performance;Battery,Medium,3,Yes,0,0,1,0,1,0
+260,21,32187,Student,PhD,Ahmedabad,Apple,iPhone 12,Yes,,Battery;Price,Medium,4,Yes,1,0,1,1,0,0
+261,59,91753,Sales,Bachelor,Mumbai,Realme,Realme 7,Yes,6 months,Price,High,3,No,0,0,0,1,0,0
+262,39,89848,Designer,PhD,Chennai,Realme,Realme 8,No,,Performance,High,4,No,0,0,0,0,1,0
+263,35,43917,Doctor,Master,Mumbai,Samsung,Samsung S10,Yes,,Camera;Performance,Medium,1,No,1,1,0,0,1,0
+264,31,99166,Doctor,PhD,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Performance,High,2,No,0,0,0,0,1,0
+265,59,38640,Designer,Master,Pune,OnePlus,OnePlus 7,No,,Battery;Camera,Medium,4,Yes,0,1,1,0,0,0
+266,46,67158,Lawyer,Master,Mumbai,Realme,Realme 7,No,,Design,High,0,No,0,0,0,0,0,1
+267,20,70142,Designer,Bachelor,Lucknow,Xiaomi,Xiaomi Mi 10,Yes,,Price;Battery,High,2,Yes,1,0,1,1,0,0
+268,24,30717,Designer,PhD,Bengaluru,Apple,iPhone XR,No,,Performance,Medium,1,No,0,0,0,0,1,0
+269,19,107535,Lawyer,Master,Kolkata,Xiaomi,Xiaomi Redmi 9,No,,Battery;Price,Low,1,No,0,0,1,1,0,0
+270,32,79683,Lawyer,Bachelor,Lucknow,Realme,Realme 7,Yes,3 months,Camera;Performance,Medium,3,Yes,1,1,0,0,1,0
+271,49,38026,Doctor,PhD,Pune,Samsung,Samsung S9,Yes,,Price,Medium,4,Yes,1,0,0,1,0,0
+272,34,74386,Designer,PhD,Delhi,Xiaomi,Xiaomi Redmi 9,Yes,3 months,Battery;Design,Medium,1,No,1,0,1,0,0,1
+273,39,86233,Student,Master,Kolkata,OnePlus,OnePlus 7,Yes,2 months,Design;Camera,Medium,1,No,1,1,0,0,0,1
+274,43,34886,Teacher,Master,Mumbai,Samsung,Samsung S20,No,,Price,High,4,No,0,0,0,1,0,0
+275,30,96458,Student,PhD,Kolkata,Apple,iPhone 12,No,,Battery,Low,3,No,0,0,1,0,0,0
+276,37,30203,Engineer,Bachelor,Chennai,Realme,Realme 7,No,,Camera,High,0,No,0,1,0,0,0,0
+277,57,108278,Lawyer,Bachelor,Kolkata,Apple,iPhone 11,No,,Camera,High,3,Yes,0,1,0,0,0,0
+278,48,104842,Lawyer,Bachelor,Lucknow,OnePlus,OnePlus 7,No,,Battery,Low,2,No,0,0,1,0,0,0
+279,28,44334,Student,Bachelor,Bengaluru,Apple,iPhone XR,No,,Performance;Camera,Medium,4,Yes,0,1,0,0,1,0
+280,36,106312,Student,Bachelor,Bengaluru,OnePlus,OnePlus 8,No,,Battery,High,1,Yes,0,0,1,0,0,0
+281,22,98798,Manager,Bachelor,Bengaluru,Realme,Realme 8,No,,Price;Design,Medium,2,No,0,0,0,1,0,1
+282,44,76646,Doctor,Master,Ahmedabad,OnePlus,OnePlus 7,No,,Battery,Medium,1,No,0,0,1,0,0,0
+283,18,94575,Sales,Bachelor,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Performance,Low,1,No,0,0,0,0,1,0
+284,32,116795,Lawyer,Master,Hyderabad,OnePlus,OnePlus 8,No,,Price,Medium,1,No,0,0,0,1,0,0
+285,57,106949,Student,Bachelor,Ahmedabad,Apple,iPhone 11,No,,Camera;Design,Medium,4,No,0,1,0,0,0,1
+286,44,118151,Lawyer,PhD,Jaipur,OnePlus,OnePlus 9,Yes,,Battery,High,3,Yes,1,0,1,0,0,0
+287,29,108768,Engineer,Master,Bengaluru,OnePlus,OnePlus 8,Yes,2 months,Camera;Design,High,3,Yes,1,1,0,0,0,1
+288,54,95149,Engineer,PhD,Ahmedabad,OnePlus,OnePlus 8,No,,Camera,Medium,4,Yes,0,1,0,0,0,0
+289,53,74825,Doctor,PhD,Pune,Apple,iPhone 12,Yes,6 months,Camera;Price,Medium,2,Yes,1,1,0,1,0,0
+290,40,49520,Sales,PhD,Lucknow,Samsung,Samsung S20,Yes,3 months,Price,High,0,No,1,0,0,1,0,0
+291,56,73856,Lawyer,Bachelor,Ahmedabad,Xiaomi,Xiaomi Mi 10,Yes,6 months,Performance;Design,Medium,0,No,1,0,0,0,1,1
+292,56,74739,Manager,Bachelor,Ahmedabad,Realme,Realme 7,No,,Design,Medium,3,No,0,0,0,0,0,1
+293,25,78920,Designer,PhD,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,2 months,Camera,High,0,No,1,1,0,0,0,0
+294,27,116402,Lawyer,PhD,Mumbai,OnePlus,OnePlus 9,No,,Battery,Low,4,No,0,0,1,0,0,0
+295,56,50862,Doctor,Bachelor,Lucknow,Apple,iPhone XR,No,,Performance,Medium,0,Yes,0,0,0,0,1,0
+296,25,101386,Designer,PhD,Ahmedabad,OnePlus,OnePlus 8,No,,Battery,Low,1,No,0,0,1,0,0,0
+297,34,82509,Sales,Bachelor,Pune,Realme,Realme 8,No,,Design,Low,0,No,0,0,0,0,0,1
+298,32,61923,Teacher,PhD,Chennai,Xiaomi,Xiaomi Mi 10,No,,Performance;Design,High,2,Yes,0,0,0,0,1,1
+299,26,66639,Sales,Bachelor,Jaipur,Samsung,Samsung S20,Yes,3 months,Performance;Camera,Medium,0,Yes,1,1,0,0,1,0
+300,38,99460,Lawyer,PhD,Ahmedabad,Apple,iPhone 11,Yes,,Battery;Performance,Medium,0,Yes,1,0,1,0,1,0
+301,57,64642,Sales,PhD,Mumbai,OnePlus,OnePlus 8,Yes,,Camera,High,3,No,1,1,0,0,0,0
+302,49,65944,Student,PhD,Bengaluru,Apple,iPhone 12,Yes,3 months,Design;Price,High,3,Yes,1,0,0,1,0,1
+303,21,50389,Student,PhD,Jaipur,Xiaomi,Xiaomi Redmi 9,Yes,,Camera,Medium,1,No,1,1,0,0,0,0
+304,57,74041,Manager,PhD,Ahmedabad,Realme,Realme 7,No,,Design;Battery,High,3,Yes,0,0,1,0,0,1
+305,51,48782,Teacher,PhD,Hyderabad,Samsung,Samsung S10,Yes,2 months,Price;Battery,Low,4,No,1,0,1,1,0,0
+306,32,70953,Teacher,Master,Hyderabad,Samsung,Samsung S9,No,,Performance;Price,Medium,3,No,0,0,0,1,1,0
+307,38,43026,Doctor,PhD,Bengaluru,Apple,iPhone 11,Yes,1 month,Design,Medium,4,Yes,0,0,0,0,0,1
+308,46,106996,Engineer,PhD,Pune,Samsung,Samsung S20,No,,Camera;Battery,High,4,Yes,0,1,1,0,0,0
+309,45,99497,Doctor,Bachelor,Delhi,Apple,iPhone XR,Yes,1 month,Battery,Low,4,No,1,0,1,0,0,0
+310,59,102373,Teacher,Bachelor,Mumbai,OnePlus,OnePlus 7,No,,Performance;Price,Low,0,Yes,0,0,0,1,1,0
+311,23,91602,Doctor,Master,Ahmedabad,Realme,Realme 7,No,,Battery,Low,3,Yes,0,0,1,0,0,0
+312,39,95942,Engineer,Master,Lucknow,Realme,Realme 8,No,,Camera;Design,Medium,0,No,0,1,0,0,0,1
+313,30,90294,Lawyer,PhD,Bengaluru,OnePlus,OnePlus 9,No,,Camera,High,3,No,0,1,0,0,0,0
+314,34,80225,Engineer,PhD,Hyderabad,Realme,Realme 8,No,,Battery;Camera,Low,2,Yes,0,1,1,0,0,0
+315,33,92653,Student,Bachelor,Lucknow,Xiaomi,Xiaomi Mi 10,No,,Performance,Low,4,No,0,0,0,0,1,0
+316,24,66343,Student,PhD,Delhi,Apple,iPhone XR,No,,Camera,Medium,4,Yes,0,1,0,0,0,0
+317,51,67034,Doctor,Bachelor,Delhi,Realme,Realme 8,No,,Performance;Price,Medium,1,No,0,0,0,1,1,0
+318,57,101545,Lawyer,Bachelor,Chennai,Apple,iPhone 11,Yes,1 month,Design,Medium,3,Yes,1,0,0,0,0,1
+319,49,79877,Lawyer,Master,Bengaluru,Samsung,Samsung S10,No,,Performance,High,3,No,0,0,0,0,1,0
+320,50,92993,Engineer,PhD,Jaipur,Samsung,Samsung S20,Yes,,Camera,High,1,Yes,1,1,0,0,0,0
+321,42,31609,Doctor,Master,Jaipur,Apple,iPhone 11,Yes,1 month,Camera;Design,Low,2,No,0,1,0,0,0,1
+322,24,115712,Lawyer,Master,Pune,Xiaomi,Xiaomi Redmi 9,No,,Battery;Performance,Medium,4,No,0,0,1,0,1,0
+323,33,77365,Engineer,PhD,Lucknow,Xiaomi,Xiaomi Mi 10,Yes,,Design;Camera,Medium,3,Yes,0,1,0,0,0,1
+324,34,76142,Designer,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Design;Price,High,1,No,0,0,0,1,0,1
+325,54,118860,Manager,PhD,Hyderabad,Xiaomi,Xiaomi Redmi 9,Yes,2 months,Performance,High,3,Yes,1,0,0,0,1,0
+326,35,69876,Doctor,Master,Bengaluru,Apple,iPhone XR,Yes,,Camera;Battery,Low,2,Yes,1,1,1,0,0,0
+327,32,93928,Student,Bachelor,Hyderabad,Apple,iPhone 11,Yes,,Camera,Low,1,Yes,1,1,0,0,0,0
+328,48,105910,Student,PhD,Lucknow,OnePlus,OnePlus 7,No,,Performance,Medium,3,Yes,0,0,0,0,1,0
+329,19,68751,Lawyer,Master,Delhi,Realme,Realme 7,No,,Performance,Medium,1,Yes,0,0,0,0,1,0
+330,34,119312,Manager,Bachelor,Chennai,Apple,iPhone 12,Yes,,Camera;Performance,Low,2,No,1,1,0,0,1,0
+331,59,114762,Engineer,Master,Pune,Samsung,Samsung S10,No,,Price;Design,Low,3,No,0,0,0,1,0,1
+332,50,63783,Engineer,Master,Lucknow,Realme,Realme 8,Yes,,Design;Camera,High,1,No,1,1,0,0,0,1
+333,26,51067,Teacher,Bachelor,Lucknow,Samsung,Samsung S10,No,,Design,Medium,2,No,0,0,0,0,0,1
+334,31,37452,Sales,Bachelor,Hyderabad,Realme,Realme 7,No,,Camera;Price,High,3,Yes,0,1,0,1,0,0
+335,23,109267,Doctor,Master,Hyderabad,Samsung,Samsung S9,No,,Performance;Camera,Low,2,Yes,0,1,0,0,1,0
+336,22,106436,Lawyer,PhD,Delhi,Xiaomi,Xiaomi Mi 10,No,,Camera,High,0,No,0,1,0,0,0,0
+337,51,73116,Manager,PhD,Ahmedabad,OnePlus,OnePlus 8,Yes,1 month,Performance,Low,4,No,1,0,0,0,1,0
+338,26,78924,Doctor,PhD,Jaipur,Apple,iPhone XR,No,,Battery,Medium,2,No,0,0,1,0,0,0
+339,41,34042,Designer,Master,Lucknow,OnePlus,OnePlus 8,No,,Design,Medium,4,No,0,0,0,0,0,1
+340,25,84383,Manager,Bachelor,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Price;Battery,High,3,Yes,0,0,1,1,0,0
+341,36,37130,Designer,PhD,Jaipur,Xiaomi,Xiaomi Mi 10,No,,Camera,Low,1,Yes,0,1,0,0,0,0
+342,30,43331,Lawyer,PhD,Delhi,OnePlus,OnePlus 9,No,,Design;Camera,High,1,Yes,0,1,0,0,0,1
+343,23,34837,Engineer,Master,Mumbai,OnePlus,OnePlus 9,Yes,,Performance,Low,1,No,1,0,0,0,1,0
+344,54,63367,Lawyer,Bachelor,Jaipur,Realme,Realme 8,Yes,,Battery;Design,Medium,2,Yes,1,0,1,0,0,1
+345,40,115489,Student,PhD,Jaipur,Apple,iPhone XR,Yes,3 months,Performance;Design,Medium,3,Yes,1,0,0,0,1,1
+346,42,30946,Doctor,Master,Chennai,Xiaomi,Xiaomi Mi 10,Yes,,Performance;Price,Low,0,No,1,0,0,1,1,0
+347,55,52490,Student,Bachelor,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Design;Battery,Low,0,Yes,0,0,1,0,0,1
+348,26,99922,Lawyer,Bachelor,Ahmedabad,OnePlus,OnePlus 8,No,,Design,Medium,3,No,0,0,0,0,0,1
+349,52,104286,Manager,PhD,Hyderabad,Realme,Realme 7,No,,Design;Camera,High,2,No,0,1,0,0,0,1
+350,29,69133,Student,Master,Lucknow,Realme,Realme 7,No,,Camera,Low,3,Yes,0,1,0,0,0,0
+351,39,54594,Designer,Master,Chennai,Samsung,Samsung S10,No,,Price,Medium,4,Yes,0,0,0,1,0,0
+352,46,31184,Manager,Master,Chennai,Apple,iPhone 12,Yes,1 month,Design,High,3,Yes,0,0,0,0,0,1
+353,21,71850,Teacher,Bachelor,Pune,Realme,Realme 8,No,,Design;Performance,Low,2,No,0,0,0,0,1,1
+354,31,101334,Student,PhD,Delhi,Samsung,Samsung S9,Yes,,Price,High,2,No,1,0,0,1,0,0
+355,46,81322,Sales,PhD,Bengaluru,Apple,iPhone XR,Yes,1 month,Battery,Medium,1,Yes,1,0,1,0,0,0
+356,38,112476,Lawyer,PhD,Bengaluru,Samsung,Samsung S10,No,,Performance,Medium,3,Yes,0,0,0,0,1,0
+357,33,39837,Lawyer,Bachelor,Jaipur,Apple,iPhone XR,Yes,1 month,Battery;Price,High,4,No,1,0,1,1,0,0
+358,30,95066,Doctor,Master,Jaipur,Xiaomi,Xiaomi Redmi 9,Yes,,Price,Low,1,Yes,0,0,0,1,0,0
+359,23,109823,Lawyer,PhD,Chennai,Samsung,Samsung S10,No,,Performance;Camera,Medium,3,Yes,0,1,0,0,1,0
+360,28,51650,Manager,PhD,Chennai,Apple,iPhone 11,No,,Battery,Medium,2,Yes,0,0,1,0,0,0
+361,45,113232,Manager,PhD,Hyderabad,Realme,Realme 8,Yes,,Design;Camera,Medium,3,No,1,1,0,0,0,1
+362,52,50923,Designer,Master,Ahmedabad,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,2,No,0,0,0,0,0,1
+363,40,31375,Doctor,Bachelor,Pune,Samsung,Samsung S9,No,,Performance,High,2,Yes,0,0,0,0,1,0
+364,37,59320,Designer,Bachelor,Jaipur,Realme,Realme 8,No,,Performance,Low,4,Yes,0,0,0,0,1,0
+365,45,53464,Teacher,Bachelor,Lucknow,Apple,iPhone XR,No,,Price,Medium,1,No,0,0,0,1,0,0
+366,52,113168,Lawyer,PhD,Pune,Samsung,Samsung S9,Yes,2 months,Battery,High,2,No,1,0,1,0,0,0
+367,46,76994,Sales,PhD,Jaipur,OnePlus,OnePlus 7,No,,Design,Medium,4,No,0,0,0,0,0,1
+368,38,101289,Doctor,Bachelor,Delhi,Apple,iPhone 11,No,,Design;Price,Medium,3,No,0,0,0,1,0,1
+369,26,76216,Teacher,Bachelor,Bengaluru,Samsung,Samsung S9,No,,Performance;Camera,High,1,No,0,1,0,0,1,0
+370,48,30066,Lawyer,PhD,Jaipur,Realme,Realme 7,Yes,1 month,Price,Medium,3,No,0,0,0,1,0,0
+371,19,62567,Student,PhD,Delhi,Realme,Realme 7,Yes,3 months,Design,Medium,0,Yes,0,0,0,0,0,1
+372,56,30731,Teacher,PhD,Kolkata,OnePlus,OnePlus 8,Yes,2 months,Performance;Camera,Low,0,Yes,0,1,0,0,1,0
+373,52,44605,Engineer,PhD,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,,Camera;Design,Medium,2,No,1,1,0,0,0,1
+374,30,63798,Manager,Master,Pune,Xiaomi,Xiaomi Redmi 9,No,,Performance;Price,Medium,2,No,0,0,0,1,1,0
+375,51,43386,Doctor,Bachelor,Bengaluru,Apple,iPhone XR,No,,Camera,Low,2,No,0,1,0,0,0,0
+376,18,32716,Sales,Master,Hyderabad,OnePlus,OnePlus 9,No,,Performance,High,3,Yes,0,0,0,0,1,0
+377,28,68185,Designer,Bachelor,Pune,Xiaomi,Xiaomi Redmi 9,No,,Performance,High,3,No,0,0,0,0,1,0
+378,52,103843,Doctor,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,Yes,,Camera;Design,Medium,1,No,1,1,0,0,0,1
+379,20,116717,Sales,Bachelor,Jaipur,Apple,iPhone XR,Yes,1 month,Performance,Low,0,Yes,1,0,0,0,1,0
+380,24,35596,Sales,PhD,Jaipur,OnePlus,OnePlus 8,No,,Price,Medium,4,No,0,0,0,1,0,0
+381,52,58132,Lawyer,Master,Lucknow,Samsung,Samsung S20,No,,Design;Price,Medium,0,No,0,0,0,1,0,1
+382,22,119156,Student,PhD,Jaipur,Realme,Realme 8,No,,Performance;Price,High,1,Yes,0,0,0,1,1,0
+383,55,73258,Doctor,Bachelor,Pune,Samsung,Samsung S20,No,,Price;Battery,Low,2,No,0,0,1,1,0,0
+384,45,40345,Engineer,PhD,Hyderabad,Xiaomi,Xiaomi Mi 10,Yes,2 months,Design;Price,Low,4,No,1,0,0,1,0,1
+385,59,76032,Sales,Master,Delhi,OnePlus,OnePlus 8,No,,Camera;Battery,Medium,1,No,0,1,1,0,0,0
+386,46,82116,Teacher,Master,Jaipur,OnePlus,OnePlus 9,No,,Camera,High,0,Yes,0,1,0,0,0,0
+387,24,62574,Engineer,PhD,Bengaluru,Realme,Realme 8,No,,Performance;Battery,Low,1,Yes,0,0,1,0,1,0
+388,34,57094,Engineer,PhD,Ahmedabad,OnePlus,OnePlus 9,Yes,1 month,Price,High,4,Yes,1,0,0,1,0,0
+389,38,104219,Manager,Bachelor,Kolkata,Apple,iPhone XR,No,,Battery;Design,High,3,No,0,0,1,0,0,1
+390,32,69725,Designer,Master,Delhi,OnePlus,OnePlus 8,Yes,3 months,Camera,Medium,0,Yes,1,1,0,0,0,0
+391,23,60930,Teacher,Master,Mumbai,Apple,iPhone XR,No,,Performance;Design,Medium,2,No,0,0,0,0,1,1
+392,19,109737,Engineer,PhD,Kolkata,Realme,Realme 8,No,,Performance,Medium,2,No,0,0,0,0,1,0
+393,48,73601,Manager,PhD,Jaipur,Samsung,Samsung S9,Yes,,Camera,Medium,4,Yes,1,1,0,0,0,0
+394,27,115998,Teacher,PhD,Ahmedabad,Samsung,Samsung S20,No,,Price;Design,High,1,Yes,0,0,0,1,0,1
+395,24,45630,Engineer,PhD,Kolkata,Apple,iPhone XR,No,,Battery,Medium,4,No,0,0,1,0,0,0
+396,50,61376,Lawyer,Bachelor,Jaipur,Apple,iPhone XR,Yes,,Price;Battery,High,1,No,1,0,1,1,0,0
+397,46,62919,Teacher,Bachelor,Mumbai,Apple,iPhone 11,Yes,,Price;Performance,Low,3,No,0,0,0,1,1,0
+398,26,107004,Sales,PhD,Chennai,OnePlus,OnePlus 8,No,,Camera,Medium,4,Yes,0,1,0,0,0,0
+399,50,41049,Manager,Bachelor,Mumbai,Xiaomi,Xiaomi Redmi 9,Yes,,Performance,Medium,3,No,0,0,0,0,1,0
+400,18,45896,Teacher,Master,Lucknow,Realme,Realme 7,Yes,,Design;Performance,Low,0,No,1,0,0,0,1,1
+401,20,101091,Student,Bachelor,Lucknow,OnePlus,OnePlus 8,No,,Design;Price,Medium,1,No,0,0,0,1,0,1
+402,38,102603,Lawyer,Master,Lucknow,Samsung,Samsung S20,Yes,,Camera;Design,Medium,3,No,0,1,0,0,0,1
+403,31,98367,Manager,Master,Kolkata,Realme,Realme 8,Yes,1 month,Design;Camera,Medium,2,Yes,0,1,0,0,0,1
+404,54,47199,Sales,PhD,Chennai,OnePlus,OnePlus 9,No,,Battery;Performance,Low,2,Yes,0,0,1,0,1,0
+405,34,76233,Designer,Bachelor,Jaipur,OnePlus,OnePlus 8,No,,Camera;Battery,Low,1,No,0,1,1,0,0,0
+406,51,33240,Teacher,Master,Mumbai,Samsung,Samsung S20,Yes,6 months,Price;Design,Medium,0,No,0,0,0,1,0,1
+407,19,98619,Engineer,Master,Pune,Realme,Realme 7,No,,Design,Low,3,No,0,0,0,0,0,1
+408,27,59140,Student,Bachelor,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Price;Performance,Low,3,No,0,0,0,1,1,0
+409,24,61624,Engineer,Master,Kolkata,Realme,Realme 8,Yes,,Performance;Price,High,2,Yes,0,0,0,1,1,0
+410,23,115844,Engineer,Master,Delhi,Samsung,Samsung S20,No,,Price;Design,Low,0,No,0,0,0,1,0,1
+411,49,76825,Teacher,Bachelor,Delhi,Apple,iPhone XR,Yes,,Performance,Low,4,Yes,1,0,0,0,1,0
+412,35,70701,Lawyer,Bachelor,Chennai,Apple,iPhone 12,No,,Camera,Medium,4,No,0,1,0,0,0,0
+413,21,57689,Manager,Master,Chennai,OnePlus,OnePlus 8,No,,Price;Design,Low,1,No,0,0,0,1,0,1
+414,22,107209,Doctor,Master,Bengaluru,Realme,Realme 7,No,,Camera,High,3,No,0,1,0,0,0,0
+415,30,77588,Doctor,Master,Chennai,Apple,iPhone 11,No,,Battery;Design,Medium,2,No,0,0,1,0,0,1
+416,30,51672,Designer,Master,Pune,Apple,iPhone 12,No,,Camera;Battery,Low,0,Yes,0,1,1,0,0,0
+417,43,116436,Sales,Bachelor,Chennai,Realme,Realme 7,No,,Camera,Medium,3,No,0,1,0,0,0,0
+418,48,86116,Teacher,Bachelor,Lucknow,Realme,Realme 8,No,,Price;Battery,Medium,3,No,0,0,1,1,0,0
+419,22,57105,Doctor,Master,Delhi,Apple,iPhone XR,No,,Camera;Design,Medium,0,No,0,1,0,0,0,1
+420,27,76762,Engineer,PhD,Kolkata,Realme,Realme 7,Yes,2 months,Camera;Design,High,0,Yes,1,1,0,0,0,1
+421,54,72292,Teacher,PhD,Bengaluru,Samsung,Samsung S20,Yes,6 months,Performance,High,1,No,1,0,0,0,1,0
+422,51,49177,Engineer,PhD,Lucknow,Samsung,Samsung S20,Yes,6 months,Performance;Price,High,3,No,1,0,0,1,1,0
+423,24,48646,Teacher,Bachelor,Ahmedabad,OnePlus,OnePlus 9,No,,Design;Price,Medium,4,No,0,0,0,1,0,1
+424,21,45823,Lawyer,Master,Hyderabad,OnePlus,OnePlus 8,No,,Design;Performance,Low,4,Yes,0,0,0,0,1,1
+425,48,119131,Sales,Master,Delhi,Realme,Realme 8,Yes,,Performance,High,2,Yes,1,0,0,0,1,0
+426,53,63635,Student,PhD,Delhi,Samsung,Samsung S9,Yes,,Price,Low,4,Yes,1,0,0,1,0,0
+427,44,64235,Lawyer,PhD,Chennai,Samsung,Samsung S9,Yes,2 months,Battery,Low,3,No,1,0,1,0,0,0
+428,36,94817,Engineer,Bachelor,Ahmedabad,Samsung,Samsung S10,No,,Price,High,0,No,0,0,0,1,0,0
+429,44,109380,Student,PhD,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Price,Medium,0,Yes,0,0,0,1,0,0
+430,50,88560,Designer,PhD,Lucknow,Realme,Realme 7,Yes,2 months,Performance,Low,3,Yes,1,0,0,0,1,0
+431,40,68258,Designer,Bachelor,Mumbai,Samsung,Samsung S9,No,,Camera,Low,1,No,0,1,0,0,0,0
+432,26,55616,Manager,PhD,Pune,Xiaomi,Xiaomi Redmi 9,No,,Price,Low,3,Yes,0,0,0,1,0,0
+433,21,68885,Engineer,Bachelor,Hyderabad,Realme,Realme 7,Yes,1 month,Performance,Medium,0,No,0,0,0,0,1,0
+434,40,51120,Sales,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,No,,Battery,Low,0,Yes,0,0,1,0,0,0
+435,49,84205,Sales,Master,Pune,OnePlus,OnePlus 8,No,,Price,High,3,Yes,0,0,0,1,0,0
+436,55,44266,Sales,Bachelor,Jaipur,OnePlus,OnePlus 9,No,,Camera;Design,Medium,3,Yes,0,1,0,0,0,1
+437,31,106958,Sales,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,3 months,Price,Low,3,No,1,0,0,1,0,0
+438,27,52990,Doctor,Master,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Battery,Medium,1,Yes,0,0,1,0,0,0
+439,55,58716,Teacher,PhD,Pune,Xiaomi,Xiaomi Redmi 9,Yes,,Camera;Performance,High,2,Yes,1,1,0,0,1,0
+440,34,105020,Lawyer,Master,Hyderabad,Apple,iPhone 12,No,,Design;Performance,Low,2,Yes,0,0,0,0,1,1
+441,55,99123,Lawyer,PhD,Bengaluru,OnePlus,OnePlus 7,Yes,,Price,High,4,Yes,1,0,0,1,0,0
+442,57,84512,Manager,Bachelor,Jaipur,Apple,iPhone XR,No,,Battery;Camera,High,2,No,0,1,1,0,0,0
+443,52,59113,Student,Bachelor,Hyderabad,Realme,Realme 7,Yes,6 months,Price,Medium,4,Yes,1,0,0,1,0,0
+444,43,105645,Sales,Bachelor,Ahmedabad,Apple,iPhone 11,No,,Battery,Medium,0,Yes,0,0,1,0,0,0
+445,37,98321,Teacher,Bachelor,Delhi,Samsung,Samsung S9,No,,Camera,High,3,Yes,0,1,0,0,0,0
+446,46,56183,Designer,Bachelor,Hyderabad,Samsung,Samsung S10,No,,Price,High,2,Yes,0,0,0,1,0,0
+447,27,60286,Teacher,PhD,Pune,Samsung,Samsung S10,No,,Price;Camera,Medium,2,No,0,1,0,1,0,0
+448,45,110052,Sales,Bachelor,Hyderabad,Realme,Realme 7,Yes,,Design;Performance,Medium,3,No,0,0,0,0,1,1
+449,43,77663,Sales,PhD,Jaipur,Realme,Realme 8,No,,Camera,Low,3,No,0,1,0,0,0,0
+450,55,43753,Manager,PhD,Mumbai,Realme,Realme 7,No,,Design;Camera,Medium,0,No,0,1,0,0,0,1
+451,52,73678,Student,PhD,Mumbai,Samsung,Samsung S20,No,,Camera,High,1,Yes,0,1,0,0,0,0
+452,19,31211,Doctor,Bachelor,Lucknow,Apple,iPhone 11,No,,Performance,Medium,4,No,0,0,0,0,1,0
+453,43,119317,Sales,Master,Ahmedabad,Realme,Realme 8,No,,Battery;Price,High,4,Yes,0,0,1,1,0,0
+454,38,112357,Manager,Master,Lucknow,Apple,iPhone 11,No,,Battery;Performance,Medium,4,Yes,0,0,1,0,1,0
+455,38,97847,Teacher,Master,Pune,Samsung,Samsung S9,No,,Price,Low,3,Yes,0,0,0,1,0,0
+456,54,79990,Sales,Bachelor,Ahmedabad,Realme,Realme 8,No,,Battery;Price,Low,2,Yes,0,0,1,1,0,0
+457,43,47948,Manager,Bachelor,Ahmedabad,Realme,Realme 7,No,,Design;Battery,Low,0,No,0,0,1,0,0,1
+458,44,111494,Teacher,Master,Hyderabad,Samsung,Samsung S10,Yes,,Camera;Price,Medium,1,Yes,0,1,0,1,0,0
+459,56,116551,Lawyer,Bachelor,Mumbai,Samsung,Samsung S20,No,,Performance;Price,High,2,Yes,0,0,0,1,1,0
+460,43,89840,Lawyer,PhD,Lucknow,OnePlus,OnePlus 9,No,,Performance;Design,High,2,No,0,0,0,0,1,1
+461,22,94994,Designer,Master,Pune,Apple,iPhone 12,No,,Camera;Battery,Low,1,Yes,0,1,1,0,0,0
+462,32,43288,Sales,PhD,Hyderabad,Xiaomi,Xiaomi Mi 10,No,,Price;Battery,Low,3,Yes,0,0,1,1,0,0
+463,42,88959,Teacher,PhD,Mumbai,Realme,Realme 8,No,,Battery;Design,Medium,3,No,0,0,1,0,0,1
+464,35,80639,Engineer,Master,Kolkata,Apple,iPhone XR,Yes,1 month,Price,Medium,3,No,0,0,0,1,0,0
+465,31,85856,Designer,Master,Hyderabad,OnePlus,OnePlus 7,No,,Camera,Low,0,No,0,1,0,0,0,0
+466,54,119743,Student,Bachelor,Delhi,Xiaomi,Xiaomi Redmi 9,No,,Price;Camera,Low,4,Yes,0,1,0,1,0,0
+467,50,99603,Student,Master,Jaipur,Samsung,Samsung S9,No,,Design;Performance,High,4,Yes,0,0,0,0,1,1
+468,56,96255,Manager,Master,Bengaluru,OnePlus,OnePlus 8,No,,Camera;Price,Low,1,Yes,0,1,0,1,0,0
+469,55,87804,Student,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Price;Design,High,4,No,0,0,0,1,0,1
+470,49,53840,Doctor,PhD,Pune,Xiaomi,Xiaomi Redmi 9,No,,Price,Medium,2,No,0,0,0,1,0,0
+471,42,74722,Designer,PhD,Bengaluru,Samsung,Samsung S10,Yes,1 month,Camera;Design,Medium,4,Yes,0,1,0,0,0,1
+472,42,70097,Designer,Master,Delhi,OnePlus,OnePlus 7,Yes,,Camera;Performance,Medium,1,No,0,1,0,0,1,0
+473,28,89238,Teacher,Master,Pune,Realme,Realme 8,Yes,1 month,Camera;Performance,Medium,4,Yes,1,1,0,0,1,0
+474,26,111171,Lawyer,Bachelor,Bengaluru,Realme,Realme 7,No,,Camera;Battery,Medium,2,Yes,0,1,1,0,0,0
+475,59,107990,Student,Bachelor,Mumbai,OnePlus,OnePlus 7,No,,Price,Medium,4,No,0,0,0,1,0,0
+476,22,65790,Designer,Bachelor,Delhi,Samsung,Samsung S20,No,,Design,Medium,0,Yes,0,0,0,0,0,1
+477,19,64160,Doctor,Master,Pune,Apple,iPhone 11,No,,Design;Price,Low,1,No,0,0,0,1,0,1
+478,39,45605,Doctor,Master,Delhi,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,4,Yes,0,0,0,0,0,1
+479,26,95614,Student,Master,Jaipur,Realme,Realme 8,No,,Performance;Camera,Low,2,No,0,1,0,0,1,0
+480,36,97906,Teacher,PhD,Jaipur,Xiaomi,Xiaomi Mi 10,No,,Performance,Medium,4,No,0,0,0,0,1,0
+481,30,41560,Teacher,Bachelor,Ahmedabad,OnePlus,OnePlus 8,No,,Performance,Medium,3,Yes,0,0,0,0,1,0
+482,58,43503,Lawyer,PhD,Pune,Apple,iPhone 11,No,,Performance;Design,High,0,Yes,0,0,0,0,1,1
+483,20,110729,Teacher,Bachelor,Kolkata,Realme,Realme 7,Yes,,Battery,High,1,No,0,0,1,0,0,0
+484,29,35057,Lawyer,Master,Kolkata,Realme,Realme 7,No,,Performance,Medium,0,Yes,0,0,0,0,1,0
+485,54,77218,Student,PhD,Delhi,Samsung,Samsung S10,No,,Performance,High,4,No,0,0,0,0,1,0
+486,38,53806,Designer,Master,Hyderabad,Apple,iPhone XR,No,,Performance;Price,High,0,Yes,0,0,0,1,1,0
+487,30,107707,Lawyer,Bachelor,Jaipur,OnePlus,OnePlus 9,No,,Performance,Low,2,No,0,0,0,0,1,0
+488,37,64206,Designer,Master,Mumbai,Apple,iPhone 11,Yes,2 months,Design;Price,Low,3,Yes,0,0,0,1,0,1
+489,30,90091,Manager,Master,Hyderabad,Samsung,Samsung S20,Yes,3 months,Price;Performance,Medium,4,Yes,1,0,0,1,1,0
+490,43,117580,Sales,Bachelor,Mumbai,Samsung,Samsung S9,Yes,6 months,Price,Medium,2,No,1,0,0,1,0,0
+491,35,103366,Doctor,Master,Mumbai,Apple,iPhone XR,Yes,6 months,Performance,Medium,1,Yes,1,0,0,0,1,0
+492,27,50823,Designer,PhD,Lucknow,Realme,Realme 7,No,,Camera,Low,4,No,0,1,0,0,0,0
+493,53,53535,Engineer,Bachelor,Kolkata,OnePlus,OnePlus 7,Yes,,Design,Medium,0,No,0,0,0,0,0,1
+494,32,45385,Engineer,Master,Lucknow,Apple,iPhone 12,Yes,,Design;Price,Low,2,Yes,0,0,0,1,0,1
+495,35,56393,Engineer,PhD,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Battery,High,0,No,0,0,1,0,0,0
+496,53,108422,Manager,PhD,Chennai,Realme,Realme 7,No,,Camera,Low,3,No,0,1,0,0,0,0
+497,55,83014,Manager,Master,Bengaluru,OnePlus,OnePlus 8,Yes,,Camera,Low,1,No,0,1,0,0,0,0
+498,29,76157,Lawyer,PhD,Delhi,Samsung,Samsung S9,No,,Design,Low,3,Yes,0,0,0,0,0,1
+499,40,88436,Student,Master,Ahmedabad,Samsung,Samsung S9,No,,Price,Medium,0,Yes,0,0,0,1,0,0
+500,48,56849,Doctor,Master,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Design;Camera,Low,3,Yes,0,1,0,0,0,1
+501,47,72399,Doctor,Master,Bengaluru,OnePlus,OnePlus 8,Yes,1 month,Design;Camera,Medium,0,No,1,1,0,0,0,1
+502,45,40619,Sales,PhD,Chennai,Apple,iPhone 12,No,,Design,Medium,1,No,0,0,0,0,0,1
+503,25,114085,Designer,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,1,Yes,0,0,0,0,0,1
+504,51,49462,Sales,PhD,Delhi,Xiaomi,Xiaomi Redmi 9,No,,Camera;Price,Medium,3,Yes,0,1,0,1,0,0
+505,48,89758,Teacher,Master,Hyderabad,OnePlus,OnePlus 9,No,,Camera,Medium,1,No,0,1,0,0,0,0
+506,35,88408,Lawyer,Bachelor,Lucknow,Samsung,Samsung S10,Yes,6 months,Design,Medium,2,No,1,0,0,0,0,1
+507,31,67792,Lawyer,Master,Bengaluru,OnePlus,OnePlus 7,No,,Camera,Low,3,No,0,1,0,0,0,0
+508,47,87089,Designer,Bachelor,Lucknow,Apple,iPhone 12,No,,Design;Battery,Low,4,No,0,0,1,0,0,1
+509,44,52784,Manager,Bachelor,Ahmedabad,Realme,Realme 7,No,,Price,High,1,No,0,0,0,1,0,0
+510,37,48161,Engineer,PhD,Delhi,Apple,iPhone 11,Yes,,Performance,Medium,4,Yes,1,0,0,0,1,0
+511,49,102782,Student,PhD,Mumbai,Samsung,Samsung S20,No,,Price;Battery,Low,4,No,0,0,1,1,0,0
+512,38,117236,Teacher,Master,Ahmedabad,OnePlus,OnePlus 7,Yes,1 month,Design,Medium,3,No,1,0,0,0,0,1
+513,42,108858,Doctor,Master,Hyderabad,Realme,Realme 8,Yes,1 month,Design,Low,4,No,1,0,0,0,0,1
+514,40,92147,Student,PhD,Kolkata,Realme,Realme 7,No,,Battery;Camera,Medium,2,No,0,1,1,0,0,0
+515,59,57197,Lawyer,Master,Ahmedabad,Samsung,Samsung S9,No,,Price,Medium,4,Yes,0,0,0,1,0,0
+516,44,80830,Sales,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery,High,4,No,0,0,1,0,0,0
+517,22,98906,Engineer,PhD,Bengaluru,OnePlus,OnePlus 8,No,,Camera,Medium,2,No,0,1,0,0,0,0
+518,34,79961,Student,Master,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Design;Performance,High,0,No,0,0,0,0,1,1
+519,25,83413,Doctor,Bachelor,Jaipur,Xiaomi,Xiaomi Mi 10,Yes,2 months,Battery,Medium,3,No,0,0,1,0,0,0
+520,32,112143,Doctor,Master,Hyderabad,OnePlus,OnePlus 8,Yes,3 months,Price;Performance,Medium,3,No,0,0,0,1,1,0
+521,29,39716,Student,Master,Hyderabad,Realme,Realme 7,Yes,1 month,Camera;Battery,Medium,1,No,1,1,1,0,0,0
+522,50,42062,Manager,Master,Pune,Apple,iPhone 12,Yes,1 month,Battery,Low,1,No,1,0,1,0,0,0
+523,47,104554,Teacher,PhD,Hyderabad,Apple,iPhone XR,No,,Battery,Low,2,No,0,0,1,0,0,0
+524,58,112606,Teacher,Bachelor,Mumbai,Xiaomi,Xiaomi Redmi 9,No,,Performance,Low,1,Yes,0,0,0,0,1,0
+525,56,72495,Engineer,Bachelor,Lucknow,Samsung,Samsung S9,No,,Battery,Low,1,No,0,0,1,0,0,0
+526,47,114294,Engineer,PhD,Lucknow,OnePlus,OnePlus 7,Yes,,Battery;Price,Medium,4,Yes,0,0,1,1,0,0
+527,29,35409,Sales,PhD,Pune,Samsung,Samsung S20,No,,Design;Performance,Low,4,No,0,0,0,0,1,1
+528,38,57563,Student,PhD,Delhi,Realme,Realme 7,No,,Design;Camera,Low,0,Yes,0,1,0,0,0,1
+529,23,111258,Designer,PhD,Delhi,Apple,iPhone 12,No,,Battery;Price,Low,0,Yes,0,0,1,1,0,0
+530,18,57250,Doctor,Master,Lucknow,Xiaomi,Xiaomi Redmi 9,Yes,6 months,Design;Battery,Low,2,No,1,0,1,0,0,1
+531,53,53524,Teacher,Bachelor,Mumbai,Realme,Realme 7,No,,Camera;Price,Low,4,Yes,0,1,0,1,0,0
+532,43,62694,Sales,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,,Battery;Design,Medium,1,No,1,0,1,0,0,1
+533,35,36256,Manager,Bachelor,Mumbai,Realme,Realme 8,Yes,3 months,Battery;Camera,Medium,2,Yes,1,1,1,0,0,0
+534,45,46043,Designer,PhD,Mumbai,Samsung,Samsung S9,No,,Design;Battery,Low,2,No,0,0,1,0,0,1
+535,53,99847,Student,PhD,Delhi,OnePlus,OnePlus 8,No,,Design,Medium,0,Yes,0,0,0,0,0,1
+536,43,74999,Manager,Master,Kolkata,OnePlus,OnePlus 8,No,,Price;Camera,Medium,1,No,0,1,0,1,0,0
+537,28,68179,Student,PhD,Mumbai,Realme,Realme 8,No,,Battery;Design,Low,1,Yes,0,0,1,0,0,1
+538,55,112190,Manager,PhD,Kolkata,OnePlus,OnePlus 9,No,,Camera,Medium,1,Yes,0,1,0,0,0,0
+539,32,50369,Teacher,Bachelor,Ahmedabad,Apple,iPhone 11,No,,Design,Medium,0,No,0,0,0,0,0,1
+540,38,54124,Sales,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,No,,Performance;Price,Medium,3,Yes,0,0,0,1,1,0
+541,41,65771,Sales,PhD,Ahmedabad,Realme,Realme 8,No,,Battery;Performance,Low,4,No,0,0,1,0,1,0
+542,56,85283,Teacher,PhD,Lucknow,Xiaomi,Xiaomi Redmi 9,Yes,2 months,Performance;Design,Medium,1,Yes,1,0,0,0,1,1
+543,56,63734,Student,PhD,Jaipur,Apple,iPhone 11,No,,Design,Low,4,Yes,0,0,0,0,0,1
+544,58,64815,Doctor,Master,Lucknow,OnePlus,OnePlus 9,No,,Battery,Low,2,No,0,0,1,0,0,0
+545,34,106349,Lawyer,Bachelor,Mumbai,Apple,iPhone 11,No,,Performance;Design,Medium,3,No,0,0,0,0,1,1
+546,30,107400,Designer,Master,Ahmedabad,Apple,iPhone XR,No,,Battery,Medium,0,No,0,0,1,0,0,0
+547,26,67563,Sales,PhD,Bengaluru,Samsung,Samsung S9,Yes,6 months,Battery,Low,1,No,1,0,1,0,0,0
+548,50,117858,Student,Master,Chennai,Apple,iPhone XR,No,,Battery;Price,Low,3,Yes,0,0,1,1,0,0
+549,45,93171,Doctor,Master,Bengaluru,Apple,iPhone XR,No,,Camera;Performance,Medium,4,No,0,1,0,0,1,0
+550,21,52419,Teacher,PhD,Jaipur,Apple,iPhone 11,No,,Camera;Price,Medium,0,No,0,1,0,1,0,0
+551,32,40974,Sales,Bachelor,Mumbai,Samsung,Samsung S10,Yes,1 month,Performance;Battery,High,0,Yes,1,0,1,0,1,0
+552,22,36853,Doctor,PhD,Mumbai,OnePlus,OnePlus 7,No,,Camera,High,0,No,0,1,0,0,0,0
+553,29,30801,Manager,Master,Kolkata,Apple,iPhone 11,Yes,6 months,Price;Battery,High,4,Yes,1,0,1,1,0,0
+554,27,76404,Teacher,PhD,Kolkata,OnePlus,OnePlus 9,Yes,,Performance,High,0,Yes,0,0,0,0,1,0
+555,21,37612,Designer,Master,Hyderabad,Apple,iPhone 12,No,,Battery,Low,4,No,0,0,1,0,0,0
+556,47,70088,Lawyer,PhD,Delhi,Apple,iPhone 11,No,,Price,Medium,4,Yes,0,0,0,1,0,0
+557,19,64959,Engineer,Bachelor,Bengaluru,Samsung,Samsung S9,No,,Design;Camera,Medium,1,Yes,0,1,0,0,0,1
+558,58,89072,Engineer,Master,Delhi,Xiaomi,Xiaomi Redmi 9,No,,Camera,Medium,2,No,0,1,0,0,0,0
+559,58,44274,Designer,Master,Hyderabad,Apple,iPhone XR,No,,Camera;Price,Medium,4,Yes,0,1,0,1,0,0
+560,45,30002,Manager,PhD,Kolkata,Samsung,Samsung S9,No,,Price,Low,2,No,0,0,0,1,0,0
+561,28,36791,Student,PhD,Ahmedabad,Xiaomi,Xiaomi Mi 10,Yes,2 months,Battery;Camera,Medium,3,No,1,1,1,0,0,0
+562,43,58261,Teacher,Bachelor,Delhi,Xiaomi,Xiaomi Mi 10,Yes,,Price,Medium,4,No,0,0,0,1,0,0
+563,37,37310,Lawyer,Bachelor,Mumbai,Realme,Realme 8,No,,Performance;Design,Low,4,No,0,0,0,0,1,1
+564,33,69994,Designer,Bachelor,Mumbai,OnePlus,OnePlus 8,Yes,,Performance,High,0,No,1,0,0,0,1,0
+565,32,99619,Teacher,Master,Kolkata,Samsung,Samsung S10,Yes,2 months,Design;Price,Low,1,No,0,0,0,1,0,1
+566,42,109944,Teacher,Bachelor,Delhi,Realme,Realme 7,Yes,,Battery;Price,Medium,2,Yes,0,0,1,1,0,0
+567,35,77598,Engineer,Master,Bengaluru,Apple,iPhone XR,No,,Battery,High,2,Yes,0,0,1,0,0,0
+568,46,67134,Manager,PhD,Chennai,Xiaomi,Xiaomi Mi 10,Yes,2 months,Design;Performance,High,2,No,1,0,0,0,1,1
+569,45,41162,Manager,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,,Camera,High,0,Yes,1,1,0,0,0,0
+570,58,103225,Student,Master,Jaipur,Realme,Realme 8,No,,Performance;Price,Medium,3,No,0,0,0,1,1,0
+571,28,117359,Engineer,Master,Pune,Samsung,Samsung S20,No,,Battery,High,4,Yes,0,0,1,0,0,0
+572,36,37446,Engineer,Master,Pune,Samsung,Samsung S10,Yes,,Design;Battery,Low,4,Yes,1,0,1,0,0,1
+573,36,58743,Teacher,Master,Lucknow,OnePlus,OnePlus 9,Yes,3 months,Performance;Price,Low,0,No,0,0,0,1,1,0
+574,40,31695,Student,PhD,Pune,Xiaomi,Xiaomi Redmi 9,Yes,,Performance,Medium,3,Yes,1,0,0,0,1,0
+575,27,93294,Designer,Master,Pune,Samsung,Samsung S10,Yes,2 months,Performance;Camera,Medium,0,Yes,0,1,0,0,1,0
+576,56,118731,Doctor,Bachelor,Delhi,OnePlus,OnePlus 8,No,,Battery,Low,4,No,0,0,1,0,0,0
+577,57,68699,Doctor,PhD,Lucknow,Apple,iPhone 11,No,,Performance;Price,High,1,Yes,0,0,0,1,1,0
+578,23,103757,Sales,PhD,Kolkata,Apple,iPhone 12,No,,Price,Medium,4,No,0,0,0,1,0,0
+579,51,113106,Sales,Master,Chennai,Samsung,Samsung S20,Yes,,Camera;Design,Medium,3,Yes,0,1,0,0,0,1
+580,55,88905,Teacher,Bachelor,Delhi,OnePlus,OnePlus 7,No,,Camera,Low,4,Yes,0,1,0,0,0,0
+581,29,88418,Manager,Bachelor,Lucknow,OnePlus,OnePlus 8,No,,Price;Camera,Low,3,Yes,0,1,0,1,0,0
+582,46,81529,Engineer,PhD,Bengaluru,Apple,iPhone XR,Yes,2 months,Performance;Battery,Medium,4,No,0,0,1,0,1,0
+583,21,59480,Designer,PhD,Ahmedabad,Apple,iPhone 12,Yes,1 month,Performance;Battery,Medium,2,Yes,0,0,1,0,1,0
+584,41,60177,Engineer,PhD,Ahmedabad,Samsung,Samsung S20,No,,Battery,Medium,4,Yes,0,0,1,0,0,0
+585,43,49797,Student,Bachelor,Jaipur,Apple,iPhone XR,No,,Battery;Design,High,1,No,0,0,1,0,0,1
+586,48,97643,Engineer,PhD,Kolkata,Apple,iPhone XR,No,,Design;Camera,Low,2,Yes,0,1,0,0,0,1
+587,32,52391,Student,Bachelor,Jaipur,Samsung,Samsung S20,Yes,,Design;Performance,High,1,No,1,0,0,0,1,1
+588,28,48890,Doctor,Bachelor,Kolkata,Realme,Realme 8,No,,Camera;Battery,Medium,1,Yes,0,1,1,0,0,0
+589,53,67089,Lawyer,PhD,Lucknow,Apple,iPhone 11,No,,Battery,Medium,0,Yes,0,0,1,0,0,0
+590,45,64600,Doctor,Bachelor,Mumbai,Samsung,Samsung S20,No,,Price;Camera,Low,0,Yes,0,1,0,1,0,0
+591,59,74674,Engineer,PhD,Pune,Apple,iPhone XR,Yes,3 months,Price;Battery,Low,1,No,1,0,1,1,0,0
+592,21,112896,Teacher,Bachelor,Lucknow,Samsung,Samsung S20,Yes,1 month,Price,Low,0,Yes,1,0,0,1,0,0
+593,44,42501,Teacher,Bachelor,Lucknow,OnePlus,OnePlus 8,No,,Battery;Performance,Medium,4,Yes,0,0,1,0,1,0
+594,24,119859,Manager,PhD,Jaipur,OnePlus,OnePlus 8,No,,Performance,Low,4,No,0,0,0,0,1,0
+595,44,56148,Doctor,Bachelor,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Design;Battery,Low,1,Yes,0,0,1,0,0,1
+596,45,114416,Student,PhD,Chennai,Apple,iPhone XR,No,,Battery,Low,2,No,0,0,1,0,0,0
+597,25,68314,Doctor,Master,Jaipur,Samsung,Samsung S20,Yes,3 months,Battery,Medium,1,No,1,0,1,0,0,0
+598,28,109390,Engineer,Master,Mumbai,Realme,Realme 8,No,,Design,Low,2,Yes,0,0,0,0,0,1
+599,26,109409,Engineer,PhD,Delhi,Realme,Realme 7,Yes,,Performance;Battery,Medium,4,Yes,0,0,1,0,1,0
+600,38,87395,Teacher,PhD,Hyderabad,OnePlus,OnePlus 7,Yes,1 month,Camera;Price,Medium,2,No,1,1,0,1,0,0
+601,20,62430,Teacher,PhD,Pune,Samsung,Samsung S20,Yes,3 months,Battery,Low,4,Yes,1,0,1,0,0,0
+602,46,77993,Teacher,Bachelor,Pune,OnePlus,OnePlus 7,Yes,,Battery,Low,4,No,1,0,1,0,0,0
+603,55,34695,Manager,Bachelor,Delhi,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,0,Yes,0,0,0,0,0,1
+604,33,116348,Doctor,Bachelor,Delhi,OnePlus,OnePlus 8,No,,Price,High,0,No,0,0,0,1,0,0
+605,50,53244,Student,Master,Ahmedabad,Apple,iPhone XR,No,,Design,Medium,4,Yes,0,0,0,0,0,1
+606,50,69159,Designer,PhD,Delhi,Realme,Realme 7,Yes,2 months,Battery;Performance,High,4,No,1,0,1,0,1,0
+607,51,114932,Engineer,Bachelor,Chennai,Apple,iPhone 11,No,,Price;Design,High,4,Yes,0,0,0,1,0,1
+608,43,35206,Teacher,Master,Hyderabad,Apple,iPhone XR,No,,Design,Medium,1,Yes,0,0,0,0,0,1
+609,20,55825,Engineer,Master,Ahmedabad,Samsung,Samsung S9,No,,Battery;Performance,Low,0,No,0,0,1,0,1,0
+610,38,67030,Lawyer,Master,Chennai,Samsung,Samsung S9,Yes,1 month,Price;Design,High,0,No,1,0,0,1,0,1
+611,47,94595,Manager,PhD,Bengaluru,Apple,iPhone 11,No,,Battery;Performance,Medium,2,No,0,0,1,0,1,0
+612,39,113583,Teacher,Master,Bengaluru,Realme,Realme 8,Yes,2 months,Design,High,1,Yes,1,0,0,0,0,1
+613,31,57657,Lawyer,Master,Hyderabad,OnePlus,OnePlus 7,No,,Battery,High,0,Yes,0,0,1,0,0,0
+614,34,41179,Engineer,Bachelor,Ahmedabad,Apple,iPhone XR,No,,Design,Low,1,No,0,0,0,0,0,1
+615,18,110210,Doctor,Bachelor,Ahmedabad,OnePlus,OnePlus 8,No,,Design,Medium,1,No,0,0,0,0,0,1
+616,56,59455,Sales,PhD,Kolkata,Samsung,Samsung S20,No,,Design,Low,3,No,0,0,0,0,0,1
+617,29,47040,Designer,PhD,Jaipur,Realme,Realme 8,No,,Battery;Design,Medium,1,Yes,0,0,1,0,0,1
+618,26,50968,Teacher,Master,Delhi,OnePlus,OnePlus 7,No,,Design;Performance,Low,1,No,0,0,0,0,1,1
+619,40,113509,Teacher,Bachelor,Jaipur,Apple,iPhone 12,Yes,2 months,Design;Performance,Medium,3,No,1,0,0,0,1,1
+620,39,57818,Designer,PhD,Mumbai,Samsung,Samsung S9,No,,Performance,High,4,Yes,0,0,0,0,1,0
+621,47,107061,Engineer,PhD,Chennai,Apple,iPhone 11,No,,Battery,High,2,No,0,0,1,0,0,0
+622,53,49977,Sales,Bachelor,Chennai,Realme,Realme 7,Yes,,Camera,High,1,No,1,1,0,0,0,0
+623,55,80624,Designer,Master,Jaipur,OnePlus,OnePlus 9,No,,Battery,High,3,Yes,0,0,1,0,0,0
+624,30,71632,Designer,Bachelor,Delhi,Xiaomi,Xiaomi Redmi 9,Yes,6 months,Battery;Camera,Low,3,Yes,1,1,1,0,0,0
+625,48,107078,Manager,Master,Lucknow,Apple,iPhone XR,No,,Design,Low,4,No,0,0,0,0,0,1
+626,55,94182,Manager,Bachelor,Delhi,OnePlus,OnePlus 9,No,,Design;Battery,Medium,4,No,0,0,1,0,0,1
+627,36,116555,Lawyer,Master,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,,Price,Low,4,Yes,1,0,0,1,0,0
+628,29,61368,Student,Bachelor,Kolkata,Samsung,Samsung S10,No,,Performance;Price,Medium,4,Yes,0,0,0,1,1,0
+629,24,55104,Teacher,Master,Delhi,OnePlus,OnePlus 7,No,,Performance,Medium,1,Yes,0,0,0,0,1,0
+630,27,89858,Designer,PhD,Bengaluru,Realme,Realme 7,No,,Design;Battery,Low,2,No,0,0,1,0,0,1
+631,30,61996,Designer,Bachelor,Bengaluru,Realme,Realme 8,No,,Battery;Performance,Low,0,Yes,0,0,1,0,1,0
+632,50,68031,Sales,Bachelor,Jaipur,Apple,iPhone XR,Yes,3 months,Camera,Low,2,Yes,1,1,0,0,0,0
+633,35,116240,Engineer,PhD,Chennai,OnePlus,OnePlus 8,No,,Camera,High,1,Yes,0,1,0,0,0,0
+634,59,30565,Designer,PhD,Bengaluru,OnePlus,OnePlus 7,No,,Price;Design,Low,4,Yes,0,0,0,1,0,1
+635,18,76978,Designer,Master,Mumbai,Samsung,Samsung S10,Yes,,Design,Medium,2,No,1,0,0,0,0,1
+636,53,94680,Doctor,Master,Jaipur,Xiaomi,Xiaomi Mi 10,No,,Performance,Medium,2,Yes,0,0,0,0,1,0
+637,48,75647,Teacher,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,,Performance;Camera,Low,2,No,1,1,0,0,1,0
+638,34,108798,Doctor,Bachelor,Pune,Xiaomi,Xiaomi Mi 10,No,,Performance;Camera,Medium,2,Yes,0,1,0,0,1,0
+639,52,39422,Manager,Master,Chennai,Samsung,Samsung S9,Yes,1 month,Battery,High,3,Yes,0,0,1,0,0,0
+640,59,104034,Manager,PhD,Delhi,Realme,Realme 7,Yes,,Design;Battery,Medium,2,No,0,0,1,0,0,1
+641,32,89136,Sales,Bachelor,Mumbai,Samsung,Samsung S9,No,,Design,Medium,3,Yes,0,0,0,0,0,1
+642,34,97619,Manager,Bachelor,Pune,OnePlus,OnePlus 7,No,,Design,Medium,0,Yes,0,0,0,0,0,1
+643,30,107518,Lawyer,PhD,Lucknow,Samsung,Samsung S9,Yes,3 months,Camera;Price,High,4,Yes,1,1,0,1,0,0
+644,43,103166,Sales,Master,Bengaluru,Apple,iPhone 12,No,,Design;Camera,Medium,3,No,0,1,0,0,0,1
+645,46,56411,Designer,PhD,Lucknow,OnePlus,OnePlus 8,Yes,1 month,Performance,High,0,No,0,0,0,0,1,0
+646,59,89980,Sales,Master,Chennai,Realme,Realme 7,No,,Price;Camera,High,2,Yes,0,1,0,1,0,0
+647,25,113038,Engineer,Master,Kolkata,Realme,Realme 8,No,,Price;Design,Low,3,Yes,0,0,0,1,0,1
+648,37,60346,Designer,Bachelor,Lucknow,Samsung,Samsung S20,Yes,,Design,Low,3,No,1,0,0,0,0,1
+649,25,62705,Doctor,PhD,Kolkata,Apple,iPhone XR,Yes,2 months,Design;Price,Low,1,No,1,0,0,1,0,1
+650,25,53365,Manager,Master,Bengaluru,Apple,iPhone XR,Yes,,Camera;Performance,Medium,3,Yes,1,1,0,0,1,0
+651,43,97342,Manager,Bachelor,Chennai,OnePlus,OnePlus 7,No,,Battery,High,3,No,0,0,1,0,0,0
+652,45,68725,Lawyer,Bachelor,Jaipur,Xiaomi,Xiaomi Redmi 9,No,,Design;Camera,High,0,Yes,0,1,0,0,0,1
+653,24,37507,Teacher,PhD,Pune,OnePlus,OnePlus 8,No,,Battery;Camera,Low,1,No,0,1,1,0,0,0
+654,27,104510,Teacher,Bachelor,Jaipur,OnePlus,OnePlus 7,No,,Battery;Design,Medium,1,Yes,0,0,1,0,0,1
+655,39,98684,Lawyer,Master,Kolkata,Apple,iPhone 12,Yes,,Price;Camera,Medium,2,No,0,1,0,1,0,0
+656,42,118810,Student,PhD,Lucknow,OnePlus,OnePlus 7,No,,Performance;Price,Low,2,Yes,0,0,0,1,1,0
+657,39,58690,Teacher,PhD,Jaipur,Xiaomi,Xiaomi Redmi 9,Yes,6 months,Battery;Performance,Medium,0,Yes,1,0,1,0,1,0
+658,43,118952,Designer,PhD,Pune,Samsung,Samsung S10,No,,Price;Camera,Medium,4,No,0,1,0,1,0,0
+659,39,47818,Teacher,Master,Lucknow,Realme,Realme 7,Yes,6 months,Performance,High,0,Yes,1,0,0,0,1,0
+660,21,62543,Lawyer,PhD,Hyderabad,OnePlus,OnePlus 8,No,,Performance;Camera,Medium,0,Yes,0,1,0,0,1,0
+661,58,47629,Sales,Master,Delhi,OnePlus,OnePlus 8,No,,Design,Medium,3,No,0,0,0,0,0,1
+662,18,96567,Engineer,PhD,Chennai,Samsung,Samsung S20,Yes,2 months,Performance,High,0,No,1,0,0,0,1,0
+663,27,78926,Student,Master,Mumbai,Apple,iPhone XR,Yes,2 months,Performance;Battery,Low,2,No,1,0,1,0,1,0
+664,27,79892,Teacher,Master,Mumbai,Samsung,Samsung S20,No,,Camera,High,4,No,0,1,0,0,0,0
+665,34,112643,Teacher,PhD,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Price;Camera,Low,0,Yes,0,1,0,1,0,0
+666,42,96793,Manager,PhD,Kolkata,OnePlus,OnePlus 8,Yes,3 months,Price,Low,4,No,0,0,0,1,0,0
+667,21,113029,Teacher,PhD,Mumbai,Apple,iPhone 11,No,,Price;Camera,Medium,4,No,0,1,0,1,0,0
+668,20,55378,Student,PhD,Pune,Apple,iPhone XR,No,,Battery;Design,Medium,4,Yes,0,0,1,0,0,1
+669,48,62314,Teacher,PhD,Bengaluru,Apple,iPhone 12,No,,Design,Low,4,No,0,0,0,0,0,1
+670,26,88031,Teacher,PhD,Ahmedabad,Samsung,Samsung S9,No,,Battery;Price,High,1,No,0,0,1,1,0,0
+671,29,78700,Teacher,Master,Chennai,Apple,iPhone 11,No,,Price;Battery,High,2,No,0,0,1,1,0,0
+672,19,59873,Engineer,Bachelor,Delhi,Apple,iPhone XR,No,,Price;Battery,High,2,Yes,0,0,1,1,0,0
+673,48,54918,Teacher,PhD,Pune,Apple,iPhone XR,No,,Design,High,2,Yes,0,0,0,0,0,1
+674,44,114787,Sales,Bachelor,Ahmedabad,Samsung,Samsung S10,No,,Design,High,4,No,0,0,0,0,0,1
+675,59,78817,Designer,PhD,Hyderabad,OnePlus,OnePlus 7,No,,Design,Low,1,No,0,0,0,0,0,1
+676,48,91807,Sales,Master,Ahmedabad,Apple,iPhone XR,No,,Design,High,2,Yes,0,0,0,0,0,1
+677,46,113397,Manager,Bachelor,Jaipur,Samsung,Samsung S10,No,,Price;Camera,High,2,Yes,0,1,0,1,0,0
+678,48,65613,Engineer,PhD,Pune,OnePlus,OnePlus 8,Yes,2 months,Camera,Medium,2,Yes,0,1,0,0,0,0
+679,48,115013,Student,Bachelor,Jaipur,Xiaomi,Xiaomi Redmi 9,No,,Battery,Low,3,No,0,0,1,0,0,0
+680,46,53447,Lawyer,PhD,Chennai,Realme,Realme 8,No,,Price,High,4,Yes,0,0,0,1,0,0
+681,40,99157,Manager,Bachelor,Hyderabad,OnePlus,OnePlus 9,No,,Camera,Medium,2,No,0,1,0,0,0,0
+682,20,66575,Designer,Master,Lucknow,OnePlus,OnePlus 8,Yes,1 month,Battery,Low,2,Yes,1,0,1,0,0,0
+683,49,85255,Student,Master,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Battery;Design,Medium,1,Yes,0,0,1,0,0,1
+684,50,67805,Doctor,Master,Mumbai,Apple,iPhone 12,No,,Battery,High,0,Yes,0,0,1,0,0,0
+685,41,73663,Lawyer,Bachelor,Delhi,Realme,Realme 7,No,,Design;Performance,Medium,2,No,0,0,0,0,1,1
+686,23,55568,Student,Master,Hyderabad,Realme,Realme 8,No,,Price,Medium,4,Yes,0,0,0,1,0,0
+687,30,111943,Sales,Bachelor,Chennai,Realme,Realme 7,Yes,2 months,Price;Battery,High,2,Yes,1,0,1,1,0,0
+688,41,90692,Engineer,PhD,Mumbai,Samsung,Samsung S20,No,,Performance,High,4,Yes,0,0,0,0,1,0
+689,39,61127,Designer,Bachelor,Chennai,OnePlus,OnePlus 8,No,,Performance,Low,0,Yes,0,0,0,0,1,0
+690,52,75971,Sales,Bachelor,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Performance,High,4,No,0,0,0,0,1,0
+691,56,36050,Engineer,PhD,Jaipur,Realme,Realme 7,Yes,2 months,Design;Price,Medium,3,No,0,0,0,1,0,1
+692,57,90422,Student,Master,Hyderabad,Xiaomi,Xiaomi Redmi 9,Yes,,Performance,Low,1,No,1,0,0,0,1,0
+693,21,43782,Designer,Bachelor,Chennai,Xiaomi,Xiaomi Redmi 9,No,,Battery,Low,3,No,0,0,1,0,0,0
+694,28,53259,Lawyer,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,,Performance,Medium,3,Yes,1,0,0,0,1,0
+695,20,53880,Student,PhD,Mumbai,Samsung,Samsung S20,Yes,,Battery,High,2,No,1,0,1,0,0,0
+696,28,81364,Engineer,Bachelor,Mumbai,Samsung,Samsung S20,Yes,6 months,Price;Design,Medium,2,Yes,1,0,0,1,0,1
+697,37,91032,Sales,PhD,Chennai,Realme,Realme 7,No,,Design,Low,4,Yes,0,0,0,0,0,1
+698,45,92904,Manager,PhD,Pune,Xiaomi,Xiaomi Mi 10,No,,Price,Medium,1,Yes,0,0,0,1,0,0
+699,50,57301,Lawyer,Bachelor,Bengaluru,OnePlus,OnePlus 9,No,,Performance,Medium,4,No,0,0,0,0,1,0
+700,26,35239,Designer,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,Yes,2 months,Camera,Medium,4,Yes,0,1,0,0,0,0
+701,43,117695,Teacher,Bachelor,Pune,OnePlus,OnePlus 9,No,,Camera,High,2,No,0,1,0,0,0,0
+702,32,102790,Sales,Master,Bengaluru,Xiaomi,Xiaomi Mi 10,Yes,6 months,Camera;Battery,Medium,2,No,1,1,1,0,0,0
+703,54,85894,Student,Bachelor,Mumbai,Apple,iPhone 12,Yes,1 month,Performance,High,1,Yes,1,0,0,0,1,0
+704,34,78217,Manager,PhD,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Design;Price,High,0,Yes,0,0,0,1,0,1
+705,54,31626,Lawyer,PhD,Kolkata,OnePlus,OnePlus 7,No,,Performance;Price,High,0,Yes,0,0,0,1,1,0
+706,45,109012,Lawyer,Bachelor,Hyderabad,Samsung,Samsung S9,No,,Performance;Design,Medium,1,Yes,0,0,0,0,1,1
+707,30,63370,Lawyer,Master,Ahmedabad,Xiaomi,Xiaomi Mi 10,Yes,6 months,Battery;Performance,Low,2,Yes,1,0,1,0,1,0
+708,19,45932,Manager,Bachelor,Hyderabad,Xiaomi,Xiaomi Redmi 9,No,,Design,Low,3,No,0,0,0,0,0,1
+709,27,93042,Student,Master,Ahmedabad,Samsung,Samsung S10,No,,Performance,Low,2,No,0,0,0,0,1,0
+710,18,92028,Designer,Master,Jaipur,Samsung,Samsung S20,Yes,2 months,Camera;Battery,Low,1,Yes,1,1,1,0,0,0
+711,31,78043,Sales,Master,Hyderabad,Xiaomi,Xiaomi Mi 10,Yes,3 months,Performance,Low,1,No,1,0,0,0,1,0
+712,55,108047,Lawyer,Master,Hyderabad,Apple,iPhone XR,Yes,,Camera;Design,Medium,3,Yes,0,1,0,0,0,1
+713,57,67921,Student,Bachelor,Delhi,OnePlus,OnePlus 8,Yes,,Design;Battery,Medium,2,Yes,1,0,1,0,0,1
+714,23,97439,Lawyer,PhD,Kolkata,Apple,iPhone 12,Yes,6 months,Performance;Battery,Medium,1,No,1,0,1,0,1,0
+715,30,31949,Designer,Bachelor,Jaipur,Xiaomi,Xiaomi Redmi 9,No,,Performance;Price,Low,4,No,0,0,0,1,1,0
+716,35,44456,Lawyer,Bachelor,Lucknow,Realme,Realme 7,No,,Performance,High,4,Yes,0,0,0,0,1,0
+717,45,116760,Doctor,PhD,Lucknow,Apple,iPhone 11,No,,Performance;Design,Low,3,No,0,0,0,0,1,1
+718,40,40129,Manager,PhD,Pune,Realme,Realme 7,No,,Camera,High,4,No,0,1,0,0,0,0
+719,59,60552,Engineer,Bachelor,Lucknow,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Camera;Design,Medium,3,Yes,1,1,0,0,0,1
+720,31,45008,Sales,Bachelor,Delhi,Xiaomi,Xiaomi Redmi 9,Yes,3 months,Camera;Design,Medium,4,No,1,1,0,0,0,1
+721,43,106215,Doctor,Master,Lucknow,Samsung,Samsung S9,No,,Performance;Battery,Medium,2,No,0,0,1,0,1,0
+722,33,101160,Doctor,PhD,Mumbai,Apple,iPhone 12,No,,Design,High,1,No,0,0,0,0,0,1
+723,57,74732,Lawyer,Bachelor,Pune,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,2,No,0,0,0,0,0,1
+724,48,43280,Lawyer,Master,Delhi,Apple,iPhone 12,No,,Camera,High,1,Yes,0,1,0,0,0,0
+725,32,34830,Manager,Bachelor,Lucknow,Realme,Realme 7,No,,Performance,Medium,2,No,0,0,0,0,1,0
+726,21,66572,Sales,Bachelor,Kolkata,Realme,Realme 8,Yes,,Battery;Performance,High,1,No,1,0,1,0,1,0
+727,48,47997,Manager,Master,Chennai,Samsung,Samsung S20,Yes,2 months,Camera,High,4,No,1,1,0,0,0,0
+728,49,46292,Teacher,PhD,Mumbai,Samsung,Samsung S20,No,,Battery,Low,0,Yes,0,0,1,0,0,0
+729,31,33216,Engineer,PhD,Mumbai,Samsung,Samsung S9,Yes,,Price;Design,Medium,2,No,1,0,0,1,0,1
+730,21,46979,Manager,Master,Jaipur,Apple,iPhone 11,Yes,1 month,Camera,Medium,0,Yes,1,1,0,0,0,0
+731,33,48677,Engineer,Master,Lucknow,Samsung,Samsung S10,Yes,,Design;Battery,Medium,3,No,1,0,1,0,0,1
+732,27,96351,Sales,PhD,Pune,Samsung,Samsung S9,No,,Battery;Camera,High,3,No,0,1,1,0,0,0
+733,57,59158,Doctor,Master,Kolkata,Realme,Realme 8,Yes,1 month,Battery;Performance,Low,2,Yes,0,0,1,0,1,0
+734,29,73158,Sales,PhD,Mumbai,Samsung,Samsung S9,Yes,6 months,Performance;Battery,High,0,Yes,0,0,1,0,1,0
+735,49,58180,Lawyer,Master,Chennai,Apple,iPhone 12,Yes,6 months,Camera,Medium,3,Yes,1,1,0,0,0,0
+736,40,83061,Lawyer,Master,Ahmedabad,Samsung,Samsung S9,No,,Performance,Medium,2,Yes,0,0,0,0,1,0
+737,44,64607,Lawyer,Master,Bengaluru,OnePlus,OnePlus 9,No,,Price;Camera,High,0,No,0,1,0,1,0,0
+738,28,92601,Lawyer,PhD,Lucknow,Xiaomi,Xiaomi Redmi 9,Yes,,Camera,Medium,1,Yes,0,1,0,0,0,0
+739,44,90817,Lawyer,Master,Lucknow,Apple,iPhone XR,Yes,2 months,Camera;Battery,Medium,4,No,0,1,1,0,0,0
+740,59,116569,Student,Bachelor,Hyderabad,Realme,Realme 8,Yes,,Price,High,1,No,1,0,0,1,0,0
+741,34,117739,Manager,Bachelor,Lucknow,Samsung,Samsung S20,Yes,2 months,Design,Low,2,No,1,0,0,0,0,1
+742,54,105481,Sales,PhD,Ahmedabad,Realme,Realme 8,Yes,2 months,Price,High,2,Yes,1,0,0,1,0,0
+743,18,36655,Sales,PhD,Hyderabad,Apple,iPhone XR,No,,Camera,Medium,3,No,0,1,0,0,0,0
+744,31,96178,Engineer,Bachelor,Pune,OnePlus,OnePlus 8,No,,Price,High,4,Yes,0,0,0,1,0,0
+745,49,113402,Lawyer,Master,Ahmedabad,OnePlus,OnePlus 9,Yes,,Design;Performance,Low,2,No,1,0,0,0,1,1
+746,23,41519,Student,PhD,Jaipur,Samsung,Samsung S10,Yes,,Camera,Low,2,Yes,1,1,0,0,0,0
+747,30,77445,Manager,PhD,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,3 months,Price,High,3,No,1,0,0,1,0,0
+748,46,36574,Doctor,PhD,Lucknow,Xiaomi,Xiaomi Mi 10,Yes,,Battery;Design,Medium,1,No,0,0,1,0,0,1
+749,36,52191,Designer,Bachelor,Lucknow,Apple,iPhone 11,No,,Price,Low,0,Yes,0,0,0,1,0,0
+750,23,103551,Designer,Master,Chennai,Samsung,Samsung S10,No,,Price,Low,4,No,0,0,0,1,0,0
+751,35,91344,Designer,PhD,Kolkata,Samsung,Samsung S9,No,,Design;Battery,High,4,No,0,0,1,0,0,1
+752,25,108948,Doctor,Master,Pune,Xiaomi,Xiaomi Mi 10,Yes,3 months,Performance;Camera,Medium,3,No,1,1,0,0,1,0
+753,34,51946,Designer,PhD,Hyderabad,Apple,iPhone 12,No,,Performance;Camera,Low,2,Yes,0,1,0,0,1,0
+754,31,43733,Lawyer,PhD,Mumbai,OnePlus,OnePlus 9,No,,Price,Low,1,No,0,0,0,1,0,0
+755,21,40807,Designer,PhD,Jaipur,Samsung,Samsung S20,Yes,,Price;Battery,High,2,Yes,0,0,1,1,0,0
+756,18,68745,Student,Bachelor,Lucknow,Samsung,Samsung S20,Yes,,Design,Medium,4,Yes,1,0,0,0,0,1
+757,36,55009,Sales,Master,Chennai,Apple,iPhone 12,Yes,1 month,Camera,Medium,2,Yes,0,1,0,0,0,0
+758,53,30048,Manager,PhD,Jaipur,Samsung,Samsung S20,No,,Performance;Design,Medium,4,No,0,0,0,0,1,1
+759,48,38888,Manager,Master,Delhi,Samsung,Samsung S10,Yes,6 months,Performance;Camera,High,0,Yes,1,1,0,0,1,0
+760,47,47533,Engineer,Bachelor,Hyderabad,Realme,Realme 7,No,,Battery,Low,4,No,0,0,1,0,0,0
+761,30,61746,Teacher,Master,Kolkata,Realme,Realme 7,No,,Design,High,4,No,0,0,0,0,0,1
+762,38,37835,Lawyer,Master,Hyderabad,Apple,iPhone XR,No,,Battery,High,4,No,0,0,1,0,0,0
+763,37,96299,Doctor,Master,Kolkata,Apple,iPhone 12,Yes,3 months,Performance;Battery,High,4,Yes,0,0,1,0,1,0
+764,25,76229,Lawyer,PhD,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,3 months,Battery,Low,1,Yes,0,0,1,0,0,0
+765,21,47241,Student,Bachelor,Jaipur,OnePlus,OnePlus 7,No,,Performance,Medium,0,Yes,0,0,0,0,1,0
+766,55,37274,Lawyer,Bachelor,Delhi,OnePlus,OnePlus 7,Yes,1 month,Design,High,2,Yes,1,0,0,0,0,1
+767,24,92963,Lawyer,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,,Design,Medium,1,Yes,1,0,0,0,0,1
+768,57,37140,Manager,Master,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,6 months,Price,Low,2,No,1,0,0,1,0,0
+769,34,119532,Manager,Master,Pune,Samsung,Samsung S10,Yes,3 months,Design;Performance,Medium,3,No,1,0,0,0,1,1
+770,51,96617,Doctor,Bachelor,Bengaluru,OnePlus,OnePlus 7,No,,Battery,Low,3,Yes,0,0,1,0,0,0
+771,35,31214,Designer,PhD,Delhi,Apple,iPhone 11,No,,Design,Medium,1,Yes,0,0,0,0,0,1
+772,50,102105,Student,Master,Lucknow,Realme,Realme 8,No,,Battery,Low,2,Yes,0,0,1,0,0,0
+773,50,36553,Teacher,Bachelor,Pune,Samsung,Samsung S20,Yes,2 months,Performance;Camera,Low,2,Yes,1,1,0,0,1,0
+774,23,32882,Engineer,PhD,Chennai,Realme,Realme 8,No,,Camera;Design,High,1,Yes,0,1,0,0,0,1
+775,23,68255,Teacher,Bachelor,Kolkata,Realme,Realme 7,Yes,6 months,Design;Camera,High,3,No,1,1,0,0,0,1
+776,51,107798,Designer,Bachelor,Chennai,Apple,iPhone 12,Yes,2 months,Price;Battery,Medium,2,No,0,0,1,1,0,0
+777,55,80969,Engineer,PhD,Chennai,OnePlus,OnePlus 7,No,,Camera,High,2,No,0,1,0,0,0,0
+778,57,60482,Lawyer,Bachelor,Pune,Apple,iPhone 12,No,,Performance;Battery,Low,2,No,0,0,1,0,1,0
+779,52,79431,Lawyer,Bachelor,Ahmedabad,Apple,iPhone 11,Yes,3 months,Battery,Medium,4,Yes,1,0,1,0,0,0
+780,27,70910,Designer,Master,Lucknow,Realme,Realme 8,No,,Performance,Low,2,Yes,0,0,0,0,1,0
+781,41,83744,Doctor,Master,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery,Low,4,Yes,0,0,1,0,0,0
+782,19,119882,Sales,Master,Delhi,Realme,Realme 7,Yes,,Camera;Performance,Low,2,Yes,1,1,0,0,1,0
+783,52,31218,Designer,PhD,Pune,Realme,Realme 8,No,,Battery;Camera,Medium,0,Yes,0,1,1,0,0,0
+784,28,61740,Doctor,Master,Mumbai,Apple,iPhone XR,Yes,2 months,Price,Low,2,Yes,1,0,0,1,0,0
+785,28,77403,Doctor,Bachelor,Lucknow,Apple,iPhone XR,Yes,2 months,Design;Price,Low,3,Yes,0,0,0,1,0,1
+786,54,66741,Manager,Master,Delhi,OnePlus,OnePlus 7,No,,Battery,High,1,Yes,0,0,1,0,0,0
+787,31,34606,Sales,Bachelor,Jaipur,Xiaomi,Xiaomi Redmi 9,No,,Camera;Performance,High,2,Yes,0,1,0,0,1,0
+788,18,58176,Lawyer,Bachelor,Jaipur,Realme,Realme 7,Yes,,Performance,Low,4,No,1,0,0,0,1,0
+789,51,119082,Lawyer,PhD,Delhi,Apple,iPhone 11,No,,Battery,Medium,1,Yes,0,0,1,0,0,0
+790,45,45779,Designer,PhD,Ahmedabad,Samsung,Samsung S9,Yes,,Design;Price,Medium,3,No,1,0,0,1,0,1
+791,52,107120,Doctor,Bachelor,Ahmedabad,Xiaomi,Xiaomi Mi 10,No,,Performance;Design,Low,4,No,0,0,0,0,1,1
+792,53,52007,Doctor,Master,Ahmedabad,OnePlus,OnePlus 8,No,,Design,Medium,3,No,0,0,0,0,0,1
+793,46,66820,Doctor,Master,Bengaluru,Realme,Realme 8,No,,Price;Battery,Low,3,Yes,0,0,1,1,0,0
+794,59,72261,Designer,Master,Mumbai,Samsung,Samsung S10,Yes,,Price,Medium,3,Yes,0,0,0,1,0,0
+795,45,100726,Engineer,Master,Lucknow,Realme,Realme 8,No,,Camera,Medium,4,No,0,1,0,0,0,0
+796,50,49455,Engineer,Master,Hyderabad,Apple,iPhone 11,No,,Battery,Low,2,Yes,0,0,1,0,0,0
+797,35,59605,Lawyer,Master,Pune,Xiaomi,Xiaomi Redmi 9,No,,Performance;Design,Medium,0,No,0,0,0,0,1,1
+798,55,44974,Doctor,Bachelor,Ahmedabad,OnePlus,OnePlus 7,No,,Camera;Price,High,3,No,0,1,0,1,0,0
+799,33,117116,Teacher,Bachelor,Jaipur,Apple,iPhone XR,Yes,1 month,Design,High,2,No,1,0,0,0,0,1
+800,33,108653,Student,PhD,Mumbai,OnePlus,OnePlus 8,No,,Battery;Design,Medium,4,No,0,0,1,0,0,1
+801,57,98860,Engineer,Master,Bengaluru,Xiaomi,Xiaomi Mi 10,No,,Battery,High,1,Yes,0,0,1,0,0,0
+802,40,37897,Doctor,Bachelor,Delhi,Realme,Realme 8,No,,Design,Medium,1,No,0,0,0,0,0,1
+803,19,63902,Doctor,Master,Bengaluru,Apple,iPhone 11,Yes,3 months,Design;Performance,High,2,No,1,0,0,0,1,1
+804,23,40057,Teacher,Master,Chennai,Realme,Realme 8,Yes,,Performance,High,0,Yes,1,0,0,0,1,0
+805,52,50641,Designer,Master,Delhi,OnePlus,OnePlus 9,Yes,,Camera,Medium,0,No,0,1,0,0,0,0
+806,46,80117,Student,Bachelor,Mumbai,Samsung,Samsung S10,No,,Price,Medium,2,No,0,0,0,1,0,0
+807,26,46997,Engineer,PhD,Hyderabad,Samsung,Samsung S20,No,,Performance,Low,4,Yes,0,0,0,0,1,0
+808,47,87737,Teacher,PhD,Ahmedabad,Xiaomi,Xiaomi Mi 10,Yes,1 month,Performance;Battery,Medium,0,No,0,0,1,0,1,0
+809,19,46352,Teacher,PhD,Chennai,Samsung,Samsung S10,No,,Battery;Price,Low,2,No,0,0,1,1,0,0
+810,25,114860,Manager,PhD,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Battery;Performance,Medium,3,Yes,0,0,1,0,1,0
+811,51,115970,Engineer,Bachelor,Jaipur,Apple,iPhone 12,No,,Battery;Performance,Low,3,No,0,0,1,0,1,0
+812,19,98578,Sales,PhD,Bengaluru,Realme,Realme 7,Yes,1 month,Camera;Battery,Medium,2,Yes,0,1,1,0,0,0
+813,33,57032,Student,PhD,Ahmedabad,Samsung,Samsung S10,Yes,1 month,Battery;Price,High,0,Yes,1,0,1,1,0,0
+814,53,114816,Teacher,PhD,Pune,Realme,Realme 7,Yes,,Battery;Design,Medium,0,Yes,1,0,1,0,0,1
+815,47,102534,Sales,PhD,Jaipur,Apple,iPhone 12,No,,Design;Battery,Low,1,Yes,0,0,1,0,0,1
+816,56,95898,Sales,PhD,Ahmedabad,Apple,iPhone 11,Yes,,Design;Price,Medium,3,Yes,1,0,0,1,0,1
+817,41,87427,Doctor,PhD,Ahmedabad,Apple,iPhone XR,No,,Battery,Low,3,No,0,0,1,0,0,0
+818,42,113251,Student,Bachelor,Pune,Realme,Realme 8,No,,Design;Price,Medium,0,No,0,0,0,1,0,1
+819,46,45954,Lawyer,Master,Ahmedabad,Samsung,Samsung S20,Yes,6 months,Performance;Design,Medium,2,Yes,0,0,0,0,1,1
+820,28,113749,Lawyer,Master,Bengaluru,Apple,iPhone XR,Yes,,Camera;Battery,Low,0,Yes,1,1,1,0,0,0
+821,18,98835,Teacher,Bachelor,Hyderabad,Realme,Realme 7,No,,Performance,Low,3,No,0,0,0,0,1,0
+822,22,40995,Engineer,PhD,Delhi,Realme,Realme 7,No,,Price,High,4,Yes,0,0,0,1,0,0
+823,50,84862,Sales,Master,Bengaluru,Realme,Realme 8,No,,Price;Performance,Medium,1,Yes,0,0,0,1,1,0
+824,37,105955,Designer,Bachelor,Ahmedabad,OnePlus,OnePlus 9,No,,Battery;Design,Medium,0,Yes,0,0,1,0,0,1
+825,24,104155,Teacher,Bachelor,Hyderabad,OnePlus,OnePlus 8,No,,Design,High,1,No,0,0,0,0,0,1
+826,50,68187,Teacher,Master,Jaipur,Apple,iPhone 12,No,,Battery;Camera,Medium,0,No,0,1,1,0,0,0
+827,28,77458,Student,PhD,Chennai,Samsung,Samsung S10,Yes,6 months,Performance;Camera,High,0,No,1,1,0,0,1,0
+828,59,115504,Doctor,Master,Lucknow,Samsung,Samsung S10,No,,Price,Low,2,No,0,0,0,1,0,0
+829,28,60028,Sales,Master,Pune,Realme,Realme 7,No,,Camera,High,2,No,0,1,0,0,0,0
+830,20,47693,Doctor,Master,Pune,Realme,Realme 8,Yes,1 month,Price,High,0,Yes,0,0,0,1,0,0
+831,41,39953,Lawyer,Bachelor,Mumbai,Realme,Realme 8,No,,Design;Price,Low,1,No,0,0,0,1,0,1
+832,32,79979,Teacher,Bachelor,Ahmedabad,Apple,iPhone 12,Yes,,Camera;Battery,Medium,1,No,1,1,1,0,0,0
+833,53,108655,Engineer,Master,Ahmedabad,Apple,iPhone 11,No,,Design;Battery,Low,0,Yes,0,0,1,0,0,1
+834,20,57460,Doctor,Master,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Camera;Battery,Medium,1,No,0,1,1,0,0,0
+835,31,100949,Lawyer,Bachelor,Mumbai,Samsung,Samsung S20,No,,Camera,Low,3,No,0,1,0,0,0,0
+836,29,43057,Engineer,PhD,Lucknow,Samsung,Samsung S20,No,,Price,Medium,4,Yes,0,0,0,1,0,0
+837,35,106948,Lawyer,Master,Lucknow,OnePlus,OnePlus 7,Yes,3 months,Price;Performance,Medium,0,No,1,0,0,1,1,0
+838,40,31659,Doctor,PhD,Pune,Samsung,Samsung S20,No,,Price,Medium,3,No,0,0,0,1,0,0
+839,52,103062,Doctor,PhD,Hyderabad,Apple,iPhone 11,Yes,2 months,Battery,Low,4,Yes,0,0,1,0,0,0
+840,33,49405,Manager,Bachelor,Pune,OnePlus,OnePlus 9,No,,Camera;Price,Medium,1,Yes,0,1,0,1,0,0
+841,47,67830,Manager,Bachelor,Ahmedabad,Samsung,Samsung S20,No,,Battery;Camera,High,1,No,0,1,1,0,0,0
+842,51,72477,Designer,Master,Kolkata,Samsung,Samsung S9,No,,Performance,Low,2,Yes,0,0,0,0,1,0
+843,57,106639,Sales,PhD,Pune,Apple,iPhone 11,No,,Performance;Design,Medium,1,Yes,0,0,0,0,1,1
+844,45,81986,Manager,Bachelor,Bengaluru,Samsung,Samsung S20,Yes,3 months,Design,High,1,No,1,0,0,0,0,1
+845,37,82879,Designer,PhD,Lucknow,Apple,iPhone XR,No,,Design,Low,0,No,0,0,0,0,0,1
+846,26,32775,Designer,Bachelor,Delhi,Realme,Realme 8,Yes,2 months,Design,Medium,0,Yes,1,0,0,0,0,1
+847,23,114891,Designer,Master,Ahmedabad,OnePlus,OnePlus 8,Yes,1 month,Camera;Design,Low,4,No,1,1,0,0,0,1
+848,55,101310,Teacher,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Camera,Medium,3,Yes,1,1,0,0,0,0
+849,20,43566,Sales,Bachelor,Delhi,Samsung,Samsung S10,Yes,3 months,Design;Camera,Medium,3,No,1,1,0,0,0,1
+850,51,47184,Student,PhD,Pune,Xiaomi,Xiaomi Mi 10,No,,Price;Battery,High,4,No,0,0,1,1,0,0
+851,33,114511,Teacher,Master,Kolkata,Apple,iPhone XR,Yes,3 months,Camera;Price,Low,3,No,1,1,0,1,0,0
+852,34,82275,Designer,Bachelor,Lucknow,Xiaomi,Xiaomi Redmi 9,Yes,2 months,Battery,Medium,0,No,0,0,1,0,0,0
+853,45,50765,Student,Master,Lucknow,Xiaomi,Xiaomi Mi 10,Yes,2 months,Price;Performance,High,2,No,0,0,0,1,1,0
+854,31,87263,Sales,Bachelor,Bengaluru,OnePlus,OnePlus 7,Yes,3 months,Price;Design,Medium,1,No,0,0,0,1,0,1
+855,32,31286,Teacher,Bachelor,Kolkata,Xiaomi,Xiaomi Mi 10,No,,Price,Medium,3,No,0,0,0,1,0,0
+856,44,68174,Engineer,PhD,Mumbai,Apple,iPhone XR,No,,Camera,Medium,3,No,0,1,0,0,0,0
+857,22,112938,Teacher,PhD,Lucknow,Samsung,Samsung S20,No,,Camera,Low,4,No,0,1,0,0,0,0
+858,43,113984,Designer,Master,Pune,Realme,Realme 7,Yes,1 month,Performance;Design,High,2,No,1,0,0,0,1,1
+859,24,50010,Lawyer,PhD,Bengaluru,Xiaomi,Xiaomi Mi 10,Yes,2 months,Battery,Low,0,Yes,1,0,1,0,0,0
+860,25,69536,Designer,Master,Ahmedabad,Xiaomi,Xiaomi Mi 10,Yes,1 month,Performance,Low,3,Yes,1,0,0,0,1,0
+861,18,45376,Sales,Master,Chennai,OnePlus,OnePlus 9,Yes,,Design;Camera,High,1,No,0,1,0,0,0,1
+862,31,111165,Doctor,Bachelor,Hyderabad,Xiaomi,Xiaomi Redmi 9,Yes,,Price;Performance,High,2,No,1,0,0,1,1,0
+863,44,102231,Engineer,PhD,Mumbai,Xiaomi,Xiaomi Redmi 9,Yes,,Performance;Design,Low,2,Yes,1,0,0,0,1,1
+864,30,114954,Student,Bachelor,Lucknow,Realme,Realme 8,No,,Battery;Design,Low,1,No,0,0,1,0,0,1
+865,27,116479,Engineer,Bachelor,Lucknow,Realme,Realme 7,No,,Performance,High,0,No,0,0,0,0,1,0
+866,36,113323,Sales,Bachelor,Mumbai,Realme,Realme 7,No,,Design;Battery,Medium,4,Yes,0,0,1,0,0,1
+867,52,53901,Lawyer,Master,Hyderabad,Realme,Realme 8,Yes,,Battery;Performance,Medium,1,No,1,0,1,0,1,0
+868,38,102597,Designer,PhD,Jaipur,Realme,Realme 8,No,,Price,Medium,3,No,0,0,0,1,0,0
+869,39,119049,Designer,Master,Lucknow,Apple,iPhone 12,Yes,3 months,Performance;Design,High,2,Yes,1,0,0,0,1,1
+870,28,116623,Manager,PhD,Chennai,Xiaomi,Xiaomi Mi 10,No,,Design;Camera,Medium,0,Yes,0,1,0,0,0,1
+871,58,39765,Designer,PhD,Chennai,OnePlus,OnePlus 7,Yes,6 months,Design;Battery,Medium,3,Yes,1,0,1,0,0,1
+872,49,57257,Engineer,PhD,Chennai,Xiaomi,Xiaomi Mi 10,No,,Camera;Performance,High,4,Yes,0,1,0,0,1,0
+873,22,78586,Lawyer,Bachelor,Chennai,Samsung,Samsung S10,Yes,,Price;Design,Low,0,Yes,0,0,0,1,0,1
+874,35,112418,Teacher,Bachelor,Ahmedabad,Apple,iPhone 11,No,,Design,High,2,Yes,0,0,0,0,0,1
+875,52,82165,Doctor,Bachelor,Bengaluru,Apple,iPhone XR,No,,Camera;Battery,High,3,Yes,0,1,1,0,0,0
+876,30,33577,Designer,Bachelor,Pune,OnePlus,OnePlus 8,No,,Price;Battery,Low,2,No,0,0,1,1,0,0
+877,36,70663,Sales,Bachelor,Lucknow,Xiaomi,Xiaomi Mi 10,No,,Performance;Battery,High,4,Yes,0,0,1,0,1,0
+878,28,82748,Doctor,Bachelor,Pune,OnePlus,OnePlus 8,Yes,1 month,Camera;Price,Low,4,Yes,1,1,0,1,0,0
+879,40,39321,Engineer,Master,Bengaluru,OnePlus,OnePlus 7,Yes,2 months,Battery;Design,Low,3,No,1,0,1,0,0,1
+880,59,45668,Doctor,Bachelor,Delhi,Apple,iPhone 12,Yes,,Performance;Camera,High,3,Yes,1,1,0,0,1,0
+881,37,54667,Engineer,PhD,Bengaluru,Xiaomi,Xiaomi Redmi 9,No,,Camera;Price,Medium,4,No,0,1,0,1,0,0
+882,37,88817,Sales,PhD,Lucknow,Apple,iPhone 11,Yes,,Performance;Design,Low,3,No,1,0,0,0,1,1
+883,53,65739,Doctor,Master,Hyderabad,Samsung,Samsung S9,No,,Camera,High,2,No,0,1,0,0,0,0
+884,42,106868,Doctor,Bachelor,Bengaluru,OnePlus,OnePlus 7,Yes,6 months,Battery,High,2,No,1,0,1,0,0,0
+885,59,92866,Sales,PhD,Lucknow,OnePlus,OnePlus 9,No,,Performance,Low,1,Yes,0,0,0,0,1,0
+886,56,62521,Designer,PhD,Hyderabad,Realme,Realme 8,No,,Camera,High,3,No,0,1,0,0,0,0
+887,19,115827,Engineer,PhD,Jaipur,Samsung,Samsung S10,No,,Battery;Design,Medium,3,No,0,0,1,0,0,1
+888,45,92805,Doctor,PhD,Kolkata,OnePlus,OnePlus 8,No,,Price,Medium,0,Yes,0,0,0,1,0,0
+889,18,66725,Sales,Bachelor,Pune,Realme,Realme 7,No,,Camera,Medium,3,Yes,0,1,0,0,0,0
+890,57,111924,Teacher,Bachelor,Delhi,Samsung,Samsung S10,No,,Camera,Low,4,Yes,0,1,0,0,0,0
+891,19,96836,Student,PhD,Pune,Apple,iPhone 11,Yes,6 months,Performance;Battery,Low,3,Yes,1,0,1,0,1,0
+892,26,37925,Student,Bachelor,Ahmedabad,OnePlus,OnePlus 8,Yes,,Performance,Low,2,No,0,0,0,0,1,0
+893,25,109538,Sales,Master,Hyderabad,Samsung,Samsung S20,No,,Battery,Low,1,No,0,0,1,0,0,0
+894,33,90282,Teacher,Bachelor,Hyderabad,OnePlus,OnePlus 7,No,,Price;Battery,High,4,Yes,0,0,1,1,0,0
+895,53,77252,Sales,PhD,Chennai,Xiaomi,Xiaomi Redmi 9,Yes,,Performance;Price,High,1,Yes,1,0,0,1,1,0
+896,23,38382,Student,Bachelor,Pune,Apple,iPhone 12,No,,Camera;Performance,High,0,Yes,0,1,0,0,1,0
+897,31,93908,Sales,Bachelor,Pune,Samsung,Samsung S20,No,,Performance,Medium,2,No,0,0,0,0,1,0
+898,32,104180,Manager,PhD,Pune,Realme,Realme 8,No,,Camera;Design,Medium,0,Yes,0,1,0,0,0,1
+899,32,54575,Teacher,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery;Design,High,4,Yes,0,0,1,0,0,1
+900,31,104642,Sales,Bachelor,Hyderabad,Realme,Realme 7,No,,Camera;Performance,Low,0,No,0,1,0,0,1,0
+901,21,103124,Lawyer,Bachelor,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,6 months,Design,Medium,1,No,0,0,0,0,0,1
+902,44,38631,Engineer,Bachelor,Kolkata,Realme,Realme 8,No,,Battery;Camera,Low,0,Yes,0,1,1,0,0,0
+903,57,38573,Sales,PhD,Mumbai,Realme,Realme 8,Yes,6 months,Performance;Design,Low,1,Yes,1,0,0,0,1,1
+904,46,101610,Designer,PhD,Bengaluru,Realme,Realme 7,No,,Camera;Design,Low,4,No,0,1,0,0,0,1
+905,36,67850,Designer,Bachelor,Kolkata,OnePlus,OnePlus 7,Yes,3 months,Battery;Design,High,4,Yes,1,0,1,0,0,1
+906,25,69492,Doctor,PhD,Ahmedabad,Samsung,Samsung S20,No,,Battery,Low,4,Yes,0,0,1,0,0,0
+907,24,112678,Sales,PhD,Delhi,OnePlus,OnePlus 9,Yes,,Camera;Performance,High,4,No,1,1,0,0,1,0
+908,56,91331,Teacher,Master,Hyderabad,OnePlus,OnePlus 8,No,,Performance;Camera,Low,0,No,0,1,0,0,1,0
+909,24,60632,Doctor,Bachelor,Pune,Xiaomi,Xiaomi Mi 10,Yes,6 months,Camera;Design,Low,0,Yes,0,1,0,0,0,1
+910,38,56015,Lawyer,PhD,Chennai,Apple,iPhone 12,No,,Battery;Performance,Medium,0,No,0,0,1,0,1,0
+911,48,55444,Engineer,Bachelor,Pune,Apple,iPhone 12,No,,Design,High,0,Yes,0,0,0,0,0,1
+912,46,89267,Designer,Bachelor,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Performance;Camera,Medium,1,No,0,1,0,0,1,0
+913,29,68805,Lawyer,PhD,Hyderabad,OnePlus,OnePlus 7,Yes,3 months,Price,Medium,0,No,1,0,0,1,0,0
+914,44,75511,Student,PhD,Delhi,Apple,iPhone 12,Yes,1 month,Battery,Low,0,Yes,0,0,1,0,0,0
+915,33,34901,Teacher,Master,Chennai,Apple,iPhone XR,Yes,,Camera;Price,Medium,1,No,1,1,0,1,0,0
+916,18,118279,Designer,Bachelor,Hyderabad,Apple,iPhone 12,No,,Performance;Price,Medium,1,No,0,0,0,1,1,0
+917,37,50860,Designer,Bachelor,Delhi,Apple,iPhone XR,No,,Performance;Price,Medium,0,Yes,0,0,0,1,1,0
+918,43,45589,Lawyer,Master,Jaipur,Samsung,Samsung S9,Yes,,Camera,Medium,4,Yes,0,1,0,0,0,0
+919,23,51159,Engineer,Bachelor,Hyderabad,OnePlus,OnePlus 7,No,,Battery;Price,Low,0,No,0,0,1,1,0,0
+920,32,45329,Lawyer,Master,Chennai,OnePlus,OnePlus 8,No,,Performance;Design,High,4,Yes,0,0,0,0,1,1
+921,20,80254,Designer,Master,Lucknow,Samsung,Samsung S9,No,,Camera;Price,High,0,Yes,0,1,0,1,0,0
+922,45,82927,Engineer,Bachelor,Lucknow,Samsung,Samsung S9,Yes,,Camera;Performance,High,3,No,1,1,0,0,1,0
+923,34,35702,Student,Master,Mumbai,Xiaomi,Xiaomi Mi 10,Yes,1 month,Camera;Design,Low,4,No,0,1,0,0,0,1
+924,46,54726,Engineer,Master,Chennai,OnePlus,OnePlus 8,Yes,,Design,High,0,No,1,0,0,0,0,1
+925,32,49491,Sales,Master,Kolkata,Apple,iPhone 11,No,,Battery;Design,Low,1,No,0,0,1,0,0,1
+926,46,95267,Doctor,PhD,Delhi,Xiaomi,Xiaomi Redmi 9,No,,Design,Medium,1,No,0,0,0,0,0,1
+927,35,64169,Doctor,PhD,Ahmedabad,Samsung,Samsung S9,No,,Price;Performance,Low,1,No,0,0,0,1,1,0
+928,56,111363,Lawyer,PhD,Lucknow,Samsung,Samsung S20,No,,Price,Medium,2,Yes,0,0,0,1,0,0
+929,43,109030,Sales,Bachelor,Hyderabad,Samsung,Samsung S20,Yes,3 months,Battery;Price,Low,3,Yes,1,0,1,1,0,0
+930,18,57115,Sales,PhD,Chennai,Apple,iPhone 12,No,,Camera;Battery,Low,0,No,0,1,1,0,0,0
+931,31,75986,Student,Master,Lucknow,Realme,Realme 7,No,,Design,High,4,No,0,0,0,0,0,1
+932,39,66679,Sales,Bachelor,Chennai,Xiaomi,Xiaomi Mi 10,No,,Price;Performance,Low,4,Yes,0,0,0,1,1,0
+933,57,102392,Manager,PhD,Pune,OnePlus,OnePlus 7,No,,Performance,Low,4,No,0,0,0,0,1,0
+934,45,44751,Teacher,Bachelor,Jaipur,OnePlus,OnePlus 8,No,,Design;Camera,Medium,0,Yes,0,1,0,0,0,1
+935,48,90857,Sales,Master,Lucknow,Apple,iPhone XR,Yes,3 months,Camera;Design,High,0,Yes,0,1,0,0,0,1
+936,55,116491,Designer,Master,Mumbai,Samsung,Samsung S10,No,,Design,Medium,1,Yes,0,0,0,0,0,1
+937,27,71298,Doctor,Bachelor,Pune,Realme,Realme 8,No,,Performance,High,3,No,0,0,0,0,1,0
+938,38,116843,Manager,Master,Jaipur,Realme,Realme 8,Yes,6 months,Battery;Design,Low,4,Yes,1,0,1,0,0,1
+939,34,44319,Teacher,Master,Kolkata,OnePlus,OnePlus 7,No,,Performance;Price,Low,0,No,0,0,0,1,1,0
+940,38,35084,Manager,Bachelor,Kolkata,Apple,iPhone XR,Yes,3 months,Price;Battery,High,3,Yes,1,0,1,1,0,0
+941,48,72002,Student,PhD,Chennai,Xiaomi,Xiaomi Redmi 9,No,,Design;Camera,Medium,4,No,0,1,0,0,0,1
+942,35,88465,Teacher,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery,Low,1,No,0,0,1,0,0,0
+943,54,48371,Student,Master,Lucknow,Realme,Realme 8,No,,Design;Price,Low,2,No,0,0,0,1,0,1
+944,59,59312,Doctor,PhD,Pune,Xiaomi,Xiaomi Redmi 9,Yes,6 months,Design,High,0,No,1,0,0,0,0,1
+945,44,117995,Manager,Bachelor,Mumbai,OnePlus,OnePlus 7,Yes,2 months,Camera,High,3,No,0,1,0,0,0,0
+946,18,33936,Sales,Bachelor,Mumbai,Apple,iPhone 11,No,,Design;Price,Low,4,No,0,0,0,1,0,1
+947,25,95382,Engineer,PhD,Mumbai,Apple,iPhone 12,Yes,1 month,Camera,Low,1,Yes,1,1,0,0,0,0
+948,43,118789,Student,PhD,Jaipur,Samsung,Samsung S9,Yes,,Camera;Price,Medium,0,Yes,0,1,0,1,0,0
+949,24,41066,Manager,Bachelor,Lucknow,Apple,iPhone 11,No,,Design,Medium,4,No,0,0,0,0,0,1
+950,46,101442,Manager,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,,Camera,Low,0,Yes,0,1,0,0,0,0
+951,53,97388,Lawyer,Master,Hyderabad,Realme,Realme 7,Yes,3 months,Camera,High,1,No,1,1,0,0,0,0
+952,24,91248,Doctor,Master,Jaipur,Apple,iPhone XR,No,,Design,Medium,2,No,0,0,0,0,0,1
+953,25,48910,Lawyer,PhD,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Camera;Design,High,4,No,0,1,0,0,0,1
+954,19,111439,Designer,Bachelor,Ahmedabad,OnePlus,OnePlus 9,No,,Design,Medium,3,No,0,0,0,0,0,1
+955,18,33936,Sales,Bachelor,Pune,Samsung,Samsung S10,No,,Camera;Battery,High,0,Yes,0,1,1,0,0,0
+956,21,66672,Doctor,Master,Pune,OnePlus,OnePlus 7,Yes,3 months,Price,Medium,3,No,1,0,0,1,0,0
+957,43,103162,Lawyer,PhD,Lucknow,Realme,Realme 7,Yes,3 months,Performance,Medium,3,No,0,0,0,0,1,0
+958,54,104031,Doctor,Master,Pune,Xiaomi,Xiaomi Redmi 9,No,,Camera;Design,High,4,Yes,0,1,0,0,0,1
+959,21,89613,Doctor,Bachelor,Lucknow,Samsung,Samsung S10,Yes,6 months,Design;Performance,High,4,Yes,1,0,0,0,1,1
+960,53,72348,Sales,Master,Lucknow,Xiaomi,Xiaomi Mi 10,Yes,2 months,Battery;Camera,Medium,4,Yes,1,1,1,0,0,0
+961,39,96863,Designer,PhD,Bengaluru,Realme,Realme 8,No,,Price;Performance,Medium,3,No,0,0,0,1,1,0
+962,54,63434,Sales,Bachelor,Hyderabad,OnePlus,OnePlus 7,No,,Battery,High,0,No,0,0,1,0,0,0
+963,48,70382,Engineer,PhD,Mumbai,Xiaomi,Xiaomi Mi 10,No,,Battery,Medium,3,No,0,0,1,0,0,0
+964,38,118636,Student,PhD,Kolkata,OnePlus,OnePlus 7,No,,Battery;Design,Low,1,Yes,0,0,1,0,0,1
+965,24,54935,Doctor,PhD,Pune,Samsung,Samsung S10,No,,Performance,Medium,0,Yes,0,0,0,0,1,0
+966,59,31505,Student,Bachelor,Bengaluru,Realme,Realme 7,No,,Performance;Price,Medium,2,No,0,0,0,1,1,0
+967,19,89789,Doctor,PhD,Pune,Realme,Realme 7,Yes,6 months,Design;Camera,Medium,1,No,1,1,0,0,0,1
+968,18,108763,Sales,Bachelor,Kolkata,OnePlus,OnePlus 9,No,,Camera,Medium,2,Yes,0,1,0,0,0,0
+969,20,99535,Manager,Bachelor,Bengaluru,Samsung,Samsung S10,Yes,2 months,Camera;Performance,High,2,Yes,1,1,0,0,1,0
+970,44,112597,Doctor,Master,Kolkata,Realme,Realme 7,No,,Performance,Medium,2,No,0,0,0,0,1,0
+971,55,94480,Doctor,Master,Kolkata,OnePlus,OnePlus 9,No,,Camera,Medium,4,No,0,1,0,0,0,0
+972,59,71862,Engineer,PhD,Pune,Apple,iPhone 12,Yes,,Price,High,2,Yes,0,0,0,1,0,0
+973,35,107714,Designer,Bachelor,Lucknow,Samsung,Samsung S10,No,,Price,Low,1,Yes,0,0,0,1,0,0
+974,51,119379,Doctor,Bachelor,Bengaluru,Realme,Realme 8,Yes,1 month,Design,High,1,Yes,1,0,0,0,0,1
+975,44,32953,Doctor,Master,Hyderabad,OnePlus,OnePlus 8,No,,Performance,Low,2,No,0,0,0,0,1,0
+976,41,75111,Doctor,Master,Kolkata,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Camera,Medium,0,No,1,1,0,0,0,0
+977,59,71353,Student,Master,Lucknow,Realme,Realme 7,No,,Price,Low,0,Yes,0,0,0,1,0,0
+978,24,75166,Sales,Master,Ahmedabad,Samsung,Samsung S20,No,,Camera,Medium,0,No,0,1,0,0,0,0
+979,31,52443,Doctor,Bachelor,Hyderabad,Realme,Realme 8,No,,Design,Low,0,No,0,0,0,0,0,1
+980,30,44834,Teacher,PhD,Delhi,Samsung,Samsung S20,Yes,,Performance,High,0,No,1,0,0,0,1,0
+981,58,62406,Designer,PhD,Jaipur,Apple,iPhone 11,No,,Camera,High,4,Yes,0,1,0,0,0,0
+982,43,119834,Lawyer,Bachelor,Chennai,Xiaomi,Xiaomi Redmi 9,Yes,1 month,Design,High,0,No,1,0,0,0,0,1
+983,20,48226,Manager,Bachelor,Lucknow,Realme,Realme 8,No,,Price,Medium,0,Yes,0,0,0,1,0,0
+984,18,109031,Manager,Bachelor,Ahmedabad,Xiaomi,Xiaomi Redmi 9,Yes,,Battery,Low,0,Yes,0,0,1,0,0,0
+985,31,57949,Doctor,Bachelor,Mumbai,Apple,iPhone 11,No,,Battery;Price,Medium,0,Yes,0,0,1,1,0,0
+986,18,97442,Lawyer,PhD,Jaipur,OnePlus,OnePlus 7,Yes,3 months,Design;Price,Medium,3,No,0,0,0,1,0,1
+987,29,61952,Designer,PhD,Lucknow,OnePlus,OnePlus 9,No,,Price,Medium,1,No,0,0,0,1,0,0
+988,39,113481,Teacher,Bachelor,Chennai,Xiaomi,Xiaomi Redmi 9,Yes,3 months,Design,Medium,2,Yes,1,0,0,0,0,1
+989,56,52787,Lawyer,Master,Kolkata,Samsung,Samsung S10,Yes,1 month,Performance,High,1,Yes,0,0,0,0,1,0
+990,34,83106,Manager,Bachelor,Ahmedabad,OnePlus,OnePlus 8,Yes,,Camera,Medium,3,No,1,1,0,0,0,0
+991,39,107929,Sales,Master,Chennai,Realme,Realme 7,Yes,6 months,Design,Low,3,Yes,1,0,0,0,0,1
+992,40,99201,Doctor,Bachelor,Delhi,Samsung,Samsung S20,No,,Design;Battery,High,1,No,0,0,1,0,0,1
+993,48,88188,Engineer,Bachelor,Delhi,OnePlus,OnePlus 7,No,,Price,Low,4,Yes,0,0,0,1,0,0
+994,26,79393,Sales,PhD,Mumbai,OnePlus,OnePlus 8,No,,Camera;Design,High,0,Yes,0,1,0,0,0,1
+995,43,102925,Manager,Bachelor,Hyderabad,Xiaomi,Xiaomi Mi 10,Yes,,Design,Medium,2,Yes,1,0,0,0,0,1
+996,38,48883,Engineer,Bachelor,Lucknow,Xiaomi,Xiaomi Redmi 9,No,,Price,Low,1,Yes,0,0,0,1,0,0
+997,45,43440,Engineer,Bachelor,Lucknow,OnePlus,OnePlus 9,Yes,,Camera,Low,1,No,1,1,0,0,0,0
+998,18,118378,Teacher,Master,Hyderabad,Xiaomi,Xiaomi Redmi 9,Yes,2 months,Battery,Low,3,Yes,1,0,1,0,0,0
+999,51,63519,Engineer,Bachelor,Pune,Realme,Realme 7,No,,Price,Medium,0,Yes,0,0,0,1,0,0
+1000,50,37894,Teacher,Master,Ahmedabad,Apple,iPhone XR,No,,Battery;Design,Medium,1,Yes,0,0,1,0,0,1

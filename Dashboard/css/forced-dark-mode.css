@@ -1,0 +1,138 @@
+/* Forced Dark Mode Styles */
+body {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Override any light mode styles */
+body:not(.dark-mode) {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Ensure all cards and containers follow dark theme */
+.card, 
+.container, 
+.sidebar, 
+.main-content,
+.dashboard-header,
+.section-content,
+.chart-container,
+.prediction-form,
+.insight-card,
+.prediction-tool-container,
+.comparison-container,
+.feature-influence-container {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+
+/* Enhanced heading styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #6c9fff !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(108, 159, 255, 0.2);
+}
+
+/* Enhanced chart container */
+.chart-container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* Improved section headers */
+.section-header {
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* Enhanced buttons */
+button {
+    background-color: #3b82f6 !important;
+    color: white !important;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover:not([disabled]) {
+    background-color: #2563eb !important;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    transform: translateY(-2px);
+}
+
+button[disabled] {
+    background-color: #2c3e50 !important;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Enhanced form inputs */
+input, select, textarea {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #444 !important;
+    padding: 12px !important;
+    border-radius: 6px !important;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3) !important;
+    outline: none !important;
+}
+
+/* Polished card styling */
+.card {
+    border-radius: 10px !important;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Enhanced chart legends */
+.chartjs-legend li span {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+/* Sidebar enhancement */
+.sidebar {
+    background-color: #1a1a1a !important;
+    box-shadow: 3px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar ul li {
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li.active, 
+.sidebar ul li:hover {
+    background-color: #2a2a2a;
+    border-left-color: #3b82f6;
+}
+
+/* Loading overlay enhancement */
+.loading-overlay {
+    background-color: rgba(18, 18, 18, 0.9) !important;
+}
+
+.spinner {
+    border-top-color: #3b82f6 !important;
+}

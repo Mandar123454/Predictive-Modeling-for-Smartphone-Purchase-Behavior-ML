@@ -1,0 +1,97 @@
+/* Enhanced section and chart header styling */
+
+/* Section headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(79, 70, 229, 0.3);
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4f46e5;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .section-header h2 {
+    color: #818cf8;
+}
+
+/* Chart headers */
+.chart-header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.chart-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4f46e5;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.dark-mode .chart-header h3 {
+    color: #818cf8;
+}
+
+/* Underline effect for chart headers */
+.chart-header h3:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: rgba(79, 70, 229, 0.5);
+    bottom: 0;
+    left: 15%;
+    transition: width 0.3s;
+}
+
+.chart-header:hover h3:after {
+    width: 90%;
+    left: 5%;
+}
+
+/* Chart descriptions */
+.chart-description,
+.chart-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0 auto 15px;
+    max-width: 80%;
+    font-style: italic;
+}
+
+.dark-mode .chart-description,
+.dark-mode .chart-subtitle {
+    color: #94a3b8;
+}
+
+/* Distribution row specific styling */
+.distribution-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.distribution-row .chart-card {
+    flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+    .distribution-row {
+        flex-direction: column;
+    }
+    
+    .distribution-row .chart-card {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}

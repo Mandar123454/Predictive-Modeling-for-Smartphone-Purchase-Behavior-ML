@@ -1,0 +1,81 @@
+/* Advanced Purchase Pattern Analysis Styling */
+
+.purchase-pattern-container {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.purchase-pattern-header {
+    margin-bottom: 20px;
+}
+
+.purchase-pattern-header h3 {
+    color: #60a5fa;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.purchase-pattern-subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.purchase-pattern-chart-container {
+    height: 450px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.purchase-pattern-explanation {
+    background-color: rgba(30, 41, 59, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #3b82f6;
+}
+
+.purchase-pattern-explanation h4 {
+    color: #60a5fa;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.purchase-pattern-explanation ul {
+    padding-left: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.purchase-pattern-explanation li {
+    color: #e2e8f0;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.purchase-pattern-explanation li strong {
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+.purchase-pattern-explanation p {
+    color: #cbd5e1;
+    font-style: italic;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* Improve chart appearance */
+#purchase-pattern-analysis {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .purchase-pattern-chart-container {
+        height: 400px;
+    }
+}
