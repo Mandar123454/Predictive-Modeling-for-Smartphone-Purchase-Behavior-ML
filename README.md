@@ -2,7 +2,6 @@
 
 An interactive dashboard for analyzing smartphone purchase patterns and predicting customer purchase behavior based on demographic and financial data.
 
-![Dashboard Preview](./screenshots/dashboard-preview.png)
 
 ## Features
 
@@ -42,36 +41,6 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 └── app.py              # Flask application serving the API
 ```
 
-## Setup and Installation
-
-### Local Development
-
-1. Clone the repository
-   ```
-   git clone https://github.com/yourusername/smartphone-purchase-prediction.git
-   cd smartphone-purchase-prediction
-   ```
-
-2. Create and activate a virtual environment
-   ```
-   python -m venv venv
-   # On Windows
-   venv\Scripts\activate
-   # On macOS/Linux
-   source venv/bin/activate
-   ```
-
-3. Install dependencies
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. Run the Flask application
-   ```
-   python app.py
-   ```
-
-5. Open your browser and navigate to `http://localhost:5000`
 
 ### Deployment to Netlify
 
