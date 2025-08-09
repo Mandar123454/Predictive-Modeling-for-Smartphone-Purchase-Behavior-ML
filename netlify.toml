@@ -4,6 +4,16 @@
   publish = "Dashboard"
   # Simple shell script build command
   command = "bash netlify-build.sh"
+  
+# Skip Python dependency installation entirely
+[build.environment]
+  NETLIFY_USE_YARN = "false"
+  NETLIFY_USE_NPM = "false"
+  NETLIFY_USE_PNPM = "false"
+  NETLIFY_USE_YARN_INSTALL = "false"
+  NETLIFY_USE_PACKAGER = "false"
+  # Skip Python dependency installation
+  PYTHON_VERSION = "off"
 
 # Redirects for SPA (Single Page Application)
 [[redirects]]
