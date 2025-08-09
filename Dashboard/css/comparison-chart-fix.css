@@ -1,0 +1,28 @@
+/* Fix for the comparison chart continuous scrolling issue */
+#comparison-chart {
+    width: 100% !important;
+    height: 350px !important;
+    max-height: 350px !important;
+    display: block !important;
+    position: relative !important;
+}
+
+.comparison-result .result-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.comparison-result .result-container {
+    height: auto;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+/* Table container inside comparison results */
+.comparison-table-container {
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}

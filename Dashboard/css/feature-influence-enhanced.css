@@ -1,0 +1,175 @@
+/* Enhanced Feature Influence Analysis Chart for better visibility */
+.feature-influence-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+}
+
+.dark-mode .feature-influence-container {
+    background-color: rgba(30, 41, 59, 0.92);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Chart container for larger visualization */
+.feature-influence-chart-container {
+    min-height: 400px; /* Increased height for better visibility */
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+/* Canvas styling for better appearance */
+#feature-influence-chart {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.dark-mode #feature-influence-chart {
+    background-color: rgba(17, 24, 39, 0.7);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Analysis section */
+.feature-influence-analysis {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(243, 244, 246, 0.7);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    border-left: 4px solid #4f46e5;
+}
+
+.dark-mode .feature-influence-analysis {
+    background-color: rgba(31, 41, 55, 0.7);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #818cf8;
+}
+
+.feature-influence-analysis h4 {
+    color: #4f46e5;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.dark-mode .feature-influence-analysis h4 {
+    color: #818cf8;
+}
+
+.feature-influence-analysis ul {
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.feature-influence-analysis li {
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.dark-mode .feature-influence-analysis li {
+    color: #e5e7eb;
+}
+
+/* Enhanced header styling */
+.feature-influence-container .chart-header h3 {
+    color: #4f46e5;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.dark-mode .feature-influence-container .chart-header h3 {
+    color: #818cf8;
+}
+
+.feature-influence-container .chart-description {
+    text-align: center;
+    color: #4b5563;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.dark-mode .feature-influence-container .chart-description {
+    color: #9ca3af;
+}
+
+/* Make text more visible in both modes */
+.feature-influence-container .chart-description strong {
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+.dark-mode .feature-influence-container .chart-description strong {
+    color: #818cf8;
+}
+
+/* Improved chart label */
+.chart-label {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.dark-mode .chart-label {
+    color: #9ca3af;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+    .feature-influence-layout {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .feature-influence-chart-container {
+        flex: 3;
+    }
+    
+    .feature-influence-analysis {
+        flex: 2;
+        margin-top: 0;
+    }
+}
+
+/* Legend enhancements */
+.feature-influence-container .chart-js-legend {
+    padding: 0.75rem;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.dark-mode .feature-influence-container .chart-js-legend {
+    background-color: rgba(17, 24, 39, 0.8);
+}
+
+.feature-influence-container .chart-js-legend li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    color: #1f2937;
+}
+
+.dark-mode .feature-influence-container .chart-js-legend li {
+    color: #e5e7eb;
+}

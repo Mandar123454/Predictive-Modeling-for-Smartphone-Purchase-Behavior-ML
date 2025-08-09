@@ -1,0 +1,79 @@
+/* Stronger force chart visibility styles */
+.chart-container {
+  position: relative;
+  min-height: 300px;
+  display: block !important;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.chart-container canvas {
+  display: block !important;
+  min-height: 300px !important;
+  height: 300px !important; /* Force height */
+  width: 100% !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix for specific charts */
+#age-purchase-rate-chart, 
+#brand-purchase-rate-chart {
+  display: block !important;
+  min-height: 300px !important;
+  height: 300px !important; /* Force height */
+  width: 100% !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 10;
+}
+
+/* Fix chart containers */
+#age-purchase-rate-chart-container,
+#brand-purchase-rate-chart-container {
+  min-height: 300px;
+  position: relative;
+  display: block !important;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Ensure chart headers are visible */
+.chart-header h3 {
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+  display: block !important;
+}
+
+/* Light mode chart text */
+body:not(.dark-mode) .chart-header h3,
+.light-mode .chart-header h3 {
+  color: #333333 !important;
+  text-shadow: none;
+}
+
+/* Ensure chart descriptions are visible */
+.chart-description {
+  display: block !important;
+  margin-bottom: 15px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Light mode chart description */
+body:not(.dark-mode) .chart-description,
+.light-mode .chart-description {
+  color: rgba(0,0,0,0.7) !important;
+}
+
+/* Add diagnostic borders in development mode */
+.dev-mode .chart-container {
+  border: 1px dashed #ff6b6b;
+}
+
+.dev-mode canvas {
+  border: 1px solid #4ecdc4;
+}

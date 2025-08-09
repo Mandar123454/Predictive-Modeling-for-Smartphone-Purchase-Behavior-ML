@@ -1,0 +1,35 @@
+/* Enhance the correlation heatmap container */
+#correlation-heatmap-chart-container {
+    height: 500px !important; /* Increased height */
+    width: 100% !important;
+    position: relative;
+}
+
+/* Make sure the canvas fills the container */
+#correlation-heatmap-chart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Key findings list styling */
+.key-findings ul {
+    padding-left: 20px;
+}
+
+.key-findings li {
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.key-findings li::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3b82f6;
+}

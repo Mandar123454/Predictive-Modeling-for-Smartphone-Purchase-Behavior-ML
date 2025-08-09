@@ -1,0 +1,188 @@
+/* Dark Mode CSS */
+:root {
+    --dark-primary: #171923;
+    --dark-secondary: #2d3748;
+    --dark-accent: #4299e1;
+    --dark-text: #e2e8f0;
+    --dark-muted: #a0aec0;
+    --dark-border: #4a5568;
+    --dark-card: #1a202c;
+    --dark-hover: #2c353d;
+    --dark-success: #48bb78;
+    --dark-warning: #ecc94b;
+    --dark-danger: #f56565;
+    --dark-info: #4299e1;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--dark-primary);
+    color: var(--dark-text);
+    --text-color: var(--dark-text);
+    --card-bg-color: var(--dark-card);
+    --primary-rgb: 66, 153, 225;
+    --text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    --high-contrast-text: #f8fafc;
+}
+
+body.dark-mode .sidebar {
+    background-color: var(--dark-secondary);
+    border-right-color: var(--dark-border);
+}
+
+body.dark-mode header,
+body.dark-mode .kpi-card,
+body.dark-mode .chart-card,
+body.dark-mode .input-form,
+body.dark-mode .prediction-result,
+body.dark-mode .insight-card {
+    background-color: #2d2d2d;
+    color: #f8fafc;
+}
+
+/* Make section titles extra visible in dark mode */
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .section-title {
+    color: #f8fafc;
+    font-weight: 700;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+}
+
+body.dark-mode .prediction-text p,
+body.dark-mode .gauge-value,
+body.dark-mode #prediction-text,
+body.dark-mode #prediction-probability,
+body.dark-mode .prediction-note,
+body.dark-mode .result-data p,
+body.dark-mode .result-data div {
+    color: #ffffff;
+}
+
+/* Ensure text is clearly visible even with colored spans */
+body.dark-mode .result-data,
+body.dark-mode #prediction-text,
+body.dark-mode #prediction-probability {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+}
+
+/* Make gauge percentage super clear */
+body.dark-mode #gauge-value {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .demo-mode-indicator,
+body.dark-mode .demo-indicator-styled {
+    color: rgba(255, 255, 255, 0.85) !important;
+    background: rgba(67, 97, 238, 0.15) !important;
+    border-left: 3px solid #4361ee !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+body.dark-mode .header-title h1,
+body.dark-mode .section-header h2 {
+    color: #4cc9f0;
+}
+
+/* Enhanced prediction result visibility in dark mode */
+body.dark-mode #prediction-output {
+    background-color: rgba(26, 32, 44, 0.8);
+}
+
+body.dark-mode .result-data {
+    color: var(--high-contrast-text);
+}
+
+body.dark-mode #gauge-value {
+    color: var(--high-contrast-text);
+    text-shadow: var(--text-shadow);
+    font-weight: 700;
+}
+
+/* Improved demo indicator visibility in dark mode */
+body.dark-mode .demo-indicator-container {
+    background-color: rgba(26, 32, 44, 0.5);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* Error message in dark mode */
+body.dark-mode .error-message {
+    color: var(--high-contrast-text);
+}
+
+body.dark-mode .header-title p,
+body.dark-mode .section-header p,
+body.dark-mode .kpi-info h3,
+body.dark-mode .form-group label,
+body.dark-mode .insight-info p {
+    color: #a0a0a0;
+}
+
+body.dark-mode .kpi-info p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Make chart titles visible in dark mode */
+body.dark-mode .chart-header h3 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Make chart labels visible in dark mode */
+body.dark-mode .chart-card canvas {
+    color: #ffffff;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select {
+    background-color: #3d3d3d;
+    border-color: #4d4d4d;
+    color: #e0e0e0;
+}
+
+body.dark-mode table th {
+    background-color: #3d3d3d;
+}
+
+body.dark-mode table td {
+    border-bottom-color: #4d4d4d;
+}
+
+body.dark-mode .theme-toggle button {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+body.dark-mode .theme-toggle button:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .kpi-icon {
+    background: var(--primary-gradient);
+}
+
+/* Enhanced section heading visibility in dark mode */
+body.dark-mode .chart-card h3,
+body.dark-mode .prediction-result h3,
+body.dark-mode .input-form h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+/* Ensure prediction percentage is highly visible */
+body.dark-mode .gauge-container #gauge-value {
+    color: #ffffff !important;
+    font-size: 3rem !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+    font-weight: 800 !important;
+}

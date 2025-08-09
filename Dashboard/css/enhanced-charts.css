@@ -1,0 +1,56 @@
+/* Enhanced chart styling specifically for feature influence */
+#feature-influence-chart {
+    background-color: white !important;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode #feature-influence-chart {
+    background-color: rgba(30, 41, 59, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Better visibility for chart labels in light mode */
+.feature-influence-card h3 {
+    color: #111827 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+}
+
+.feature-influence-subtitle {
+    color: #4b5563 !important;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.dark-mode .feature-influence-card h3 {
+    color: #f1f5f9 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .feature-influence-subtitle {
+    color: #cbd5e1 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Make chart data pop more in light mode */
+.chart-tooltip {
+    background-color: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #111827 !important;
+    font-weight: 600 !important;
+}
+
+.dark-mode .chart-tooltip {
+    background-color: #1e293b !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #f1f5f9 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}

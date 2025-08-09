@@ -1,0 +1,11 @@
+{
+    "prediction": 1,
+    "probability": 0.85,
+    "explanation": {
+        "top_factors": [
+            {"feature": "EstimatedSalary", "importance": 0.35, "value": 65000},
+            {"feature": "Age", "importance": 0.25, "value": 32},
+            {"feature": "CreditScore", "importance": 0.15, "value": 720}
+        ]
+    }
+}

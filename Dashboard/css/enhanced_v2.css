@@ -1,0 +1,272 @@
+/* Enhanced styles for better user experience */
+
+/* Chart header with actions */
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.chart-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Global demo mode indicator */
+.demo-indicator {
+    position: fixed;
+    top: 0;
+    left: 250px; /* Same as sidebar width */
+    right: 0;
+    background-color: rgba(67, 97, 238, 0.15);
+    color: #4361ee;
+    text-align: center;
+    padding: 4px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.demo-indicator:hover {
+    background-color: rgba(67, 97, 238, 0.2);
+}
+
+body.dark-mode .demo-indicator {
+    background-color: rgba(67, 97, 238, 0.2);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+body.dark-mode .demo-indicator:hover {
+    background-color: rgba(67, 97, 238, 0.25);
+}
+
+/* Improved loading spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Export buttons for data and charts */
+.export-button {
+    background-color: #4a5568;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.export-button i {
+    margin-right: 6px;
+}
+
+.export-button:hover {
+    background-color: #2d3748;
+}
+
+body.dark-mode .export-button {
+    background-color: #4a5568;
+}
+
+body.dark-mode .export-button:hover {
+    background-color: #2d3748;
+}
+
+/* Progress bar for loading */
+.progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background-color: #e2e8f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #3b82f6;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+body.dark-mode .progress-bar-container {
+    background-color: #2d3748;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #4299e1;
+}
+
+/* Enhanced tooltips */
+.enhanced-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.enhanced-tooltip .tooltip-content {
+    visibility: hidden;
+    width: 200px;
+    background-color: #1a202c;
+    color: #e2e8f0;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-tooltip .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1a202c transparent transparent transparent;
+}
+
+.enhanced-tooltip:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Improved card styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature highlight pulse animation */
+@keyframes pulse-highlight {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5); }
+    70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.pulse-highlight {
+    animation: pulse-highlight 1.5s infinite;
+}
+
+/* Fade-in animation for elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skeleton loading placeholders */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+    height: 16px;
+    margin-bottom: 8px;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* Data table styles */
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.data-table thead tr {
+    background-color: #f8fafc;
+}
+
+.data-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.data-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+body.dark-mode .data-table thead tr {
+    background-color: #2d3748;
+}
+
+body.dark-mode .data-table th,
+body.dark-mode .data-table td {
+    border-color: #4a5568;
+}
+
+body.dark-mode .data-table tbody tr:hover {
+    background-color: #2c353d;
+}

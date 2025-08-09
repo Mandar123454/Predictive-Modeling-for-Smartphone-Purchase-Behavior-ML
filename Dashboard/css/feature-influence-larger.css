@@ -1,0 +1,88 @@
+/* Enhanced Feature Influence Chart Size */
+
+/* Increase chart container size */
+#feature-influence-chart {
+    height: 500px !important; /* Increased from 450px */
+    width: 100% !important;
+}
+
+/* Make the feature influence container more prominent */
+.chart-card.wide.feature-influence-container {
+    padding: 25px !important;
+    margin-bottom: 30px !important;
+    background-color: #1e293b !important; /* Slightly darker for contrast */
+    border: 1px solid rgba(99, 102, 241, 0.15) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Increase chart size in the layout */
+.feature-influence-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 25px !important;
+    margin-top: 20px !important;
+    align-items: stretch !important; /* Make items stretch to fill height */
+}
+
+/* Make chart container significantly larger */
+.feature-influence-chart-container {
+    width: 75% !important; /* Increased from 65% */
+    height: 550px !important; /* Increased from 450px */
+    min-height: 500px !important;
+    max-height: 700px !important;
+    position: relative !important;
+}
+
+/* Adjust analysis section to be narrower */
+.feature-influence-analysis {
+    width: 25% !important; /* Reduced from 35% */
+    padding: 15px !important;
+    background: rgba(30, 41, 59, 0.5) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(99, 102, 241, 0.2) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+/* Make chart label more prominent */
+.chart-label {
+    text-align: center !important;
+    margin-top: 15px !important;
+    font-size: 0.95rem !important;
+    color: #94a3b8 !important;
+    font-weight: 500 !important;
+}
+
+/* Make sure the chart fills its container properly */
+canvas#feature-influence-chart {
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    .feature-influence-chart-container {
+        width: 70% !important;
+    }
+    
+    .feature-influence-analysis {
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .feature-influence-layout {
+        flex-direction: column !important;
+    }
+    
+    .feature-influence-chart-container,
+    .feature-influence-analysis {
+        width: 100% !important;
+    }
+    
+    .feature-influence-chart-container {
+        height: 500px !important;
+        margin-bottom: 20px !important;
+    }
+}

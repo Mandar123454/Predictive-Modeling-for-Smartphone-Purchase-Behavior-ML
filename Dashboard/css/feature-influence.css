@@ -1,0 +1,65 @@
+/* Feature Influence Chart Styles */
+.chart-card.wide canvas#feature-influence-chart {
+    height: 300px !important;
+}
+
+/* Improved text visibility for both dark and light modes */
+.chart-card h3 {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.chart-description {
+    color: var(--text-dark);
+    opacity: 0.85;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Dark mode specific styles */
+.dark-mode .chart-card h3 {
+    color: #e2e8f0;
+}
+
+.dark-mode .chart-description {
+    color: #cbd5e1;
+    opacity: 0.9;
+}
+
+/* Enhanced chart card styling */
+.chart-card.wide {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #ffffff; /* Explicit white background for light mode */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .chart-card.wide {
+    background-color: var(--dark-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Enhanced feature influence chart container */
+#feature-influence-chart,
+#correlation-heatmap-chart {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for chart in light mode */
+    border-radius: 6px;
+}
+
+.dark-mode #feature-influence-chart,
+.dark-mode #correlation-heatmap-chart {
+    background-color: rgba(30, 41, 59, 0.4); /* Darker background for chart in dark mode */
+}
+
+/* Remove the previous heatmap styles that we no longer need */
+.heatmap-legend {
+    display: none;
+}
