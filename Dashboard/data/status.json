@@ -1,9 +1,1 @@
-{
-    "status": "ok",
-    "version": "1.0.0",
-    "model_info": {
-        "name": "Random Forest Classifier",
-        "accuracy": 0.87,
-        "date_trained": "2023-06-15"
-    }
-}
+{"status": "ok", "version": "1.0.0", "model_info": {"name": "Random Forest Classifier", "accuracy": 0.87, "date_trained": "2023-06-15"}}

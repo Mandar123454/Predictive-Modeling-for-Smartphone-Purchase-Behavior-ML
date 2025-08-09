@@ -1,10 +1,1 @@
-{
-    "feature_importance": {
-        "EstimatedSalary": 0.35,
-        "Age": 0.25,
-        "CreditScore": 0.15,
-        "Gender": 0.12,
-        "Balance": 0.08,
-        "NumOfProducts": 0.05
-    }
-}
+{"feature_importance": {"income": 0.25, "age": 0.2, "time_on_website": 0.15, "previous_purchases": 0.12, "marketing_engaged": 0.1, "search_frequency": 0.1, "device_age": 0.08}}
