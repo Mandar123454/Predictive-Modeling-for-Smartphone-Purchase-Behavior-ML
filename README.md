@@ -39,7 +39,7 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 │   └── Main Notebook.ipynb         # Model training and evaluation
 └── app.py              # Flask application serving the API
 ```
-```
+
 ### Deployment to Netlify
 
 This dashboard is designed to be deployed as a static site on Netlify with the following setup:
