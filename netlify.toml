@@ -2,8 +2,8 @@
 [build]
   # Directory with the static files
   publish = "Dashboard"
-  # Build command to prepare static files
-  command = "mkdir -p Dashboard/data && python prepare_static_data.py"
+  # Simple shell script build command
+  command = "bash netlify-build.sh"
 
 # Redirects for SPA (Single Page Application)
 [[redirects]]
