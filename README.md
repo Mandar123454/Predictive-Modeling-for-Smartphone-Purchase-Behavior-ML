@@ -2,7 +2,7 @@
 
 An interactive dashboard for analyzing smartphone purchase patterns and predicting customer purchase behavior based on demographic and financial data.
 
-- ![Dashboard Preview](.Dashboard-Preview.png)
+- ![Dashboard Preview](.DashboardPreview.png)
 
 ## Features
 
