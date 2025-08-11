@@ -2,6 +2,8 @@
 
 An interactive dashboard for analyzing smartphone purchase patterns and predicting customer purchase behavior based on demographic and financial data.
 
+- ![Dashboard Preview](.Dashboard-Preview.png)
+
 ## Features
 
 - **Purchase Prediction**: Get real-time predictions on whether a user will purchase a smartphone based on their demographics and financial information
@@ -17,6 +19,37 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 - **Backend**: Python Flask API
 - **Machine Learning**: Scikit-learn, Pandas, NumPy
 - **Model**: Random Forest Classifier
+
+## Setup and Installation
+
+### Local Development
+
+1. Clone the repository
+   ```
+   git clone https://github.com/yourusername/smartphone-purchase-prediction.git
+   cd smartphone-purchase-prediction
+   ```
+
+2. Create and activate a virtual environment
+   ```
+   python -m venv venv
+   # On Windows
+   venv\Scripts\activate
+   # On macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. Install dependencies
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Run the Flask application
+   ```
+   python app.py
+   ```
+
+5. Open your browser and navigate to `http://localhost:5000`
 
 ## Project Structure
 
