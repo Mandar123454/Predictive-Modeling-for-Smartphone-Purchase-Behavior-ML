@@ -54,7 +54,7 @@ The Smartphone Purchase Prediction project consists of several components that w
 
 ### Models
 
-- **model.pkl**: The trained Random Forest Classifier model used for predictions.
+- **model.pkl**: The trained Logistic Regression model used for predictions.
 - **scaler.pkl**: StandardScaler object used to normalize numerical features.
 - **model_columns.pkl**: List of column names that the model expects as input.
 
