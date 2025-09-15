@@ -87,7 +87,7 @@ An interactive machine learning dashboard that predicts smartphone purchasing be
 # Download or clone the repository
 git clone https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML.git
 cd Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML
-=======
+```
 ## Setup and Installation
 
 ### Local Development
