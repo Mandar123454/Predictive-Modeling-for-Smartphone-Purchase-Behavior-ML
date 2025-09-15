@@ -73,18 +73,6 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 └── app.py              # Flask application serving the API
 ```
 
-### Deployment to GitHub Pages
-
-This dashboard is designed to be deployed as a static site on GitHub Pages with the following setup:
-
-1. Prepare static data files in the `Dashboard/data/` directory for API responses
-2. Push your repository to GitHub
-3. Configure GitHub Pages in repository settings:
-   - Go to Settings > Pages
-   - Set source to your main branch
-   - Set the folder to "/Dashboard"
-   - Publish directory: `Dashboard`
-4. Deploy!
 
 ## API Endpoints
 
