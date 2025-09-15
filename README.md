@@ -56,21 +56,39 @@ An interactive dashboard for analyzing smartphone purchase patterns and predicti
 ```
 ├── Dashboard/           # Frontend web application
 │   ├── css/             # Stylesheets
+│   │   └── styles.css   # Main stylesheet
 │   ├── js/              # JavaScript files
-│   ├── data/            # Static JSON data for GitHub Pages deployment
-│   └── index.html       # Main dashboard page
+│   │   ├── main.js      # Dashboard functionality
+│   │   └── static-data-provider.js  # For Netlify deployment
+│   ├── data/            # Static JSON data for Netlify deployment
+│   │   ├── status.json
+│   │   ├── dashboard_data.json
+│   │   ├── feature_importance.json
+│   │   ├── prediction.json
+│   │   ├── brand_comparison.json
+│   │   └── fallback.json
+│   ├── index.html       # Main dashboard page
+│   └── README.md        # Dashboard-specific documentation
 ├── Data/                # Dataset files
 │   ├── smartphone_purchased_data.csv        # Original dataset
 │   ├── smartphone_purchased_data_cleaned.csv # Cleaned dataset
 │   └── smartphone_purchased_data_updated.csv # Updated dataset with additional features
+│   ├── X_test.csv       # Test dataset features
+│   └── X_test_scaled.csv # Scaled test dataset features
 ├── Models/              # Trained machine learning models
 │   ├── model.pkl        # Main prediction model
 │   ├── scaler.pkl       # Feature scaler
 │   └── model_columns.pkl # Column names for model input
 ├── Notebook/            # Jupyter notebooks for analysis and model development
 │   ├── exploratory_analysis.ipynb  # Data exploration
-│   └── Main Notebook.ipynb         # Model training and evaluation
-└── app.py              # Flask application serving the API
+│   ├── Main Notebook.ipynb         # Model training and evaluation
+│   └── Notebook.ipynb              # Additional analysis
+├── app.py              # Flask application serving the API
+├── netlify.toml        # Netlify configuration file
+├── prepare_static_data.py  # Script to generate static JSON for Netlify
+├── requirements.txt    # Python dependencies
+├── README.md           # Main project documentation
+└── run_dashboard.bat   # Script to run the dashboard locally (Windows)
 ```
 
 
