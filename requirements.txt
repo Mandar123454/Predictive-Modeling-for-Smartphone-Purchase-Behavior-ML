@@ -1,14 +1,15 @@
 # Core Flask Dependencies
-Flask==2.3.3
-Flask-CORS==4.0.0
+Flask==3.1.2
+Flask-Cors==6.0.1
 Werkzeug==2.3.7
 
 # Data Processing and Analysis
-pandas==2.0.3
-numpy==1.24.3
+pandas==2.3.2
+numpy==2.3.3
 
 # Machine Learning
-scikit-learn==1.3.0
+scikit-learn==1.7.1
+joblib==1.5.2
 
 # Additional Utilities
 pickle-mixin==1.0.2
@@ -20,9 +21,6 @@ dash==2.12.1
 # Development and Testing (optional)
 pytest==7.4.0
 pytest-flask==1.2.0
-
-# For improved JSON handling
-jsonify
 
 # System utilities
 pathlib2==2.3.7
