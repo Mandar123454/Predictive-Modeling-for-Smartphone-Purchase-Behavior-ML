@@ -30,7 +30,6 @@ An interactive machine learning dashboard that predicts smartphone purchasing be
 - **Data Processing**: Feature engineering, scaling, encoding
 - **Model**: Random Forest + XGBoost ensemble
 
-<<<<<<< HEAD
 ## 📋 System Requirements
 
 ### Minimum Requirements
@@ -83,86 +82,13 @@ An interactive machine learning dashboard that predicts smartphone purchasing be
 ### Method 1: Automatic Setup (Recommended for New Users)
 
 **For Windows:**
-```bash
+```powershell
 # Download or clone the repository
 git clone https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML.git
 cd Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML
-```
-## Setup and Installation
 
-### Local Development
-
-1. Clone the repository
-   ```
-   git clone https://github.com/yourusername/smartphone-purchase-prediction.git
-   cd smartphone-purchase-prediction
-   ```
-
-2. Create and activate a virtual environment
-   ```
-   python -m venv venv
-   # On Windows
-   venv\Scripts\activate
-   # On macOS/Linux
-   source venv/bin/activate
-   ```
-
-3. Install dependencies
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. Run the Flask application
-   ```
-   python app.py
-   ```
-
-5. Open your browser and navigate to `http://localhost:5000`
-
-## Project Structure
-
-```
-├── Dashboard/           # Frontend web application
-│   ├── css/             # Stylesheets
-│   │   └── styles.css   # Main stylesheet
-│   ├── js/              # JavaScript files
-│   │   ├── main.js      # Dashboard functionality
-│   │   └── static-data-provider.js  # For Netlify deployment
-│   ├── data/            # Static JSON data for Netlify deployment
-│   │   ├── status.json
-│   │   ├── dashboard_data.json
-│   │   ├── feature_importance.json
-│   │   ├── prediction.json
-│   │   ├── brand_comparison.json
-│   │   └── fallback.json
-│   ├── index.html       # Main dashboard page
-│   └── README.md        # Dashboard-specific documentation
-├── Data/                # Dataset files
-│   ├── smartphone_purchased_data.csv        # Original dataset
-│   ├── smartphone_purchased_data_cleaned.csv # Cleaned dataset
-│   └── smartphone_purchased_data_updated.csv # Updated dataset with additional features
-│   ├── X_test.csv       # Test dataset features
-│   └── X_test_scaled.csv # Scaled test dataset features
-├── Models/              # Trained machine learning models
-│   ├── model.pkl        # Main prediction model
-│   ├── scaler.pkl       # Feature scaler
-│   └── model_columns.pkl # Column names for model input
-├── Notebook/            # Jupyter notebooks for analysis and model development
-│   ├── exploratory_analysis.ipynb  # Data exploration
-│   ├── Main Notebook.ipynb         # Model training and evaluation
-│   └── Notebook.ipynb              # Additional analysis
-├── app.py              # Flask application serving the API
-├── netlify.toml        # Netlify configuration file
-├── prepare_static_data.py  # Script to generate static JSON for Netlify
-├── requirements.txt    # Python dependencies
-├── README.md           # Main project documentation
-└── run_dashboard.bat   # Script to run the dashboard locally (Windows)
-```
-
->>>>>>> 3f258d204fe26f43c0fcc9284ec712040fc4eb09
-
-# Run setup script
-setup.bat
+# Run setup script (Windows)
+./setup.bat
 ```
 
 
@@ -332,6 +258,12 @@ print(f"Purchase Probability: {prediction['probability']}%")
 - **Recall**: 89.7% (sensitivity) 
 - **F1-Score**: 87.3% (harmonic mean of precision/recall)
 - **ROC-AUC**: 0.924 (excellent discrimination)
+
+## 📄 Reports & Documents
+
+- One-File Overview: `Project Report/PROJECT_OVERVIEW_ALL_IN_ONE.md`
+- Technical Documentation: `Project Report/DOCS.md`
+- Full ML Report (PDF): `Project Report/ML Report MK.pdf`
 
 ## 🎓 Educational Use
 
