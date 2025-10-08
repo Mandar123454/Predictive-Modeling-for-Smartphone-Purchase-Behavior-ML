@@ -112,8 +112,16 @@ try:
     else:
         logger.error("Columns file not found in any location")
         
-    if model and scaler and model_columns:
-        logger.info("All model files loaded successfully")
+    # Explicit None checks to avoid ambiguous truth value errors (e.g. pandas Index)
+    if model is not None and scaler is not None and model_columns is not None:
+        try:
+            # Add some diagnostics about model_columns for clarity
+            if hasattr(model_columns, 'dtype') and hasattr(model_columns, '__len__'):
+                logger.info(f"All model files loaded successfully (model_columns type={type(model_columns).__name__}, len={len(model_columns)})")
+            else:
+                logger.info(f"All model files loaded successfully (model_columns type={type(model_columns).__name__})")
+        except Exception as diag_err:
+            logger.warning(f"Loaded model_columns but failed to inspect details: {diag_err}")
     else:
         logger.warning("Some model files could not be loaded - predictions will be unavailable")
         
@@ -460,24 +468,40 @@ def predict():
         
         # Reindex to match training columns
         logger.info("Reindexing to match model columns")
+        missing_cols = [c for c in model_columns if c not in input_encoded.columns]
+        extra_cols = [c for c in input_encoded.columns if c not in model_columns]
+        if missing_cols:
+            logger.info(f"Missing columns added with 0 fill: {missing_cols}")
+        if extra_cols:
+            logger.info(f"Extra columns (will be dropped): {extra_cols}")
         input_encoded = input_encoded.reindex(columns=model_columns, fill_value=0)
-        
+        logger.info(f"Encoded input shape after reindex: {input_encoded.shape}")
+
         # Scale the features
         logger.info("Scaling features")
         input_scaled = scaler.transform(input_encoded)
-        
+        logger.info(f"Scaled input sample (first row): {input_scaled[0][:10]} ... total_features={input_scaled.shape[1]}")
+
         # Make prediction
         logger.info("Making prediction")
-        prediction = int(model.predict(input_scaled)[0])
-        probability = float(model.predict_proba(input_scaled)[0, 1])
-        
+        raw_pred = model.predict(input_scaled)
+        raw_proba = model.predict_proba(input_scaled)
+        prediction = int(raw_pred[0])
+        probability = float(raw_proba[0, 1])
+        logger.info(f"Model raw prediction={prediction} probability={probability:.4f}")
+
+        # Do not infer brand automatically; use input brand only
+        input_brand = str(input_data.get('brand', '')).strip()
+
         result = {
             'prediction': prediction,
-            'probability': probability,
-            'message': 'Likely to purchase' if prediction == 1 else 'Not likely to purchase'
+            'probability': probability,            # 0-1 float
+            'probability_percent': round(probability * 100, 2),  # convenience for UI
+            'message': 'Likely to purchase' if prediction == 1 else 'Not likely to purchase',
+            'brand': input_brand
         }
         logger.info(f"Prediction result: {result}")
-        
+
         return jsonify(result)
         
     except Exception as e:
@@ -627,15 +651,21 @@ def feature_importance():
                 'brand_Samsung': 0.05
             }
         
+        # Optionally filter out brand one-hot features for a cleaner primary importance view
+        filtered_importance = {k: v for k, v in importance.items() if not k.startswith('brand_')}
+        if len(filtered_importance) != len(importance):
+            logger.info("Filtered out brand_* features from importance for display")
+        display_importance = filtered_importance if filtered_importance else importance
+
         # Sort by absolute importance
-        sorted_importance = sorted(importance.items(), key=lambda x: abs(x[1]), reverse=True)
+        sorted_importance = sorted(display_importance.items(), key=lambda x: abs(x[1]), reverse=True)
         
         # Calculate normalized importance (percentage of total)
-        total_importance = sum(abs(val) for val in importance.values())
+        total_importance = sum(abs(val) for val in display_importance.values())
         normalized_importance = {}
         
         if total_importance > 0:
-            for key, value in importance.items():
+            for key, value in display_importance.items():
                 normalized_importance[key] = abs(value) / total_importance
                 
             # Sort normalized importance

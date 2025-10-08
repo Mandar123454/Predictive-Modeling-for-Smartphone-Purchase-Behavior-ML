@@ -1452,8 +1452,17 @@ function displayPredictionResult(result) {
     // Update dark mode status
     isDarkMode = checkDarkMode();
     
+    // Normalize probability (support new backend fields)
+    let prob = 0;
+    if (typeof result.probability === 'number' && !isNaN(result.probability)) {
+        prob = result.probability;
+    } else if (typeof result.probability_percent === 'number' && !isNaN(result.probability_percent)) {
+        prob = result.probability_percent / 100;
+    }
+    prob = Math.min(Math.max(prob, 0), 1); // clamp
+
     // First update gauge chart
-    updateGaugeChart(result.probability);
+    updateGaugeChart(prob);
     
     // Update prediction text with a slight delay for animation effect
     setTimeout(() => {
@@ -1462,8 +1471,8 @@ function displayPredictionResult(result) {
         resultData.style.opacity = '1';
         
         const predictionText = result.prediction === 1 ? 'likely' : 'not likely';
-        const percentValue = (result.probability * 100).toFixed(0);
-        const detailedPercent = (result.probability * 100).toFixed(1);
+    const percentValue = (prob * 100).toFixed(0);
+    const detailedPercent = (prob * 100).toFixed(1);
         
         // Update text elements
         const predictionTextSpan = document.getElementById('prediction-text');
@@ -1472,15 +1481,8 @@ function displayPredictionResult(result) {
         // Update the predicted brand
         const predictedBrandSpan = document.getElementById('predicted-brand');
         if (predictedBrandSpan) {
-            // Get the brand from the result, or fallback to what was selected in the form
-            let brandName = result.brand || inputData.brand || 'iPhone';
-            
-            // Check if result has brand information
-            if (result.brand && result.brand !== 'Other') {
-                brandName = result.brand;
-            }
-            
-            // Set the brand name
+            // Use brand returned from backend without inference
+            let brandName = result.brand || 'iPhone';
             predictedBrandSpan.textContent = brandName;
             
             // Update the article (a/an) based on the brand name
@@ -1508,13 +1510,13 @@ function displayPredictionResult(result) {
         // Remove any existing probability classes
         resultContainer.classList.remove('high-prob', 'medium-prob', 'low-prob');
         
-        if (result.probability > 0.7) {
+        if (prob > 0.7) {
             predictionTextSpan.style.color = isDarkMode ? '#86efac' : '#15803d'; // Brighter green for high probability in dark mode
             resultContainer.classList.add('high-prob');
-        } else if (result.probability > 0.5) {
+        } else if (prob > 0.5) {
             predictionTextSpan.style.color = isDarkMode ? '#4ade80' : '#16a34a'; // Bright green for medium-high in dark mode
             resultContainer.classList.add('high-prob');
-        } else if (result.probability > 0.3) {
+        } else if (prob > 0.3) {
             predictionTextSpan.style.color = isDarkMode ? '#fdba74' : '#ea580c'; // Brighter orange for medium-low in dark mode
             resultContainer.classList.add('medium-prob');
         } else {
@@ -1529,9 +1531,9 @@ function displayPredictionResult(result) {
         }
         
         // Get color based on probability
-        const probColor = result.probability > 0.7 ? (isDarkMode ? '#86efac' : '#15803d') :
-                          result.probability > 0.5 ? (isDarkMode ? '#4ade80' : '#16a34a') :
-                          result.probability > 0.3 ? (isDarkMode ? '#fdba74' : '#ea580c') :
+    const probColor = prob > 0.7 ? (isDarkMode ? '#86efac' : '#15803d') :
+              prob > 0.5 ? (isDarkMode ? '#4ade80' : '#16a34a') :
+              prob > 0.3 ? (isDarkMode ? '#fdba74' : '#ea580c') :
                                                    (isDarkMode ? '#fca5a5' : '#dc2626');
                           
         // Style the gauge value (big percentage in the middle of the gauge)
@@ -1555,7 +1557,7 @@ function displayPredictionResult(result) {
         
         // Style the probability text below the gauge
         const probEl = document.getElementById('prediction-probability');
-        probEl.textContent = `${detailedPercent}%`;
+    probEl.textContent = `${detailedPercent}%`;
         
         // Enhanced styling for probability text
         probEl.style.color = probColor;

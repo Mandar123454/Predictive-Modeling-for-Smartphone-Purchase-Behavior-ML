@@ -1,61 +1,81 @@
-# PowerShell script to run the Smartphone Purchase Behavior Dashboard
+<#!
+    Enhanced launcher (preserves original behavior but adds):
+     - Prefer local .venv Python
+     - Auto install missing core deps silently (or prompt)
+     - Full traceback capture on failure
+     - Optional -AutoYes switch to skip prompts
+!>
+param(
+    [switch]$AutoYes,
+    [int]$Port = 5000
+)
+
 Write-Host "`n===== Smartphone Purchase Behavior Dashboard =====`n" -ForegroundColor Cyan
+Set-Location -Path $PSScriptRoot
 
-# Check Python installation
-try {
-    $pythonVersion = python --version
-    Write-Host "✅ $pythonVersion detected" -ForegroundColor Green
-} catch {
-    Write-Host "❌ Python not found. Please install Python 3.7 or higher." -ForegroundColor Red
-    Exit 1
+# Resolve Python (prefer venv)
+$venvPython = Join-Path $PSScriptRoot ".venv/Scripts/python.exe"
+if (-not (Test-Path $venvPython)) { $venvPython = Join-Path (Split-Path $PSScriptRoot -Parent) ".venv/Scripts/python.exe" }
+$python = $null
+if (Test-Path $venvPython) { $python = $venvPython }
+else {
+    try { $python = (Get-Command python -ErrorAction Stop).Source } catch { }
+    if (-not $python) { try { $python = (Get-Command python3 -ErrorAction Stop).Source } catch { }
 }
+if (-not $python) { Write-Host "❌ Python not found. Install Python 3.12 (recommended)." -ForegroundColor Red; exit 1 }
+Write-Host "Using Python: $python" -ForegroundColor Green
 
-# Check required packages
-$requiredPackages = @("flask", "flask-cors", "pandas", "numpy", "scikit-learn")
+# Core deps
+$requiredPackages = @("flask","flask_cors","pandas","numpy","sklearn")
 $missingPackages = @()
-
-foreach ($package in $requiredPackages) {
-    try {
-        $null = python -c "import $package"
-        Write-Host "✅ $package is installed" -ForegroundColor Green
-    } catch {
-        Write-Host "❌ $package is missing" -ForegroundColor Red
-        $missingPackages += $package
-    }
+foreach ($pkg in $requiredPackages) {
+    & $python -c "import $pkg" 2>$null
+    if ($LASTEXITCODE -ne 0) { $missingPackages += $pkg; Write-Host "❌ $pkg missing" -ForegroundColor Yellow } else { Write-Host "✅ $pkg present" -ForegroundColor Green }
 }
 
 if ($missingPackages.Count -gt 0) {
-    Write-Host "`nMissing packages detected. Would you like to install them? (y/n)" -ForegroundColor Yellow
-    $installChoice = Read-Host
-    if ($installChoice -eq "y") {
-        $packageString = $missingPackages -join " "
-        Write-Host "Installing packages: $packageString" -ForegroundColor Cyan
-        python -m pip install $missingPackages
-    } else {
-        Write-Host "`nPlease install required packages manually with:" -ForegroundColor Yellow
-        Write-Host "pip install $($missingPackages -join ' ')" -ForegroundColor Yellow
-        Write-Host "Then run this script again.`n"
-        Exit 1
-    }
+    if ($AutoYes) { $choice = 'y' } else { Write-Host "Install missing packages: $($missingPackages -join ', ')? (y/n)" -ForegroundColor Yellow; $choice = Read-Host }
+    if ($choice -eq 'y') {
+         Write-Host "Installing: $($missingPackages -join ' ')" -ForegroundColor Cyan
+         & $python -m pip install --upgrade pip 2>$null | Out-Null
+         & $python -m pip install $missingPackages
+    } else { Write-Host "Aborting due to missing dependencies." -ForegroundColor Red; exit 1 }
 }
 
-# Navigate to Dashboard directory
-Set-Location -Path "$PSScriptRoot\Dashboard"
-
-# Test file access
-Write-Host "`nTesting file access..."
-python test_file_loading.py
-
-Write-Host "`nWould you like to create test model files if originals can't be loaded? (y/n)" -ForegroundColor Yellow
-$modelChoice = Read-Host
-if ($modelChoice -eq "y") {
-    Write-Host "Creating test model files..."
-    python create_test_model.py
+# Inform about full dependency set
+if (Test-Path (Join-Path (Split-Path $PSScriptRoot -Parent) 'requirements.txt')) {
+    Write-Host "(Tip) To install full project deps: $python -m pip install -r requirements.txt" -ForegroundColor DarkGray
 }
 
-# Start the Flask server
-Write-Host "`nStarting dashboard server..." -ForegroundColor Green
-Write-Host "Access the dashboard at: http://localhost:5000" -ForegroundColor Cyan
-Write-Host "Press Ctrl+C to stop the server when done`n"
+# Change into dashboard directory if not already
+if ((Split-Path $PSScriptRoot -Leaf) -ne 'Dashboard') {
+    $dashPath = Join-Path $PSScriptRoot 'Dashboard'
+    if (Test-Path $dashPath) { Set-Location $dashPath }
+}
 
-python app.py
+# Optional test scripts
+if (Test-Path 'test_file_loading.py') {
+    Write-Host "Running file access test..." -ForegroundColor Cyan
+    & $python test_file_loading.py 2>&1 | ForEach-Object { Write-Host $_ }
+}
+
+# Model sanity note
+foreach ($f in @('..\Models\model.pkl','..\Models\scaler.pkl','..\Models\model_columns.pkl')) {
+    if (-not (Test-Path $f)) { Write-Host "⚠ Missing: $f (predictions may be disabled)" -ForegroundColor Yellow }
+}
+
+Write-Host "`nStarting dashboard server on http://localhost:$Port" -ForegroundColor Green
+$env:PORT = $Port
+Write-Host "Press Ctrl+C to stop." -ForegroundColor Cyan
+
+$output = & $python app.py 2>&1
+$code = $LASTEXITCODE
+if ($code -ne 0) {
+    Write-Host "App exited with code $code" -ForegroundColor Red
+    Write-Host "----- BEGIN TRACEBACK / OUTPUT -----" -ForegroundColor Yellow
+    $output | ForEach-Object { Write-Host $_ }
+    Write-Host "----- END TRACEBACK / OUTPUT -----" -ForegroundColor Yellow
+    exit $code
+} else {
+    $output | ForEach-Object { Write-Host $_ }
+}
