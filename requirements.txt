@@ -1,7 +1,8 @@
-# Core Flask Dependencies
-Flask==3.1.2
-Flask-Cors==6.0.1
-Werkzeug==2.3.7
+# Core Web Dependencies (Adjusted for Dash 2.12.1 compatibility)
+# Dash 2.12.1 requires Flask < 2.3.0. Previous Flask==3.1.2 caused conflicts.
+Flask==2.2.5
+Flask-Cors==3.0.10  # Version compatible with Flask 2.2.x
+Werkzeug>=2.2.0,<2.3  # Compatible with Flask 2.2.5
 
 # Data Processing and Analysis
 pandas==2.3.2
@@ -16,11 +17,11 @@ pickle-mixin==1.0.2
 
 # Optional: For enhanced features
 plotly==5.15.0
-dash==2.12.1
+dash==2.12.1  # Keep this; if you want Flask 3.x upgrade dash to >=2.14 later
 
 # Development and Testing (optional)
 pytest==7.4.0
-pytest-flask==1.2.0
+pytest-flask==1.2.0  # Works with Flask 2.2.x
 
 # System utilities
 pathlib2==2.3.7

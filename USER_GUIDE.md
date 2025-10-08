@@ -2,27 +2,50 @@
 
 Welcome to SmartPredict! This guide will help you get started with the smartphone purchase behavior prediction dashboard.
 
-## 🚀 Quick Start (3 Steps)
+## 🚀 Quick Start (Reliable Path)
 
-### Step 1: Get the Project
-- **Download**: [Download ZIP](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/archive/refs/heads/main.zip) and extract
-- **Or Clone**: `git clone https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML.git`
+### 1. Get the Code
+Download ZIP (extract) or clone:
+```
+git clone https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML.git
+```
 
-### Step 2: Setup (Choose One Method)
-- **Windows**: Double-click `setup.bat`
-- **Mac/Linux**: Run `./setup.sh` in terminal
-- **Any OS**: Run `python run_dashboard.py`
+### 2. Create + Activate Virtual Environment (Recommended)
+From project root:
+```
+python -m venv .venv
+".venv\Scripts\Activate"  # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-### Step 3: Open Dashboard
-- Browser opens automatically to `http://localhost:5000`
-- If not, manually open: **http://localhost:5000**
+### 3. Start the Dashboard
+Standard run (Windows PowerShell):
+```
+Set-Location .\Dashboard
+\.venv\Scripts\Activate.ps1   # if not already active
+./run_dashboard.ps1
+```
+Direct Python fallback:
+```
+Set-Location .\Dashboard
+python app.py
+```
+Then open: http://127.0.0.1:5000 (or http://localhost:5000)
 
-## 📋 What You Need
+> Tip: If you already ran `setup.bat` earlier, you can still use the steps above; they are explicit and easier to troubleshoot.
 
-- **Computer**: Windows 10+, macOS 10.14+, or Linux
-- **Python**: Version 3.7 or newer ([Download here](https://python.org))
-- **Browser**: Chrome, Firefox, Safari, or Edge (recent version)
-- **Internet**: For initial setup (downloads packages)
+## 📋 Requirements
+
+| Item | Recommended |
+|------|-------------|
+| OS | Windows 10/11, macOS 12+, or recent Linux distro |
+| Python | 3.10 – 3.12 (3.12 used during latest update) |
+| RAM | 4 GB+ |
+| Browser | Latest Chrome / Edge / Firefox |
+| Internet | Needed only for first dependency install |
+
+If multiple Python versions exist, ensure the one used to create `.venv` matches the one that will run `app.py`.
 
 ## 🎯 How to Use the Dashboard
 
@@ -45,17 +68,22 @@ Welcome to SmartPredict! This guide will help you get started with the smartphon
 - Use filters to focus on specific groups
 
 ### 3. Prediction Tool
-**What it does**: Predicts purchase probability for any person
-- Enter demographics (age, gender, income, education)
-- Set preferences (price range, brand, features)
-- Get instant prediction (0-100% probability)
-- See which factors influence the prediction most
+**Purpose**: Returns purchase likelihood (%) for the exact inputs you provide.
 
-**How to use**:
-1. Fill in the form with person's information
-2. Click "Get Prediction" 
-3. Review probability score and explanations
-4. Try different scenarios by changing values
+Current behavior (after latest optimization):
+- The brand you select is echoed back exactly (no auto brand inference).
+- Probability shown = model probability of purchase (0–100%).
+- Color scale: Green (high), Orange (medium), Red (low).
+
+Usage:
+1. Fill all required fields (age, income, time on website, previous purchases, marketing engagement, search frequency, device age, brand).
+2. Submit form – gauge + textual result update instantly.
+3. Adjust a single field (e.g., increase income) to see sensitivity.
+4. Use extreme values to understand feature impact bounds.
+
+Troubleshooting prediction:
+- If gauge shows 0% but message says “Likely” refresh (was fixed; should not happen now).
+- If API returns error, fallback logic may fabricate a probability – check browser console.
 
 ### 4. Brand Comparison
 **What you can compare**:
@@ -71,34 +99,72 @@ Welcome to SmartPredict! This guide will help you get started with the smartphon
 - See purchase decision timelines
 
 ### 5. Insights Section
-**Advanced analytics**:
-- Customer segmentation (different user types)
-- Seasonal buying patterns
-- Price sensitivity analysis
-- Feature importance rankings
+**Includes**: Feature importance ranking (brand one‑hot indicators removed for clarity), comparative charts, and high-level influence ordering.
 
-## 🔧 Troubleshooting
+Feature importance notes:
+- Only core numeric / behavioral features are displayed (brand_* columns filtered out).
+- Bars may show small negative values for features with slight negative weight.
+- Normalized percentages are used internally; raw values are scaled consistently across a single model state.
 
-### Dashboard Won't Start
-1. **Check Python**: Run `python --version` in terminal
-   - Should show Python 3.7 or higher
-   - If not found, install from [python.org](https://python.org)
+## 🔧 Troubleshooting (Focused)
 
-2. **Install Dependencies**: Run `pip install flask pandas numpy scikit-learn`
+### A. Startup Fails Immediately
+```
+python --version
+pip --version
+```
+If Python < 3.8, upgrade. Then recreate environment:
+```
+Remove-Item -Recurse -Force .venv  # PowerShell
+python -m venv .venv
+\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
 
-3. **Try Alternative Start Methods**:
-   ```bash
-   # Method 1
-   python run_dashboard.py
-   
-   # Method 2  
-   cd Dashboard
-   python app.py
-   
-   # Method 3 (Windows)
-   cd Dashboard
-   .\run_dashboard.ps1
-   ```
+Run again:
+```
+Set-Location .\Dashboard
+python app.py
+```
+
+### B. Blank Page or Static Only
+- Hard refresh (Ctrl+Shift+R)
+- Open DevTools Console – look for 404s or CORS errors
+- Ensure you are on http://127.0.0.1:5000 not a stale cached tab
+
+### C. Prediction Endpoint 500
+Tail backend log:
+```
+Get-Content .\Dashboard\dashboard_api.log -Tail 40
+```
+Look for messages: “Missing columns added…” or “Model raw prediction…”. If model files missing run:
+```
+python create_test_model.py   # inside Dashboard
+```
+
+### D. Feature Importance Missing / Empty
+- Confirm endpoint: http://127.0.0.1:5000/api/feature_importance
+- If error, server log may show model not loaded.
+- Recreate test model artifacts as above.
+
+### E. Port 5000 Already Used
+Windows:
+```
+netstat -ano | findstr :5000
+taskkill /PID <PID> /F
+```
+Linux / macOS:
+```
+lsof -i :5000
+kill -9 <PID>
+```
+
+### F. Virtual Environment Not Activating
+PowerShell execution policy may block scripts:
+```
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+Then re-run activation.
 
 ### Page Loads But No Charts
 1. **Clear Browser Cache**: Ctrl+F5 (Windows) or Cmd+R (Mac)
@@ -138,22 +204,23 @@ Welcome to SmartPredict! This guide will help you get started with the smartphon
 - **Feature Focus**: Understand what each brand emphasizes
 - **Target Demographics**: See which age groups prefer which brands
 
-## 📊 Understanding the Numbers
+## 📊 Interpreting Results
 
-### Prediction Scores
-- **0-30%**: Low probability of purchase
-- **30-70%**: Moderate probability, depends on other factors
-- **70-100%**: High probability of purchase
+Prediction Scale:
+| Range | Interpretation | Suggested Action |
+|-------|----------------|------------------|
+| 0–30% | Low interest | Adjust marketing / nurture |
+| 30–70% | Moderate | Collect more signals, offer incentive |
+| 70–100% | High | Prioritize engagement / conversion |
 
-### Model Accuracy
-- **87.3%**: Overall accuracy on test data
-- **What it means**: Out of 100 predictions, about 87 are correct
-- **Confidence**: Higher percentages are more reliable
+Model Accuracy Snapshot:
+- Current logistic model: ~87% accuracy (test split)
+- Use probability thresholds (e.g. ≥0.6) for higher precision scenarios.
 
-### Statistical Terms
-- **Correlation**: How much two things are related (-1 to +1)
-- **Significance**: Whether a pattern is real or just chance
-- **Distribution**: How values spread across a range
+Key Terms:
+- Correlation: Relationship strength (−1 to +1)
+- Importance: Relative influence of a feature in the model
+- Probability: Model-estimated likelihood (not guaranteed outcome)
 
 ## 📱 Mobile Usage
 
@@ -183,25 +250,26 @@ The dashboard works on phones and tablets:
 - **Strategy Planning**: Use insights for marketing and product planning
 - **ROI Understanding**: Learn how predictions create business value
 
-## ❓ Frequently Asked Questions
+## ❓ FAQ (Updated)
 
-**Q: Is this real smartphone purchase data?**
-A: The data is synthetic (artificially created) but based on realistic patterns and research.
+**Is the data real?**  Synthetic but pattern-informed.
 
-**Q: Can I add my own data?**
-A: Currently, the dashboard uses the included dataset. Custom data upload is a potential future feature.
+**Can I swap in my own CSV?**  Not via UI yet. Replace the file in `Data/` keeping the same column names, then restart.
 
-**Q: How accurate are the predictions?**
-A: The model achieves 87.3% accuracy on test data, which is quite good for this type of prediction.
+**Why are brand features not in feature importance?**  They were intentionally filtered to emphasize universal behavioral drivers.
 
-**Q: Can I export results?**
-A: You can take screenshots or use browser printing. Direct export features may be added in future versions.
+**Can I get them back?**  Yes—remove the filter block in `feature_importance()` (search for `filtered_importance`).
 
-**Q: Does it work offline?**
-A: Yes, once set up, the dashboard runs locally and doesn't need internet.
+**Prediction brand differs from selection?**  Fixed—now echoes the submitted brand exactly.
 
-**Q: Can I modify the dashboard?**
-A: Yes! The code is open source. See the README for development setup instructions.
+**Export charts?**  Use browser print (Save as PDF) or screenshot tools.
+
+**Offline use?**  After first dependency install, yes.
+
+**How to reset models?**  Run inside `Dashboard/`:
+```
+python create_test_model.py
+```
 
 ## 🆘 Getting Help
 
@@ -220,5 +288,14 @@ Once you're comfortable with the dashboard:
 - Look for interesting patterns in demographics
 - Compare your expectations with the data findings
 - Think about how this applies to real business decisions
+
+---
+
+### Maintenance Snapshot (Latest Update)
+- Removed brand auto-inference in predictions
+- Added robust logging for prediction requests
+- Filtered brand_* one-hot columns from feature importance output
+- Improved probability rendering (prevents 0% mismatch)
+- Standardized virtual environment usage
 
 Happy exploring with SmartPredict! 🚀
