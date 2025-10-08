@@ -1,0 +1,17 @@
+SmartPredict - Smartphone Purchase Prediction Dashboard
+Copyright (c) 2025 Mandar123454
+
+Licensed under the MIT License. See the LICENSE file in the project root or visit:
+https://opensource.org/licenses/MIT
+
+This NOTICE file is informational only and does not modify the license terms.
+
+Included core components:
+- Flask / Flask-CORS (BSD / MIT style licenses)
+- scikit-learn (BSD)
+- pandas (BSD / 3-Clause)
+- numpy (BSD)
+- Chart.js (MIT)
+- Bootstrap (MIT)
+
+All trademarks referenced are the property of their respective owners.
