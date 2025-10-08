@@ -318,6 +318,28 @@ python run_dashboard.py
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
+### Attribution & Responsible Use
+If you reuse or modify this project (commercially or non‑commercially) you must:
+1. Retain the original copyright notice: `Copyright (c) 2025 Mandar123454`
+2. Keep the MIT license text in your distribution (LICENSE file)
+3. Clearly document any major modifications you make
+
+Recommended (not legally required under MIT):
+- Link back to this repository so others can find the source
+- Add a short note like: “Based on SmartPredict – Smartphone Purchase Prediction Dashboard (MIT Licensed)”
+
+No warranties are provided; see “AS IS” clause in the license. Use at your own risk.
+
+### Contribution Licensing
+By submitting a Pull Request you agree your contribution is provided under the same MIT License and that you have the right to license it. If you include third‑party code, ensure its license is compatible and note it in a new `THIRD_PARTY_NOTICES` section or file.
+
+### Additional Legal Artifacts
+The repository may include (or you can add):
+- `NOTICE` – High‑level copyright + license pointer (for downstream bundlers)
+- `CONTRIBUTING.md` – How to propose changes, coding standards, and review process
+
+If these files appear later, they will complement (not replace) the MIT terms.
+
 ## 🙏 Acknowledgments
 
 - **Scikit-learn** team for excellent ML library
