@@ -34,8 +34,8 @@ function checkApiAvailability() {
     return fetch(`${apiBaseUrl}/api/status`, { 
         method: 'GET',
         headers: { 'Accept': 'application/json' },
-        // Short timeout to quickly detect API issues
-        signal: AbortSignal.timeout(3000)
+        // Allow longer timeout to accommodate Azure cold starts
+        signal: AbortSignal.timeout(12000)
     })
     .then(response => {
         if (response.ok) {
