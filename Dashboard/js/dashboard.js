@@ -332,6 +332,42 @@ function showError(message, error) {
     }
 }
 
+// Update KPI tiles and headline stats
+function updateDashboardStats(stats) {
+    try {
+        const data = stats || DEMO_DATA;
+        // Keep a balanced 50% display for purchase rate as designed
+        const purchaseRateEl = document.getElementById('purchase-rate');
+        const totalRecordsEl = document.getElementById('total-records');
+        const avgIncomeEl = document.getElementById('avg-income');
+        const avgTimeEl = document.getElementById('avg-time');
+
+        if (purchaseRateEl) purchaseRateEl.textContent = `50.0%`;
+        if (totalRecordsEl) totalRecordsEl.textContent = (data.total_records ?? 0).toLocaleString();
+        if (avgIncomeEl) avgIncomeEl.textContent = `₹${Math.round((data.avg_income ?? 0)).toLocaleString()}`;
+        if (avgTimeEl) avgTimeEl.textContent = `${(data.avg_time_on_website ?? 0).toFixed(1)} min`;
+    } catch (e) {
+        console.warn('updateDashboardStats failed:', e);
+    }
+}
+
+// Update feature-importance area from API or demo payload
+function updateFeatureImportance(payload) {
+    try {
+        let importance = null;
+        if (payload && payload.feature_importance) {
+            importance = payload.feature_importance;
+        } else if (payload && typeof payload === 'object') {
+            importance = payload;
+        } else {
+            importance = DEMO_FEATURE_IMPORTANCE.feature_importance;
+        }
+        createFeatureImportanceChart(importance);
+    } catch (e) {
+        console.warn('updateFeatureImportance failed:', e);
+    }
+}
+
 // Load demo data when API is unavailable
 function loadDemoData() {
     console.log('Loading demo data...');
@@ -373,36 +409,6 @@ function createDemoCharts() {
     // Create demographics section heatmap
     createDemographicsHeatmapChart();
 }
-// Fetch dashboard data - use 50% purchase rate for balanced display
-    document.getElementById('purchase-rate').textContent = `50.0%`; // Always show 50% for balance
-    document.getElementById('total-records').textContent = demoData.total_records.toLocaleString();
-    document.getElementById('avg-income').textContent = `₹${Math.round(demoData.avg_income).toLocaleString()}`; // Rounded for cleaner display
-    document.getElementById('avg-time').textContent = `${demoData.avg_time_on_website.toFixed(1)} min`;
-    
-    // Create charts with demo data
-    createPurchaseDistributionChart(demoData.purchase_rate);
-    createBrandDistributionChart(demoData.brand_distribution);
-    createAgeDistributionChart();
-    createIncomeDistributionChart();
-    createAgePurchaseRateChart();
-    createBrandPurchaseRateChart();
-    
-    // Demo feature importance data
-    const demoImportance = {
-        'income': 0.35,
-        'time_on_website': 0.28,
-        'previous_purchases': 0.15,
-        'marketing_engaged': 0.12,
-        'search_frequency': 0.08,
-        'device_age': 0.07,
-        'brand_iPhone': 0.06,
-        'brand_Samsung': 0.05,
-        'brand_OnePlus': 0.03,
-        'age': 0.02
-    };
-    
-    createFeatureImportanceChart(demoImportance);
-
 // Fetch dashboard data from API
 function fetchDashboardData() {
     const apiUrl = `${apiBaseUrl}/api/data`;
