@@ -9,7 +9,7 @@ This project contains a Flask API that serves the dashboard from the `Dashboard/
 
 ## What we ship
 - `Dashboard/app.py` exposes `app` (Flask) for WSGI
-- `requirements.txt` includes `gunicorn` for production
+- `requirements.txt` now contains only runtime packages to keep Oryx builds fast and reliable
 - `Procfile` runs from the Dashboard folder: `web: gunicorn --chdir Dashboard --bind=0.0.0.0:${PORT:-8000} app:app --workers 2 --timeout 120`
 - Model artifacts live under `Models/` and are loaded at startup
 
@@ -38,7 +38,7 @@ The command packages your current folder and deploys it. Oryx reads `requirement
 az webapp up --name $appName --resource-group $rg --logs
 ```
 
-## App settings (optional)
+## App settings (recommended)
 ```powershell
 # Example: turn on build during zip deploy (handy if using zip pushes)
 az webapp config appsettings set --resource-group $rg --name $appName --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
@@ -47,12 +47,24 @@ az webapp config appsettings set --resource-group $rg --name $appName --settings
 az webapp config appsettings set --resource-group $rg --name $appName --settings WEBSITES_CONTAINER_START_TIME_LIMIT=1800
 ```
 
+Other useful settings: set Python version to 3.11 in the Web App runtime, and keep `WEBSITE_RUN_FROM_PACKAGE=0` when using Oryx to build from source.
+
 ## Verify
 ```powershell
 az webapp browse --resource-group $rg --name $appName
 ```
 
 ## Troubleshooting
+
+- Build/Deploy failed in Deployment Center:
+	- Ensure the Web App uses Linux, Runtime stack Python 3.11.
+	- Keep `requirements.txt` minimal (runtime-only). Dev/test libs are in `dev-requirements.txt` and are not needed on Azure.
+	- Re-run: `az webapp up --name $appName --resource-group $rg --runtime "PYTHON|3.11" --logs`
+	- Open Deployment Center → Logs → Build/Deploy logs, and expand the latest record to see pip/oryx output.
+
+- App starts but frontend shows “Failed to fetch”:
+	- The frontend is already fixed to use same-origin API calls. After deploy, hard-refresh (Ctrl+F5) to bust cached `dashboard.js`.
+	- First load after cold start can take ~10–20 seconds while the app warms up; the UI now waits longer and retries.
 
 
 ## Apply tags (recommended)
