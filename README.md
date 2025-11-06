@@ -4,6 +4,14 @@ An interactive machine learning dashboard that predicts smartphone purchasing be
 
 ![Dashboard Preview](Dashboard-Preview.png)
 
+## 🚀 Deploy to Azure (App Service)
+
+This repository is ready for Azure App Service on Linux. A `Procfile` and production server (`gunicorn`) are included.
+
+- Quick guide: see `AZURE_DEPLOY.md` for step-by-step deployment with Azure CLI
+- Entry point: root `app.py` (exposes `app` for WSGI)
+- Bindings: `Procfile` binds to `$PORT` as required by Azure
+
 ## 🎯 Features
 
 ### Dashboard Sections
@@ -40,11 +48,23 @@ An interactive machine learning dashboard that predicts smartphone purchasing be
 - **Browser**: Chrome 90+, Firefox 88+, Safari 14+, or Edge 90+
 
 ### Python Dependencies
-- Flask 2.3+
-- Pandas 2.0+
-- NumPy 1.24+
-- Scikit-learn 1.3+
-- Flask-CORS 4.0+
+ Flask 2.2.x (pinned: 2.2.5)
+ Pandas 2.3.x (pinned: 2.3.2)
+ NumPy 2.3.x (pinned: 2.3.3)
+ Scikit-learn 1.7.x (pinned: 1.7.1)
+ Flask-CORS 3.0.x (pinned: 3.0.10)
+ Gunicorn (for production/Azure)
+Note: Use the single virtual environment at the repository root (`.venv`). The previous duplicate `Dashboard/.venv` has been removed.
+
+If PowerShell reports a path to a removed Python installation or the venv seems broken, recreate the virtual environment:
+```powershell
+# From the repo root
+Remove-Item -Recurse -Force .\.venv  # if it exists and is broken
+py -3.11 -m venv .venv                # or: python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
 
 ## 📁 Project Structure
 
