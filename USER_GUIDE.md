@@ -40,7 +40,7 @@ Then open: http://127.0.0.1:5000 (or http://localhost:5000)
 | Item | Recommended |
 |------|-------------|
 | OS | Windows 10/11, macOS 12+, or recent Linux distro |
-| Python | 3.10 – 3.12 (3.12 used during latest update) |
+| Python | 3.11 recommended (works with 3.10–3.12). Python 3.13 may require compatible wheels. |
 | RAM | 4 GB+ |
 | Browser | Latest Chrome / Edge / Firefox |
 | Internet | Needed only for first dependency install |
@@ -214,7 +214,7 @@ Prediction Scale:
 | 70–100% | High | Prioritize engagement / conversion |
 
 Model Accuracy Snapshot:
-- Current logistic model: ~87% accuracy (test split)
+- Current RandomForest model: ~87% accuracy (test split)
 - Use probability thresholds (e.g. ≥0.6) for higher precision scenarios.
 
 Key Terms:

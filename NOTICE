@@ -13,5 +13,9 @@ Included core components:
 - numpy (BSD)
 - Chart.js (MIT)
 - Bootstrap (MIT)
+ - Dash (MIT)
+ - Plotly.py (MIT)
+ - Gunicorn (MIT)
+ - Font Awesome (CC BY 4.0 / MIT for code)
 
 All trademarks referenced are the property of their respective owners.

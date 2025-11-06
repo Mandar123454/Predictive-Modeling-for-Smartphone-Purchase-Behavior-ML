@@ -83,6 +83,18 @@ python3 app.py
 
 Open your browser at `http://localhost:5000`.
 
+## Ops & Deployment
+
+- Single virtual environment at repo root (`.venv`); avoid nested venvs.
+- Production server: Gunicorn via `Procfile` (binds `$PORT`).
+- Azure App Service (Linux): Use the guide in `AZURE_DEPLOY.md` for `az webapp up` flow; entrypoint is root `app.py` exposing `app`.
+
+## UI/UX Notes (Latest)
+
+- Colorful gradient scrollbars and caret; respects prefers-reduced-motion.
+- Subtle gradient cursor trail on desktop; disabled on touch devices.
+- Responsive layout with improved contrast for accessibility.
+
 ## Data & Models
 - Data files: `Data/smartphone_purchased_data.csv` (original), `Data/smartphone_purchased_data_cleaned.csv` (cleaned/generated), `Data/smartphone_purchased_data_updated.csv` (optional enhanced).
 - If a CSV is missing or has different column names, the API renames what it can and synthesizes any missing columns, then saves a cleaned CSV back to `Data/`.
