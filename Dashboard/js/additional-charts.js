@@ -16,7 +16,9 @@ function createMarketingImpactChart() {
     const textColor = isDarkMode ? '#e2e8f0' : '#333333';
     const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
     
-    const ctx = document.getElementById('marketing-impact-chart').getContext('2d');
+    const marketingCanvas = document.getElementById('marketing-impact-chart');
+    if (!marketingCanvas) { console.warn('marketing-impact-chart canvas not found; skipping'); return; }
+    const ctx = marketingCanvas.getContext('2d');
     new Chart(ctx, {
         type: 'bar',
         data: {
@@ -127,7 +129,9 @@ function createDemographicsProbabilityChart() {
         });
     });
     
-    const ctx = document.getElementById('demographics-probability-chart').getContext('2d');
+    const demoProbCanvas = document.getElementById('demographics-probability-chart');
+    if (!demoProbCanvas) { console.warn('demographics-probability-chart canvas not found; skipping'); return; }
+    const ctx = demoProbCanvas.getContext('2d');
     
     // Create heatmap using Chart.js
     new Chart(ctx, {
@@ -275,7 +279,9 @@ function createBrandPurchaseRateChart() {
     // Create color array based on brands
     const colors = brands.map(brand => brandColors[brand] || '#4361ee');
     
-    const ctx = document.getElementById('brand-purchase-rate-chart').getContext('2d');
+    const brandRateCanvas = document.getElementById('brand-purchase-rate-chart');
+    if (!brandRateCanvas) { console.warn('brand-purchase-rate-chart canvas not found; skipping'); return; }
+    const ctx = brandRateCanvas.getContext('2d');
     new Chart(ctx, {
         type: 'bar',
         data: {
