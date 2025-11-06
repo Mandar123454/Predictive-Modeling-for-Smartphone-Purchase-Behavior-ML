@@ -53,12 +53,52 @@ az webapp browse --resource-group $rg --name $appName
 ```
 
 ## Troubleshooting
-- Check logs: `az webapp log tail --name $appName --resource-group $rg`
-- If port issues arise, we already bind to `$PORT` in the `Procfile`.
-- Ensure `Models/` and `Data/` are committed so they get deployed with the app.
-- If build fails due to wheels on Python 3.13, target runtime `PYTHON|3.11` as above.
-- If you see ModuleNotFoundError for `dash` or `plotly`, verify `requirements.txt` installed (Oryx output) and that your deployment included the root files.
 
+
+## Apply tags (recommended)
+
+Tags help organize and cost-allocate your Azure resources. A tag is a key-value pair. Tag names (keys) are case-insensitive, tag values are case-sensitive.
+
+Common tags to use:
+- env = dev | test | prod
+- project = smartpredict
+- owner = your-name-or-alias
+- costCenter = CC-1234
+- dataSensitivity = internal | confidential
+
+PowerShell-friendly Azure CLI examples:
+
+```powershell
+# Assumes you already set these earlier
+$rg = "smartphone-rg"
+$appName = "smartphone-purchase-12345"
+
+# 1) Tag the Resource Group at creation (or update later)
+az group create --name $rg --location centralindia --tags env=dev project=smartpredict owner=mandar
+# Or update existing RG tags
+az group update --name $rg --set tags.env=dev tags.project=smartpredict tags.owner=mandar
+
+# 2) Tag the Web App
+$webappId = az webapp show -n $appName -g $rg --query id -o tsv
+az resource tag --ids $webappId --tags env=dev project=smartpredict owner=mandar
+
+# 3) Tag the App Service Plan
+$planName = az webapp show -n $appName -g $rg --query serverFarmId -o tsv | ForEach-Object { $_.Split('/')[-1] }
+$planId = az appservice plan show -n $planName -g $rg --query id -o tsv
+az resource tag --ids $planId --tags env=dev project=smartpredict owner=mandar costCenter=CC-1234
+
+# 4) Show tags
+az group show -n $rg --query tags
+az resource show --ids $webappId --query tags
+
+# 5) Remove a tag key (e.g., costCenter) from a resource
+az resource update --ids $webappId --remove tags.costCenter
+```
+
+Notes:
+- You can also set tags during portal creation under the “Tags” tab.
+- `az webapp up` does not accept `--tags`, so tag the app after creation.
+- For consistency, use the same tag set across the RG, plan, and web app.
 ## What to create in the Azure Portal (if using the UI)
 You can deploy fully via CLI (recommended). If you prefer the Portal, create:
 
