@@ -851,11 +851,13 @@ function createIncomeDistributionChart(incomeGroups) {
 
 // Create feature importance chart
 function createFeatureImportanceChart(featureImportance) {
-    // Sort features by absolute importance
-    const sortedFeatures = Object.entries(featureImportance)
-        .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
-        .slice(0, 10); // Get top 10 features
-    
+    // Filter out brand one-hot features and keep only core demographics/behavior features
+    const entries = Object.entries(featureImportance)
+        .filter(([k]) => !k.toLowerCase().startsWith('brand_'));
+
+    // Sort by absolute importance (desc) and take top 10
+    const sortedFeatures = entries.sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 10);
+
     const features = sortedFeatures.map(item => formatFeatureName(item[0]));
     const importance = sortedFeatures.map(item => item[1]);
     
@@ -872,6 +874,21 @@ function createFeatureImportanceChart(featureImportance) {
     // Set appropriate colors for current mode
     const textColor = isDarkMode ? '#e2e8f0' : '#333333';
     const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+    // Pastel multi-color palette to match previous styling
+    const palette = [
+        '#74b9ff', // light blue
+        '#ff99c8', // pink
+        '#55efc4', // green
+        '#f9ca24', // yellow
+        '#b5a7f2', // violet
+        '#f6b26b', // orange
+        '#81ecec', // teal
+        '#fab1a0', // peach
+        '#a29bfe', // soft indigo
+        '#ffeaa7'  // light amber
+    ];
+    const barColors = importance.map((_, idx) => palette[idx % palette.length]);
     
     const ctx = document.getElementById('feature-importance-chart').getContext('2d');
     new Chart(ctx, {
@@ -881,18 +898,23 @@ function createFeatureImportanceChart(featureImportance) {
             datasets: [{
                 label: 'Importance',
                 data: importance,
-                backgroundColor: importance.map(value => value > 0 ? '#4361ee' : '#ef4444'),
+                backgroundColor: barColors,
                 borderWidth: 0,
-                borderRadius: 5
+                borderRadius: 6
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: true,
-            aspectRatio: 2,
+            aspectRatio: 2.2,
             scales: {
                 y: {
                     beginAtZero: true,
+                    suggestedMax: (function() {
+                        const max = Math.max(...importance.map(v => Math.abs(v)));
+                        // Round up to nearest 0.05 for a clean axis (e.g., 0.25)
+                        return Math.ceil(max * 20) / 20;
+                    })(),
                     ticks: {
                         color: textColor,
                         font: {
