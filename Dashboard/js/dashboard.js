@@ -853,7 +853,13 @@ function createIncomeDistributionChart(incomeGroups) {
 function createFeatureImportanceChart(featureImportance) {
     // Filter out brand one-hot features and keep only core demographics/behavior features
     const entries = Object.entries(featureImportance)
-        .filter(([k]) => !k.toLowerCase().startsWith('brand_'));
+        .filter(([k]) => {
+            const key = String(k).toLowerCase();
+            // Drop brand-related keys and the generic 'age' feature per requirement
+            const isBrand = /^brand[\W_]/i.test(k) || key.startsWith('brand:') || key.includes(' brand');
+            const isAge = key === 'age';
+            return !isBrand && !isAge;
+        });
 
     // Sort by absolute importance (desc) and take top 10
     const sortedFeatures = entries.sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 10);

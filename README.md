@@ -1,16 +1,33 @@
-# SmartPredict - Predictive Modeling for Smartphone Purchase Behavior
+# SmartPredict — Predictive Modeling for Smartphone Purchase Behavior
 
-An interactive machine learning dashboard that predicts smartphone purchasing behavior based on demographic factors, user preferences, and market trends. Built with Flask backend and interactive frontend visualizations.
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](#)
+[![Flask API](https://img.shields.io/badge/Flask-API-000?logo=flask&logoColor=white)](#)
+[![Gunicorn](https://img.shields.io/badge/Gunicorn-Server-499848?logo=gunicorn&logoColor=white)](#)
+[![scikit‑learn 1.7](https://img.shields.io/badge/scikit--learn-1.7-FA9F1B?logo=scikitlearn&logoColor=white)](#)
+[![pandas 2.3](https://img.shields.io/badge/pandas-2.3-150458?logo=pandas&logoColor=white)](#)
+[![NumPy 2.3](https://img.shields.io/badge/NumPy-2.3-013243?logo=numpy&logoColor=white)](#)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.x-FF6384?logo=chartdotjs&logoColor=white)](#)
+[![Azure App Service](https://img.shields.io/badge/Deployed_on-Azure_App_Service-0078D4?logo=microsoft-azure&logoColor=white)](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)
+[![Live Project](https://img.shields.io/badge/Live_Project-Open_now-brightgreen)](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/commits/main)
+[![Open issues](https://img.shields.io/github/issues/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/issues)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-blueviolet)](CONTRIBUTING.md)
 
-![Dashboard Preview](Dashboard-Preview.png)
+An interactive machine learning dashboard that predicts smartphone purchasing behavior based on demographic factors, user preferences, and market trends. Built with a Flask API backend and an interactive Chart.js frontend.
+
+👉 Live Project: **[smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)**
+
+Resume‑style summary:
+> Predictive Modeling for Smartphone Purchase Behavior — Self‑Directed Project. Built and deployed a Flask web app that predicts purchase behavior using scikit‑learn. Hosted on Microsoft Azure App Service (Linux) with Gunicorn/Procfile, and production‑ready settings for reliable startup. Demonstrates cloud deployment, Python web APIs, ML integration, and CI/CD‑ready workflow.
 
 ## 🚀 Deploy to Azure (App Service)
 
 This repository is ready for Azure App Service on Linux. A `Procfile` and production server (`gunicorn`) are included.
 
 - Quick guide: see `AZURE_DEPLOY.md` for step-by-step deployment with Azure CLI
-- Entry point: root `app.py` (exposes `app` for WSGI)
-- Bindings: `Procfile` binds to `$PORT` as required by Azure
+- Entry point: `Dashboard/app.py` (exposes `app` for WSGI)
+- Process: `Procfile` runs `gunicorn --chdir Dashboard app:app --bind 0.0.0.0:$PORT`
 
 ## 🎯 Features
 
@@ -144,12 +161,10 @@ cd "E:\Internships and Projects\ML Projects\Smartphone Purchase Prediction\Dashb
 
 ## 🌐 Accessing the Dashboard
 
-After starting the dashboard using any method above:
+- Live (Azure): **https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net**
+- Local (Dev): http://localhost:5000
 
-1. **Open your web browser**
-2. **Navigate to**: `http://localhost:5000`
-3. **Wait for loading**: Initial load may take 10-15 seconds
-4. **Explore sections**: Overview → Demographics → Prediction → Brands → Insights
+Note: The first request on Azure after a cold start may take a few seconds while the app warms up. The UI will render immediately and transparently switch to live data as soon as the API is ready.
 
 ## 🔍 Troubleshooting Guide
 
