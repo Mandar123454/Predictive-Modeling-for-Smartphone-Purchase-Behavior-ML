@@ -10,16 +10,14 @@
 [![Azure App Service](https://img.shields.io/badge/Deployed_on-Azure_App_Service-0078D4?logo=microsoft-azure&logoColor=white)](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)
 [![Live Project](https://img.shields.io/badge/Live_Project-Open_now-brightgreen)](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/commits/main)
-[![Open issues](https://img.shields.io/github/issues/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/issues)
+[![Last commit](https://img.shields.io/github/last-commit/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML?cacheSeconds=300)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/commits/main)
+[![Open issues](https://img.shields.io/github/issues/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML?cacheSeconds=300)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/issues)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-blueviolet)](CONTRIBUTING.md)
 
 An interactive machine learning dashboard that predicts smartphone purchasing behavior based on demographic factors, user preferences, and market trends. Built with a Flask API backend and an interactive Chart.js frontend.
 
-👉 Live Project: **[smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)**
+👉 Live Project: **(https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)**
 
-Resume‑style summary:
-> Predictive Modeling for Smartphone Purchase Behavior — Self‑Directed Project. Built and deployed a Flask web app that predicts purchase behavior using scikit‑learn. Hosted on Microsoft Azure App Service (Linux) with Gunicorn/Procfile, and production‑ready settings for reliable startup. Demonstrates cloud deployment, Python web APIs, ML integration, and CI/CD‑ready workflow.
 
 ## 🚀 Deploy to Azure (App Service)
 
