@@ -68,8 +68,12 @@ Types: `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `chore`.
 3. Implement changes (keep diffs focused)
 4. Add/Update tests if behavior changes
 5. Run lint/format (optional but recommended)
-6. Run dashboard: `cd Dashboard && python app.py`
-7. Open Pull Request with description & screenshots for UI changes
+6. Run dashboard:
+    - Windows PowerShell: `cd Dashboard && ./run_dashboard.ps1`
+    - Windows (cmd): `cd Dashboard && ..\run_dashboard.bat` (if present)
+    - macOS/Linux: `python3 run_dashboard.py` or `cd Dashboard && python3 app.py`
+7. For Azure App Service changes: test locally then see `AZURE_DEPLOY.md`
+8. Open Pull Request with description & screenshots for UI changes
 
 ## 7. Testing Guidelines
 - Prefer small unit tests for prediction preprocessing & API endpoints.
@@ -92,6 +96,10 @@ Add test dependencies only if justified. Avoid heavy integration tests unless ne
 - Pin with upper-bound safe ranges when conflicts known.
 - Remove unused packages during refactors.
 - Security updates > feature convenience.
+
+Versioning policy notes:
+- Python 3.11+ preferred. Wheels validated on Windows with Python 3.13 for sklearn 1.7.x.
+- Keep `requirements.txt` pinned for reproducible Azure builds (Oryx).
 
 ## 10. Licensing of Contributions
 All contributions are licensed under the existing MIT License. By submitting a Pull Request you certify you have the right to license the code and it does not introduce incompatible third‑party code.

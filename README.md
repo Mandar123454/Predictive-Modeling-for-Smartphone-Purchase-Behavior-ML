@@ -22,26 +22,31 @@ This repository is ready for Azure App Service on Linux. A `Procfile` and produc
 - **Insights** - Advanced analytics and business intelligence
 
 ### Key Capabilities
-- **87%+ Prediction Accuracy** with ensemble ML models
-- **Interactive Visualizations** using Chart.js and D3.js
+- **87%+ Prediction Accuracy** with scikit-learn models
+- **Interactive Visualizations** using Chart.js (Plotly optional)
 - **Real-time Predictions** with user demographic input
 - **Brand Intelligence** with market share and loyalty analysis
 - **Export Functionality** for charts and predictions
 - **Mobile Responsive** design for all devices
+
+### Recent UI/UX Enhancements
+- Tasteful colorful scrollbars and input carets (CSS-only; Firefox fallback)
+- Subtle gradient cursor trail on desktop; disabled for reduced-motion users
+- PWA-friendly meta tags and improved contrast for accessibility
 
 ## 🛠️ Technology Stack
 
 - **Backend**: Python, Flask, Flask-CORS
 - **Machine Learning**: Scikit-learn, Pandas, NumPy
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
-- **Visualization**: Chart.js, D3.js, Plotly.js
+- **Visualization**: Chart.js (primary), Plotly.js (optional)
 - **Data Processing**: Feature engineering, scaling, encoding
-- **Model**: Random Forest + XGBoost ensemble
+- **Model**: Random Forest (persisted with joblib)
 
 ## 📋 System Requirements
 
 ### Minimum Requirements
-- **Python**: 3.7 or higher
+- **Python**: 3.11 recommended (works with 3.10–3.12). Python 3.13 may require compatible wheels for NumPy/scikit-learn.
 - **RAM**: 4GB minimum, 8GB recommended
 - **Storage**: 2GB free space
 - **OS**: Windows 10+, macOS 10.14+, or Linux Ubuntu 18.04+
@@ -235,12 +240,11 @@ lsof -ti:5000 | xargs kill -9
 When running locally, the following REST API endpoints are available:
 
 - `GET /api/status` - Check API health and status
-- `GET /api/dashboard_data` - Get dashboard summary statistics  
-- `GET /api/feature_importance` - Get model feature importance rankings
-- `POST /api/predict` - Get purchase prediction for user input
-- `GET /api/compare_brands` - Get brand comparison analytics
-- `GET /api/demographics` - Get demographic analysis data
-- `GET /api/insights` - Get advanced analytics insights
+- `GET /api/data` - Basic dataset statistics and distributions
+- `GET /api/feature_importance` - Model feature importance (or fallback)
+- `POST /api/predict` - Purchase prediction for user input
+- `POST /api/compare_brands` - Compare probabilities across brands
+- `GET /api/segment_analysis` - Segment analysis by age, income, brand
 
 ### Example API Usage:
 ```python

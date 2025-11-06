@@ -21,6 +21,11 @@
 
 - Full ML Report (PDF): `Project Report/ML Report MK.pdf`
 
+Deployment & Ops:
+- Azure App Service guide: `AZURE_DEPLOY.md` (uses Procfile + Gunicorn)
+- Local launchers: `run_dashboard.py`, `Dashboard/run_dashboard.ps1`, `run_dashboard.bat` (Windows), `setup.sh` (macOS/Linux)
+- Single virtual environment at repo root (`.venv`)
+
 ---
 
 ## 1. Overview Section
@@ -330,6 +335,11 @@ The Insights section synthesizes all previous analyses into actionable business 
 - **Chart Rendering**: <500ms for most visualizations
 - **Prediction Response**: <100ms average
 - **Data Update Frequency**: Real-time for user inputs, daily for baseline data
+
+### UI/UX Enhancements (Latest)
+- Colorful, tasteful scrollbars and input carets (CSS-only; Firefox fallback)
+- Elegant gradient cursor trail (desktop only; respects reduced motion)
+- Mobile-first responsive layout with improved contrast and spacing
 
 ### User Testing Capabilities
 Users can:

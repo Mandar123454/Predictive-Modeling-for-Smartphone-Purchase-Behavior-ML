@@ -83,9 +83,11 @@
 
 ### API Endpoints
 - **GET /api/status** - Health check
+- **GET /api/data** - Dataset statistics
+- **GET /api/feature_importance** - Feature importance
 - **POST /api/predict** - Single prediction
 - **POST /api/compare_brands** - Brand comparison
-- **GET /api/data** - Dataset statistics
+- **GET /api/segment_analysis** - Segment summaries
 
 ---
 
@@ -113,6 +115,42 @@
 - **Diagrams**: System architecture, ML pipeline flow
 - **Charts**: Model accuracy comparison, feature importance
 - **Metrics**: Performance statistics in attractive format
+
+---
+
+## 8. Deployment (Azure App Service)
+
+### ☁️ Summary
+- Linux App Service with Oryx build from `requirements.txt`
+- `Procfile` runs Gunicorn: `web: gunicorn --bind 0.0.0.0:$PORT app:app`
+- Entry point: root `app.py` (exports `app`)
+
+### CLI Flow (high level)
+1. `az login` and select subscription
+2. `az group create -n <rg> -l <region>`
+3. `az webapp up -n <app-name> -g <rg> -l <region> --runtime "PYTHON|3.11"`
+4. `az webapp log tail -n <app-name> -g <rg>` for live logs
+
+### Slide Tips
+- Include an architecture box: User → App Service → Flask (Gunicorn) → Model/Files
+- Add troubleshooting callouts (wheels for Python 3.13, port binding)
+
+---
+
+## 9. UI/UX Enhancements
+
+### 🎨 Highlights
+- Colorful, tasteful scrollbars and input carets (fallbacks for Firefox)
+- Subtle gradient cursor trail (desktop only; reduces motion when requested)
+- Improved contrast and spacing for readability; mobile-friendly meta tags
+
+### Show & Tell
+- Before/after screenshots
+- Short GIF of cursor trail and theme
+
+---
+
+## 10. Q&A
 
 ---
 
