@@ -169,27 +169,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check API status before loading data
     checkApiAvailability()
-        .then(isApiAvailable => {
-            // Load dashboard data - we'll use fallback data automatically if needed
-            return Promise.all([fetchDashboardData(), fetchFeatureImportance()]);
-        })
+        .then(() => Promise.all([fetchDashboardData(), fetchFeatureImportance()]))
         .then(() => {
-            // Hide loading overlay
+            // Hide loading overlay regardless of API path
             loadingOverlay.style.display = 'none';
         })
         .catch(error => {
-            console.error('Error initializing dashboard:', error);
-            showError('Failed to initialize dashboard', error);
-            
-            // Set up periodic API availability check every 30 seconds
+            // Do NOT block the UI with an overlay; fall back silently
+            console.warn('Initializing with demo data due to error:', error);
+            try { loadDemoData(); } catch (e) { console.warn('Demo load also failed:', e); }
+            loadingOverlay.style.display = 'none';
+            // Periodically re-check API and refresh once available
             setInterval(() => {
                 checkApiAvailability().then(newStatus => {
-                    if (newStatus) {
-                        // API became available, refresh the page for latest data
-                        window.location.reload();
-                    }
+                    if (newStatus) window.location.reload();
                 });
-            }, 30000); // Check every 30 seconds
+            }, 30000);
         });
     
     // Initialize prediction form with improved validation
@@ -380,6 +375,10 @@ function loadDemoData() {
     
     // Create demo charts
     createDemoCharts();
+    // Show subtle demo indicator (no blocking overlay)
+    if (typeof DashboardUtils !== 'undefined' && DashboardUtils.enableDemoMode) {
+        DashboardUtils.enableDemoMode();
+    }
 }
 
 // Create demo charts
@@ -418,7 +417,8 @@ function fetchDashboardData() {
         .then(response => {
             if (!response.ok) {
                 console.warn(`API responded with status: ${response.status}. Using fallback data.`);
-                return loadDemoData();
+                loadDemoData();
+                return DEMO_DATA; // resolve with demo data, don't throw
             }
             console.log('Response received from API');
             return response.json();
@@ -459,9 +459,9 @@ function fetchDashboardData() {
             return data;
         })
         .catch(error => {
-            console.error('Error fetching dashboard data:', error);
-            showError(`Failed to load dashboard data from ${apiUrl}`, error);
-            throw error;
+            console.warn('API data fetch failed, using demo data:', error);
+            try { loadDemoData(); } catch (e) { console.warn('Demo load failed:', e); }
+            return DEMO_DATA; // swallow error and continue
         });
 }
 
