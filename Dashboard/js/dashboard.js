@@ -1104,7 +1104,12 @@ function createCorrelationHeatmapChart(data) {
         existingChart.destroy();
     }
     
-    const ctx = document.getElementById('correlation-heatmap-chart').getContext('2d');
+    const canvasEl = document.getElementById('correlation-heatmap-chart');
+    if (!canvasEl) {
+        console.warn('correlation-heatmap-chart canvas not found; skipping heatmap render');
+        return;
+    }
+    const ctx = canvasEl.getContext('2d');
     
     // Update dark mode status and set appropriate colors
     isDarkMode = checkDarkMode();
