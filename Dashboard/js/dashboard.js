@@ -1,5 +1,17 @@
 // Global variables for API settings
-let apiBaseUrl = 'http://127.0.0.1:5000'; // Change from localhost to explicit IP
+// Use same-origin API by default so it works on Azure (https) and locally
+let apiBaseUrl = '';
+try {
+    // Prefer same-origin to avoid mixed-content/CORS issues in Azure
+    const href = typeof window !== 'undefined' ? window.location.href : '';
+    const isLocal = href.startsWith('http://localhost') || href.startsWith('http://127.0.0.1');
+    // For local dev where frontend and backend are the same Flask app, same-origin '' is correct
+    // For Azure (https://<app>.azurewebsites.net), same-origin '' is also correct
+    apiBaseUrl = '';
+} catch (e) {
+    // Fallback (no window), keep same-origin
+    apiBaseUrl = '';
+}
 let apiRetryCount = 0;
 const MAX_RETRIES = 3;
 
