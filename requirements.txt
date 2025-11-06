@@ -1,30 +1,19 @@
-# Core Web Dependencies (Adjusted for Dash 2.12.1 compatibility)
-# Dash 2.12.1 requires Flask < 2.3.0. Previous Flask==3.1.2 caused conflicts.
-Flask==2.2.5
-Flask-Cors==3.0.10  # Version compatible with Flask 2.2.x
-Werkzeug>=2.2.0,<2.3  # Compatible with Flask 2.2.5
+# Runtime dependencies for SmartPredict (kept minimal for Azure App Service builds)
 
-# Data Processing and Analysis
+# Web framework
+Flask==2.2.5
+Flask-Cors==3.0.10
+Werkzeug>=2.2.0,<2.3
+
+# Data/ML stack (wheels available for Python 3.11 on Linux)
 pandas==2.3.2
 numpy==2.3.3
-
-# Machine Learning
 scikit-learn==1.7.1
 joblib==1.5.2
 
-# Additional Utilities
-pickle-mixin==1.0.2
-
-# Optional: For enhanced features
-plotly==5.15.0
-dash==2.12.1  # Keep this; if you want Flask 3.x upgrade dash to >=2.14 later
-
-# Development and Testing (optional)
-pytest==7.4.0
-pytest-flask==1.2.0  # Works with Flask 2.2.x
-
-# System utilities
-pathlib2==2.3.7
-
-# Production WSGI server for Azure App Service (Linux)
+# Production server (Azure uses Gunicorn behind App Service)
 gunicorn==21.2.0
+
+# Notes:
+# - Dev/test and optional visualization libs have been moved to dev-requirements.txt
+#   to speed up Azure builds and avoid unnecessary packages during deployment.
