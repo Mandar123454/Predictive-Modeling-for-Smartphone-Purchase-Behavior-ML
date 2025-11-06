@@ -1,0 +1,64 @@
+/* Colorful, tasteful scrollbars and input caret/cursor accents */
+:root {
+  --scrollbar-bg: #0b1220;
+  --scrollbar-track: #111827; /* dark slate */
+  --scrollbar-thumb: linear-gradient(180deg,#ff6b6b 0%,#feca57 25%,#1dd1a1 50%,#54a0ff 75%,#5f27cd 100%);
+  --scrollbar-thumb-hover-filter: brightness(1.1) saturate(1.2);
+  --caret-color: #54a0ff; /* default caret color (inputs) */
+}
+
+/* Firefox (fallback colors) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #6D28D9 var(--scrollbar-track);
+}
+
+/* Chromium/WebKit */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255,0.08);
+  background-image: var(--scrollbar-thumb);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  filter: var(--scrollbar-thumb-hover-filter);
+}
+
+/* Inputs: colorful caret and focused outline */
+input, select, textarea {
+  caret-color: var(--caret-color);
+}
+
+/* Subtle animated glow on focus to match the gradient theme */
+@keyframes gradient-glow {
+  0% { box-shadow: 0 0 0 0 rgba(84,160,255,0.0), 0 0 0 0 rgba(95,39,205,0.0); }
+  50% { box-shadow: 0 0 0 3px rgba(84,160,255,0.15), 0 0 16px 2px rgba(95,39,205,0.25); }
+  100% { box-shadow: 0 0 0 0 rgba(84,160,255,0.0), 0 0 0 0 rgba(95,39,205,0.0); }
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #54a0ff;
+  animation: gradient-glow 1.8s ease-in-out 1;
+}
+
+/* Selection color to complement the rainbow theme */
+::selection {
+  background: linear-gradient(90deg,#ff6b6b,#feca57,#1dd1a1,#54a0ff,#5f27cd);
+  color: #0b1220;
+}
+
+/* Reduce effects for users preferring less motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; }
+}

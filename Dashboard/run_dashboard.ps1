@@ -5,15 +5,25 @@ $ErrorActionPreference = "Stop"
 Write-Host "Starting Dashboard Application..." -ForegroundColor Cyan
 Set-Location -Path $PSScriptRoot
 
+# Prefer repository root venv Python if available
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
+$venvPython = Join-Path $repoRoot ".venv/Scripts/python.exe"
+
 try {
-    $pythonCmd = Get-Command python -ErrorAction SilentlyContinue
-    if (-not $pythonCmd) { $pythonCmd = Get-Command python3 -ErrorAction SilentlyContinue }
+    $pythonCmd = $null
+    if (Test-Path $venvPython) {
+        $pythonCmd = $venvPython
+        Write-Host "Using virtual environment Python: $pythonCmd" -ForegroundColor DarkCyan
+    } else {
+        $pythonCmd = Get-Command python -ErrorAction SilentlyContinue
+        if (-not $pythonCmd) { $pythonCmd = Get-Command python3 -ErrorAction SilentlyContinue }
+    }
     if (-not $pythonCmd) { Write-Host "Error: Python not found. Please install Python 3.7 or higher." -ForegroundColor Red; exit 1 }
 
-    $flaskInstalled = python -c "import flask" 2>$null
+    $flaskInstalled = & $pythonCmd -c "import flask" 2>$null
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Flask not found. Installing minimal dependencies..." -ForegroundColor Yellow
-        python -m pip install flask flask-cors pandas numpy scikit-learn
+        & $pythonCmd -m pip install flask flask-cors pandas numpy scikit-learn
     }
 
     $modelPath = "..\Models\model.pkl"
@@ -25,7 +35,7 @@ try {
 
     Write-Host "Starting Flask server on http://localhost:5000" -ForegroundColor Green
     Write-Host "Press Ctrl+C to stop the server" -ForegroundColor Yellow
-    python app.py
+    & $pythonCmd app.py
 }
 catch {
     Write-Host "An error occurred: $_" -ForegroundColor Red
