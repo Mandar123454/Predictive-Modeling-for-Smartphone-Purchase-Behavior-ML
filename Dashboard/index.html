@@ -47,6 +47,8 @@
     <link rel="stylesheet" href="css/feature-influence-larger.css">
     <link rel="stylesheet" href="css/advanced-correlation.css">
     <link rel="stylesheet" href="css/colorful-ui.css">
+    <link rel="stylesheet" href="css/documents-section.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- Chart.js for visualization (pinned) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <!-- Matrix chart plugin for heatmaps (required by 'type: "matrix"') -->
@@ -97,6 +99,7 @@
                 <li data-section="prediction"><i class="fas fa-brain"></i> Prediction Tool</li>
                 <li data-section="comparison"><i class="fas fa-balance-scale"></i> Brand Comparison</li>
                 <li data-section="insights"><i class="fas fa-lightbulb"></i> Insights</li>
+                <li data-section="documents"><i class="fas fa-folder-open"></i> Documents</li>
             </ul>
             <div class="theme-toggle">
                 <button id="theme-toggle-btn" disabled>
@@ -580,6 +583,206 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Documents Section -->
+            <section id="documents" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-folder-open"></i> Project Documents</h2>
+                    <p class="section-subtitle">Access project documentation, reports, and resources</p>
+                </div>
+                
+                <div class="documents-container">
+                    <!-- Project Reports -->
+                    <div class="doc-category">
+                        <h3 class="doc-category-title"><i class="fas fa-file-alt"></i> Project Reports</h3>
+                        <div class="doc-cards-grid">
+                            <a href="docs.html" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Full Documentation</h4>
+                                    <p>Complete project documentation</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="/docs/DOCS.md" target="_blank" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-file-code"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Technical Docs</h4>
+                                    <p>API and technical documentation</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="/docs/PROJECT_OVERVIEW_ALL_IN_ONE.md" target="_blank" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Project Overview</h4>
+                                    <p>Complete project summary</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Guides & Help -->
+                    <div class="doc-category">
+                        <h3 class="doc-category-title"><i class="fas fa-question-circle"></i> Guides & Help</h3>
+                        <div class="doc-cards-grid">
+                            <a href="/docs/USER_GUIDE.md" target="_blank" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-book-reader"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>User Guide</h4>
+                                    <p>How to use the dashboard</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="/docs/README.md" target="_blank" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>README</h4>
+                                    <p>Project introduction and setup</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="/docs/CONTRIBUTING.md" target="_blank" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Contributing</h4>
+                                    <p>How to contribute</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Legal & Policies -->
+                    <div class="doc-category">
+                        <h3 class="doc-category-title"><i class="fas fa-gavel"></i> Legal & Policies</h3>
+                        <div class="doc-cards-grid">
+                            <a href="privacy.html" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Privacy Policy</h4>
+                                    <p>Data handling practices</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="terms.html" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Terms of Service</h4>
+                                    <p>Usage terms and conditions</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="security.html" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>Security</h4>
+                                    <p>Security information</p>
+                                </div>
+                                <i class="fas fa-external-link-alt doc-link-icon"></i>
+                            </a>
+                            <a href="#" onclick="showLicenseModal(); return false;" class="doc-card-item">
+                                <div class="doc-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="doc-info">
+                                    <h4>License</h4>
+                                    <p>MIT License</p>
+                                </div>
+                                <i class="fas fa-eye doc-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Footer -->
+            <footer class="dashboard-footer">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <!-- Left: Brand Section -->
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>Smart<span>Predict</span></h3>
+                            </div>
+                            <p class="footer-description">
+                                Advanced machine learning dashboard for predicting smartphone purchase behavior. 
+                                Analyze demographics, compare brands, and make data-driven decisions.
+                            </p>
+                            <div class="footer-social">
+                                <a href="https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML" target="_blank" class="social-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mandar-kajbaje-29988531a/" target="_blank" class="social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right: Links & Info -->
+                        <div class="footer-right">
+                            <div class="footer-copyright">
+                                © 2025 <a href="#">SmartPredict</a>. All rights reserved. Built with 
+                                <i class="fas fa-heart" style="color: #ef4444;"></i> for ML enthusiasts.
+                            </div>
+                            <div class="footer-links">
+                                <a href="privacy.html">Privacy</a>
+                                <a href="terms.html">Terms</a>
+                            </div>
+                            <a href="#" class="do-not-share" onclick="doNotShareInfo(); return false;">Do Not Share My Info</a>
+                            <button class="cookie-settings-btn" id="manageCookiesBtn">
+                                <i class="fas fa-cookie-bite"></i> Manage Cookies
+                            </button>
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                <span>All systems operational</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- License Modal -->
+    <div id="licenseModal" class="license-modal">
+        <div class="license-modal-content">
+            <div class="license-modal-header">
+                <h2><i class="fas fa-certificate"></i> MIT License</h2>
+                <button class="license-modal-close" onclick="closeLicenseModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="license-modal-body" id="licenseContent">
+                <div class="license-loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading license...
+                </div>
+            </div>
+            <div class="license-modal-footer">
+                <a href="/docs/LICENSE" target="_blank" class="license-download-btn">
+                    <i class="fas fa-download"></i> Download LICENSE
+                </a>
+            </div>
         </div>
     </div>
     
@@ -732,5 +935,93 @@
             }, 3000); // Wait 3 seconds after everything has loaded
         });
     </script>
+
+    <!-- License Modal Functions -->
+    <script>
+        // License Modal Functions
+        function showLicenseModal() {
+            const modal = document.getElementById('licenseModal');
+            const content = document.getElementById('licenseContent');
+            
+            if (!modal) return;
+            
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+            
+            // Fetch license content
+            fetch('/docs/LICENSE')
+                .then(response => {
+                    if (!response.ok) throw new Error('Failed to fetch');
+                    return response.text();
+                })
+                .then(text => {
+                    content.innerHTML = `<pre>${text}</pre>`;
+                })
+                .catch(err => {
+                    console.error('License fetch error:', err);
+                    content.innerHTML = `
+                        <div style="text-align: center; color: #ef4444; padding: 40px;">
+                            <i class="fas fa-exclamation-circle" style="font-size: 3rem; margin-bottom: 20px; display: block;"></i>
+                            <p style="font-size: 1.1rem;">Unable to load license content.</p>
+                            <p style="color: rgba(255,255,255,0.5); margin-top: 10px;">Please try downloading directly.</p>
+                        </div>
+                    `;
+                });
+        }
+
+        function closeLicenseModal() {
+            const modal = document.getElementById('licenseModal');
+            if (!modal) return;
+            
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLicenseModal();
+            }
+        });
+
+        // Close modal on backdrop click
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('licenseModal');
+            if (modal) {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeLicenseModal();
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-banner-text">
+                <h4>We value your privacy</h4>
+                <p>We use cookies to enhance your browsing experience, analyze traffic, and remember your preferences.</p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button id="declineCookies" class="cookie-btn decline">Decline</button>
+                <button id="acceptCookies" class="cookie-btn accept">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer JS -->
+    <script src="js/footer.js"></script>
 </body>
 </html>

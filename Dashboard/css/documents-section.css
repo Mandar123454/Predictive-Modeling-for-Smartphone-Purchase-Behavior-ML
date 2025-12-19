@@ -259,6 +259,216 @@
     }
 }
 
+/* License Modal Styles */
+.license-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.license-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.license-modal-content {
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 24px;
+    width: 90%;
+    max-width: 750px;
+    max-height: 85vh;
+    overflow: hidden;
+    transform: scale(0.7) translateY(80px);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 
+        0 30px 100px rgba(0, 0, 0, 0.6),
+        0 0 50px rgba(99, 102, 241, 0.2);
+}
+
+.license-modal.active .license-modal-content {
+    transform: scale(1) translateY(0);
+}
+
+.license-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.license-modal-header h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    animation: fadeSlideIn 0.6s ease-out 0.2s both;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.license-modal-header h2 i {
+    color: #6366f1;
+    font-size: 1.8rem;
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.license-modal-close {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.license-modal-close:hover {
+    background: rgba(239, 68, 68, 0.3);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 5px 20px rgba(239, 68, 68, 0.3);
+}
+
+.license-modal-body {
+    padding: 30px;
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+.license-modal-body pre {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    animation: textReveal 0.8s ease-out;
+}
+
+@keyframes textReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.license-loading {
+    text-align: center;
+    padding: 60px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.license-loading i {
+    font-size: 3rem;
+    color: #6366f1;
+    margin-bottom: 20px;
+    display: block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.license-modal-footer {
+    padding: 20px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.license-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.3);
+}
+
+.license-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+}
+
+.license-download-btn i {
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+/* Scrollbar for modal */
+.license-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.license-modal-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.license-modal-body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6366f1, #a855f7);
+    border-radius: 4px;
+}
+
+.license-modal-body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #818cf8, #c084fc);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .doc-cards-grid {
@@ -277,6 +487,25 @@
         width: 45px;
         height: 45px;
         font-size: 1.2rem;
+    }
+
+    .license-modal-content {
+        width: 95%;
+        max-height: 90vh;
+        border-radius: 16px;
+    }
+
+    .license-modal-header {
+        padding: 20px;
+    }
+
+    .license-modal-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .license-modal-body {
+        padding: 20px;
+        max-height: 60vh;
     }
 }
 

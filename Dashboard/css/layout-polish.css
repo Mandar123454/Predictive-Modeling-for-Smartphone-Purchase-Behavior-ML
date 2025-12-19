@@ -14,7 +14,7 @@ body {
 
 /* Enhanced sidebar styling */
 .sidebar {
-    width: 250px !important;
+    width: 260px !important;
     background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%) !important;
     box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3) !important;
     position: fixed !important;

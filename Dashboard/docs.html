@@ -183,6 +183,175 @@
         .quick-link i {
             color: #6366f1;
         }
+
+        /* License Modal Styles */
+        .license-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .license-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .license-modal-content {
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow: hidden;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .license-modal.active .license-modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .license-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 30px;
+            background: linear-gradient(90deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15));
+            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .license-modal-header h2 {
+            color: #fff;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0;
+        }
+
+        .license-modal-header h2 i {
+            color: #6366f1;
+        }
+
+        .license-modal-close {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .license-modal-close:hover {
+            background: rgba(239, 68, 68, 0.4);
+            transform: rotate(90deg);
+        }
+
+        .license-modal-body {
+            padding: 30px;
+            max-height: 50vh;
+            overflow-y: auto;
+        }
+
+        .license-modal-body pre {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Fira Code', 'Consolas', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            animation: typewriter 0.5s ease-out;
+        }
+
+        @keyframes typewriter {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .license-loading {
+            text-align: center;
+            padding: 40px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .license-loading i {
+            font-size: 2rem;
+            color: #6366f1;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .license-modal-footer {
+            padding: 20px 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .license-download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .license-download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Scrollbar for modal */
+        .license-modal-body::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .license-modal-body::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        .license-modal-body::-webkit-scrollbar-thumb {
+            background: rgba(99, 102, 241, 0.5);
+            border-radius: 4px;
+        }
+
+        .license-modal-body::-webkit-scrollbar-thumb:hover {
+            background: rgba(99, 102, 241, 0.7);
+        }
     </style>
 </head>
 <body class="legal-page">
@@ -229,7 +398,7 @@
                 </div>
                 <h3>ML Report</h3>
                 <p>Comprehensive machine learning project report covering data analysis, model development, and results.</p>
-                <a href="../Project Report/ML Report MK.pdf" class="doc-card-link" target="_blank">
+                <a href="/docs/ML_Report_MK.pdf" class="doc-card-link" target="_blank">
                     <i class="fas fa-download"></i> Download PDF
                 </a>
                 <div class="doc-card-meta">
@@ -244,7 +413,7 @@
                 </div>
                 <h3>Project Presentation</h3>
                 <p>PowerPoint presentation summarizing the smartphone purchase prediction project.</p>
-                <a href="../Project Report/Project MK PPT.pptx" class="doc-card-link" target="_blank">
+                <a href="/docs/Project_MK_PPT.pptx" class="doc-card-link" target="_blank">
                     <i class="fas fa-download"></i> Download PPTX
                 </a>
                 <div class="doc-card-meta">
@@ -259,7 +428,7 @@
                 </div>
                 <h3>Plagiarism Report</h3>
                 <p>Originality verification report ensuring the authenticity of the project work.</p>
-                <a href="../Project Report/Plagarism Report.pdf" class="doc-card-link" target="_blank">
+                <a href="/docs/Plagiarism_Report.pdf" class="doc-card-link" target="_blank">
                     <i class="fas fa-download"></i> Download PDF
                 </a>
                 <div class="doc-card-meta">
@@ -278,7 +447,7 @@
                 </div>
                 <h3>README</h3>
                 <p>Project overview, features, installation instructions, and quick start guide.</p>
-                <a href="../README.md" class="doc-card-link" target="_blank">
+                <a href="/docs/README.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View README
                 </a>
                 <div class="doc-card-meta">
@@ -293,7 +462,7 @@
                 </div>
                 <h3>User Guide</h3>
                 <p>Detailed instructions on how to use the dashboard and prediction tools.</p>
-                <a href="../USER_GUIDE.md" class="doc-card-link" target="_blank">
+                <a href="/docs/USER_GUIDE.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Guide
                 </a>
                 <div class="doc-card-meta">
@@ -308,7 +477,7 @@
                 </div>
                 <h3>Contributing Guide</h3>
                 <p>Guidelines for contributing to the project, code standards, and PR process.</p>
-                <a href="../CONTRIBUTING.md" class="doc-card-link" target="_blank">
+                <a href="/docs/CONTRIBUTING.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Guide
                 </a>
                 <div class="doc-card-meta">
@@ -323,7 +492,7 @@
                 </div>
                 <h3>Project Overview</h3>
                 <p>Complete project overview with all-in-one documentation reference.</p>
-                <a href="../Project Report/PROJECT_OVERVIEW_ALL_IN_ONE.md" class="doc-card-link" target="_blank">
+                <a href="/docs/PROJECT_OVERVIEW_ALL_IN_ONE.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Overview
                 </a>
                 <div class="doc-card-meta">
@@ -342,7 +511,7 @@
                 </div>
                 <h3>Main Notebook</h3>
                 <p>Primary Jupyter notebook with complete ML pipeline, data processing, and model training.</p>
-                <a href="../Notebook/Main Notebook.ipynb" class="doc-card-link" target="_blank">
+                <a href="/docs/Main_Notebook.ipynb" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Open Notebook
                 </a>
                 <div class="doc-card-meta">
@@ -357,7 +526,7 @@
                 </div>
                 <h3>Exploratory Analysis</h3>
                 <p>Data exploration and visualization notebook with statistical analysis.</p>
-                <a href="../Notebook/exploratory_analysis.ipynb" class="doc-card-link" target="_blank">
+                <a href="/docs/exploratory_analysis.ipynb" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Open Notebook
                 </a>
                 <div class="doc-card-meta">
@@ -372,7 +541,7 @@
                 </div>
                 <h3>Feature Influence Analysis</h3>
                 <p>Analysis of feature importance and their influence on purchase predictions.</p>
-                <a href="../Notebook/feature_influence_analysis.ipynb" class="doc-card-link" target="_blank">
+                <a href="/docs/feature_influence_analysis.ipynb" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Open Notebook
                 </a>
                 <div class="doc-card-meta">
@@ -391,7 +560,7 @@
                 </div>
                 <h3>Azure Deployment</h3>
                 <p>Step-by-step guide for deploying the dashboard on Microsoft Azure App Service.</p>
-                <a href="../AZURE_DEPLOY.md" class="doc-card-link" target="_blank">
+                <a href="/docs/AZURE_DEPLOY.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Guide
                 </a>
                 <div class="doc-card-meta">
@@ -406,7 +575,7 @@
                 </div>
                 <h3>API Documentation</h3>
                 <p>REST API endpoints documentation for the prediction service.</p>
-                <a href="../Project Report/DOCS.md" class="doc-card-link" target="_blank">
+                <a href="/docs/DOCS.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Docs
                 </a>
                 <div class="doc-card-meta">
@@ -421,7 +590,7 @@
                 </div>
                 <h3>Requirements</h3>
                 <p>Python dependencies and requirements for running the project.</p>
-                <a href="../requirements.txt" class="doc-card-link" target="_blank">
+                <a href="/docs/requirements.txt" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Requirements
                 </a>
                 <div class="doc-card-meta">
@@ -440,8 +609,8 @@
                 </div>
                 <h3>MIT License</h3>
                 <p>Open source license granting permission to use, copy, modify, and distribute the software.</p>
-                <a href="../LICENSE" class="doc-card-link" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> View License
+                <a href="#" class="doc-card-link" onclick="showLicenseModal(); return false;">
+                    <i class="fas fa-eye"></i> View License
                 </a>
                 <div class="doc-card-meta">
                     <span><i class="fas fa-unlock"></i> Open Source</span>
@@ -470,7 +639,7 @@
                 </div>
                 <h3>Code of Conduct</h3>
                 <p>Community guidelines ensuring a welcoming and inclusive environment.</p>
-                <a href="../CODE_OF_CONDUCT.md" class="doc-card-link" target="_blank">
+                <a href="/docs/CODE_OF_CONDUCT.md" class="doc-card-link" target="_blank">
                     <i class="fas fa-external-link-alt"></i> View Code
                 </a>
                 <div class="doc-card-meta">
@@ -496,6 +665,28 @@
         </div>
     </main>
 
+    <!-- License Modal -->
+    <div id="licenseModal" class="license-modal" style="display: none;">
+        <div class="license-modal-content">
+            <div class="license-modal-header">
+                <h2><i class="fas fa-certificate"></i> MIT License</h2>
+                <button class="license-modal-close" onclick="closeLicenseModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="license-modal-body" id="licenseContent">
+                <div class="license-loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading license...
+                </div>
+            </div>
+            <div class="license-modal-footer">
+                <a href="/docs/LICENSE" target="_blank" class="license-download-btn">
+                    <i class="fas fa-download"></i> Download LICENSE
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="legal-page-footer">
         <p>
@@ -506,21 +697,8 @@
         </p>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
     <script>
-        // Back to top button visibility
-        window.addEventListener('scroll', function() {
-            const backToTop = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -548,6 +726,58 @@
             card.style.transform = 'translateY(20px)';
             card.style.transition = `all 0.5s ease ${index * 0.1}s`;
             observer.observe(card);
+        });
+
+        // License Modal Functions
+        function showLicenseModal() {
+            const modal = document.getElementById('licenseModal');
+            const content = document.getElementById('licenseContent');
+            
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+            
+            // Fetch license content
+            fetch('/docs/LICENSE')
+                .then(response => response.text())
+                .then(text => {
+                    content.innerHTML = `<pre>${text}</pre>`;
+                    // Add typing animation effect
+                    const pre = content.querySelector('pre');
+                    pre.style.animation = 'none';
+                    setTimeout(() => {
+                        pre.style.animation = 'typewriter 0.5s ease-out';
+                    }, 10);
+                })
+                .catch(err => {
+                    content.innerHTML = `
+                        <div style="text-align: center; color: #ef4444;">
+                            <i class="fas fa-exclamation-circle" style="font-size: 2rem; margin-bottom: 15px; display: block;"></i>
+                            <p>Failed to load license. Please try again.</p>
+                        </div>
+                    `;
+                });
+        }
+
+        function closeLicenseModal() {
+            const modal = document.getElementById('licenseModal');
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLicenseModal();
+            }
+        });
+
+        // Close modal on backdrop click
+        document.getElementById('licenseModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLicenseModal();
+            }
         });
     </script>
 </body>

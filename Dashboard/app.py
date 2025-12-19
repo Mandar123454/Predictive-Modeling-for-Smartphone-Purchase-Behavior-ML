@@ -309,6 +309,53 @@ def send_js(path):
 def send_assets(path):
     return send_from_directory('assets', path)
 
+# Serve documentation files from parent directory
+@app.route('/docs/<path:filename>')
+def serve_docs(filename):
+    """Serve documentation files from parent directory"""
+    parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
+    # Map of allowed doc files and their locations
+    doc_paths = {
+        # Markdown files
+        'DOCS.md': os.path.join(parent_dir, 'Project Report', 'DOCS.md'),
+        'PROJECT_OVERVIEW_ALL_IN_ONE.md': os.path.join(parent_dir, 'Project Report', 'PROJECT_OVERVIEW_ALL_IN_ONE.md'),
+        'USER_GUIDE.md': os.path.join(parent_dir, 'USER_GUIDE.md'),
+        'README.md': os.path.join(parent_dir, 'README.md'),
+        'CONTRIBUTING.md': os.path.join(parent_dir, 'CONTRIBUTING.md'),
+        'LICENSE': os.path.join(parent_dir, 'LICENSE'),
+        'SECURITY.md': os.path.join(parent_dir, 'SECURITY.md'),
+        'CODE_OF_CONDUCT.md': os.path.join(parent_dir, 'CODE_OF_CONDUCT.md'),
+        'AZURE_DEPLOY.md': os.path.join(parent_dir, 'AZURE_DEPLOY.md'),
+        'requirements.txt': os.path.join(parent_dir, 'requirements.txt'),
+        # PDF and PPTX files
+        'ML_Report_MK.pdf': os.path.join(parent_dir, 'Project Report', 'ML Report MK.pdf'),
+        'Project_MK_PPT.pptx': os.path.join(parent_dir, 'Project Report', 'Project MK PPT.pptx'),
+        'Plagiarism_Report.pdf': os.path.join(parent_dir, 'Project Report', 'Plagarism Report.pdf'),
+        # Notebooks
+        'Main_Notebook.ipynb': os.path.join(parent_dir, 'Notebook', 'Main Notebook.ipynb'),
+        'exploratory_analysis.ipynb': os.path.join(parent_dir, 'Notebook', 'exploratory_analysis.ipynb'),
+        'feature_influence_analysis.ipynb': os.path.join(parent_dir, 'Notebook', 'feature_influence_analysis.ipynb'),
+    }
+    
+    if filename in doc_paths and os.path.exists(doc_paths[filename]):
+        file_path = doc_paths[filename]
+        directory = os.path.dirname(file_path)
+        file_name = os.path.basename(file_path)
+        return send_from_directory(directory, file_name)
+    else:
+        logger.warning(f"Document not found: {filename}")
+        return "Document not found", 404
+
+# Serve HTML pages (privacy, terms, security, docs)
+@app.route('/<page>.html')
+def serve_html_pages(page):
+    """Serve HTML pages like privacy.html, terms.html, security.html, docs.html"""
+    allowed_pages = ['privacy', 'terms', 'security', 'docs']
+    if page in allowed_pages:
+        return render_template(f'{page}.html')
+    return "Page not found", 404
+
 @app.route('/api/status')
 def api_status():
     """Return API status and available features"""

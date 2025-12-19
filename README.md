@@ -1,168 +1,296 @@
-# SmartPredict — Predictive Modeling for Smartphone Purchase Behavior
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/smartphone-tablet.png" alt="SmartPredict Logo" width="80"/>
+</p>
 
-[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](#)
-[![Flask API](https://img.shields.io/badge/Flask-API-000?logo=flask&logoColor=white)](#)
-[![Gunicorn](https://img.shields.io/badge/Gunicorn-Server-499848?logo=gunicorn&logoColor=white)](#)
-[![scikit‑learn 1.7](https://img.shields.io/badge/scikit--learn-1.7-FA9F1B?logo=scikitlearn&logoColor=white)](#)
-[![pandas 2.3](https://img.shields.io/badge/pandas-2.3-150458?logo=pandas&logoColor=white)](#)
-[![NumPy 2.3](https://img.shields.io/badge/NumPy-2.3-013243?logo=numpy&logoColor=white)](#)
-[![Chart.js](https://img.shields.io/badge/Chart.js-4.x-FF6384?logo=chartdotjs&logoColor=white)](#)
-[![Azure App Service](https://img.shields.io/badge/Deployed_on-Azure_App_Service-0078D4?logo=microsoft-azure&logoColor=white)](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)
-[![Live Project](https://img.shields.io/badge/Live_Project-Open_now-brightgreen)](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML?cacheSeconds=300)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/commits/main)
-[![Open issues](https://img.shields.io/github/issues/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML?cacheSeconds=300)](https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML/issues)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-blueviolet)](CONTRIBUTING.md)
+<h1 align="center">📱 SmartPredict</h1>
+<h3 align="center">Predictive Modeling for Smartphone Purchase Behavior</h3>
 
-An interactive machine learning dashboard that predicts smartphone purchasing behavior based on demographic factors, user preferences, and market trends. Built with a Flask API backend and an interactive Chart.js frontend.
+<p align="center">
+  <strong>An interactive machine learning dashboard that predicts smartphone purchasing behavior<br>based on demographic factors, user preferences, and market trends.</strong>
+</p>
 
-👉 Live Project: **(https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)**
+<p align="center">
+  <a href="https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-00C851?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
 
+---
 
-## 🚀 Deploy to Azure (App Service)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Flask-2.2.5-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask"/>
+  <img src="https://img.shields.io/badge/scikit--learn-1.7.1-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/pandas-2.3.2-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-2.3.3-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Chart.js-4.x-FF6384?style=flat-square&logo=chartdotjs&logoColor=white" alt="Chart.js"/>
+</p>
 
-This repository is ready for Azure App Service on Linux. A `Procfile` and production server (`gunicorn`) are included.
+<p align="center">
+  <img src="https://img.shields.io/badge/Deployed_on-Azure_App_Service-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white" alt="Azure"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/>
+  <img src="https://img.shields.io/github/last-commit/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML?style=flat-square&color=blue" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/issues/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML?style=flat-square&color=yellow" alt="Issues"/>
+  <img src="https://img.shields.io/badge/PRs-Welcome-blueviolet?style=flat-square" alt="PRs Welcome"/>
+</p>
 
-- Quick guide: see `AZURE_DEPLOY.md` for step-by-step deployment with Azure CLI
-- Entry point: `Dashboard/app.py` (exposes `app` for WSGI)
-- Process: `Procfile` runs `gunicorn --chdir Dashboard app:app --bind 0.0.0.0:$PORT`
+<p align="center">
+  <img src="https://img.shields.io/badge/Model_Accuracy-87.3%25-success?style=flat-square" alt="Accuracy"/>
+  <img src="https://img.shields.io/badge/ROC--AUC-0.924-success?style=flat-square" alt="ROC-AUC"/>
+  <img src="https://img.shields.io/badge/Response_Time-<100ms-success?style=flat-square" alt="Response Time"/>
+  <img src="https://img.shields.io/badge/Records-10,000+-informational?style=flat-square" alt="Records"/>
+</p>
+
+---
+
+## ✨ Highlights
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎯 What It Does
+- **Predicts** smartphone purchase probability using ML
+- **Analyzes** demographic patterns & market trends
+- **Compares** brands with comprehensive metrics
+- **Visualizes** data with interactive Chart.js charts
+
+</td>
+<td width="50%">
+
+### 🚀 Why It's Great
+- **87%+ accuracy** Random Forest model
+- **Real-time predictions** with instant feedback
+- **Beautiful UI** with dark mode & animations
+- **Production-ready** deployed on Azure
+
+</td>
+</tr>
+</table>
+
+---
 
 ## 🎯 Features
 
-### Dashboard Sections
-- **Overview** - Project metrics and model performance summary
-- **Demographics** - Interactive demographic analysis with purchase patterns
-- **Prediction Tool** - Real-time ML predictions with user input
-- **Brand Comparison** - Comprehensive brand analysis and market insights
-- **Insights** - Advanced analytics and business intelligence
+### 📊 Dashboard Sections
 
-### Key Capabilities
-- **87%+ Prediction Accuracy** with scikit-learn models
-- **Interactive Visualizations** using Chart.js (Plotly optional)
-- **Real-time Predictions** with user demographic input
-- **Brand Intelligence** with market share and loyalty analysis
-- **Export Functionality** for charts and predictions
-- **Mobile Responsive** design for all devices
+| Section | Description |
+|---------|-------------|
+| **Overview** | Project metrics, model performance summary, and quick stats |
+| **Demographics** | Interactive demographic analysis with purchase patterns by age, gender, income |
+| **Prediction Tool** | Real-time ML predictions with user demographic input |
+| **Brand Comparison** | Comprehensive brand analysis, market share, and loyalty metrics |
+| **Insights** | Advanced analytics, user segments, and business intelligence |
+| **Documents** | Access reports, notebooks, and project documentation |
 
-### Recent UI/UX Enhancements
-- Tasteful colorful scrollbars and input carets (CSS-only; Firefox fallback)
-- Subtle gradient cursor trail on desktop; disabled for reduced-motion users
-- PWA-friendly meta tags and improved contrast for accessibility
+### ⚡ Key Capabilities
 
-## 🛠️ Technology Stack
+- ✅ **87%+ Prediction Accuracy** with optimized Random Forest
+- ✅ **Interactive Visualizations** using Chart.js
+- ✅ **Real-time Predictions** with instant probability scores
+- ✅ **Brand Intelligence** with market share analysis
+- ✅ **Export Functionality** for charts and data
+- ✅ **Mobile Responsive** design for all devices
+- ✅ **Dark Mode** with smooth animations
+- ✅ **PWA Support** with offline capabilities
 
-- **Backend**: Python, Flask, Flask-CORS
-- **Machine Learning**: Scikit-learn, Pandas, NumPy
-- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
-- **Visualization**: Chart.js (primary), Plotly.js (optional)
-- **Data Processing**: Feature engineering, scaling, encoding
-- **Model**: Random Forest (persisted with joblib)
+---
 
-## 📋 System Requirements
+## 🛠️ Tech Stack
 
-### Minimum Requirements
-- **Python**: 3.11 recommended (works with 3.10–3.12). Python 3.13 may require compatible wheels for NumPy/scikit-learn.
-- **RAM**: 4GB minimum, 8GB recommended
-- **Storage**: 2GB free space
-- **OS**: Windows 10+, macOS 10.14+, or Linux Ubuntu 18.04+
-- **Browser**: Chrome 90+, Firefox 88+, Safari 14+, or Edge 90+
+<table>
+<tr>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
+  <br>Python
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=flask" width="48" height="48" alt="Flask" />
+  <br>Flask
+</td>
+<td align="center" width="96">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="48" height="48" alt="scikit-learn" />
+  <br>Scikit-learn
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML" />
+  <br>HTML5
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS" />
+  <br>CSS3
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+  <br>JavaScript
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=azure" width="48" height="48" alt="Azure" />
+  <br>Azure
+</td>
+</tr>
+</table>
 
-### Python Dependencies
- Flask 2.2.x (pinned: 2.2.5)
- Pandas 2.3.x (pinned: 2.3.2)
- NumPy 2.3.x (pinned: 2.3.3)
- Scikit-learn 1.7.x (pinned: 1.7.1)
- Flask-CORS 3.0.x (pinned: 3.0.10)
- Gunicorn (for production/Azure)
-Note: Use the single virtual environment at the repository root (`.venv`). The previous duplicate `Dashboard/.venv` has been removed.
+| Layer | Technologies |
+|-------|-------------|
+| **Backend** | Python 3.11, Flask 2.2.5, Flask-CORS, Gunicorn |
+| **ML/Data** | Scikit-learn 1.7.1, Pandas 2.3.2, NumPy 2.3.3, Joblib |
+| **Frontend** | HTML5, CSS3, JavaScript ES6+, Bootstrap 5 |
+| **Visualization** | Chart.js 4.x, Custom animations |
+| **Deployment** | Azure App Service, Gunicorn WSGI |
 
-If PowerShell reports a path to a removed Python installation or the venv seems broken, recreate the virtual environment:
-```powershell
-# From the repo root
-Remove-Item -Recurse -Force .\.venv  # if it exists and is broken
-py -3.11 -m venv .venv                # or: python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+---
+
+## 🚀 Quick Start
+
+### Option 1: Visit Live Demo
+👉 **[https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net](https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net)**
+
+### Option 2: Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML.git
+cd Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML
+
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+# Windows:
+.venv\Scripts\activate
+# Linux/Mac:
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the dashboard
+python run_dashboard.py
 ```
+
+Then open **http://localhost:5000** in your browser.
+
+### Option 3: Windows Quick Setup
+
+```powershell
+# Just run the setup script
+.\setup.bat
+```
+
+---
 
 ## 📁 Project Structure
 
 ```
-├── setup.bat               # Windows setup script
-├── setup.sh                # Linux/Mac setup script  
-├── run_dashboard.py        # Main launcher (cross-platform)
-├── requirements.txt        # Python dependencies
-├── README.md              # This file
-├── Dashboard/             # Frontend web application
-│   ├── app.py            # Flask backend server
-│   ├── run_dashboard.ps1  # PowerShell launcher
-│   ├── index.html        # Main dashboard interface
-│   ├── css/              # Stylesheets and themes
-│   ├── js/               # JavaScript and interactive components
-│   └── data/             # Static data for visualizations
-├── Data/                  # ML datasets and processed data
-│   ├── smartphone_purchased_data.csv           # Original dataset
-│   ├── smartphone_purchased_data_cleaned.csv   # Preprocessed data
-│   └── smartphone_purchased_data_updated.csv   # Enhanced features
-├── Models/                # Trained ML models and scalers
-│   ├── model.pkl         # Main Random Forest model
-│   ├── scaler.pkl        # Feature scaler for normalization
-│   └── model_columns.pkl # Column names for model input
-├── Notebook/              # Jupyter notebooks for development
-│   ├── Main Notebook.ipynb              # Model development
-│   ├── exploratory_analysis.ipynb       # Data exploration
-│   └── feature_influence_analysis.ipynb # Feature analysis
-└── Project Report/        # Documentation and reports
-    └── DOCS.md           # Comprehensive technical documentation
+📦 SmartPredict
+├── 📄 app.py                    # Root entry point
+├── 📄 run_dashboard.py          # Cross-platform launcher
+├── 📄 requirements.txt          # Python dependencies
+├── 📄 Procfile                  # Azure/Heroku deployment
+│
+├── 📂 Dashboard/                # Web application
+│   ├── 📄 app.py               # Flask backend & API
+│   ├── 📄 index.html           # Main dashboard UI
+│   ├── 📂 css/                 # Stylesheets (dark mode, animations)
+│   ├── 📂 js/                  # JavaScript modules & charts
+│   └── 📂 data/                # Static visualization data
+│
+├── 📂 Data/                     # ML datasets
+│   ├── 📄 smartphone_purchased_data.csv
+│   ├── 📄 smartphone_purchased_data_cleaned.csv
+│   └── 📄 smartphone_purchased_data_updated.csv
+│
+├── 📂 Models/                   # Trained ML models
+│   ├── 📄 model.pkl            # Random Forest model
+│   ├── 📄 scaler.pkl           # Feature scaler
+│   └── 📄 model_columns.pkl    # Column mappings
+│
+├── 📂 Notebook/                 # Jupyter notebooks
+│   ├── 📓 Main Notebook.ipynb
+│   ├── 📓 exploratory_analysis.ipynb
+│   └── 📓 feature_influence_analysis.ipynb
+│
+└── 📂 Project Report/           # Documentation
+    ├── 📄 DOCS.md
+    └── 📄 PROJECT_OVERVIEW_ALL_IN_ONE.md
 ```
 
-## 🔧 Installation Methods
+---
 
-### Method 1: Automatic Setup (Recommended for New Users)
+## 🚀 Deploy to Azure
 
-**For Windows:**
-```powershell
-# Download or clone the repository
-git clone https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML.git
-cd Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML
+This project is **Azure App Service ready** with included `Procfile` and Gunicorn configuration.
 
-# Run setup script (Windows)
-./setup.bat
-```
-
-
-### Method 2: Cross-Platform Launcher
 ```bash
-# After cloning the repository
-python run_dashboard.py
+# Quick deploy with Azure CLI
+az webapp up --name your-app-name --resource-group your-rg --runtime "PYTHON:3.11"
 ```
 
-### Method 3: Manual Setup
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
+📖 See **[AZURE_DEPLOY.md](AZURE_DEPLOY.md)** for detailed deployment guide.
 
-# 2. Navigate to Dashboard folder
-cd Dashboard
+---
 
-# 3. Start the application
-python app.py
+## 📊 Model Performance
+
+<table>
+<tr>
+<td>
+
+### 📈 Metrics
+
+| Metric | Score |
+|--------|-------|
+| **Accuracy** | 87.3% |
+| **Precision** | 85.1% |
+| **Recall** | 89.7% |
+| **F1-Score** | 87.3% |
+| **ROC-AUC** | 0.924 |
+
+</td>
+<td>
+
+### 🔬 ML Pipeline
+
+1. **Data Preprocessing** - Missing values, outliers
+2. **Feature Engineering** - 18 derived features
+3. **Model Training** - Random Forest + tuning
+4. **Cross-Validation** - 10-fold CV
+5. **Evaluation** - Multiple metrics
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔌 API Reference
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/status` | GET | Health check & API status |
+| `/api/data` | GET | Dataset statistics |
+| `/api/feature_importance` | GET | Model feature importance |
+| `/api/predict` | POST | Purchase prediction |
+| `/api/compare_brands` | POST | Brand comparison |
+| `/api/segment_analysis` | GET | User segment analysis |
+
+### Example Usage
+
+```python
+import requests
+
+response = requests.post('http://localhost:5000/api/predict', json={
+    'age': 28,
+    'gender': 'Male',
+    'income': 65000,
+    'education': "Bachelor's"
+})
+
+print(f"Purchase Probability: {response.json()['probability']}%")
 ```
 
-### Method 4: Developer Method (Current Workflow)
-```bash
-# Your current method - still works!
-cd "E:\Internships and Projects\ML Projects\Smartphone Purchase Prediction\Dashboard"
-.\run_dashboard.ps1
-```
-
-## 🌐 Accessing the Dashboard
-
-- Live (Azure): **https://smartpredict-app-a3gcecfectcudbdd.centralindia-01.azurewebsites.net**
-- Local (Dev): http://localhost:5000
-
-Note: The first request on Azure after a cold start may take a few seconds while the app warms up. The UI will render immediately and transparently switch to live data as soon as the API is ready.
+---
 
 ## 🔍 Troubleshooting Guide
 
@@ -379,11 +507,14 @@ If these files appear later, they will complement (not replace) the MIT terms.
 
 ## 🙏 Acknowledgments
 
-- **Scikit-learn** team for excellent ML library
-- **Flask** developers for the web framework
-- **Chart.js** for beautiful visualizations
-- **Bootstrap** for responsive UI components
-- **The Python Community** for comprehensive ecosystem
+<p>
+  <img src="https://img.shields.io/badge/Thanks_to-Scikit--learn-F7931E?style=flat-square&logo=scikitlearn" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/Thanks_to-Flask-000000?style=flat-square&logo=flask" alt="Flask"/>
+  <img src="https://img.shields.io/badge/Thanks_to-Chart.js-FF6384?style=flat-square&logo=chartdotjs" alt="Chart.js"/>
+  <img src="https://img.shields.io/badge/Thanks_to-Bootstrap-7952B3?style=flat-square&logo=bootstrap" alt="Bootstrap"/>
+</p>
+
+---
 
 ## 📞 Support
 
@@ -396,6 +527,14 @@ Need help? Here's how to get support:
 
 ---
 
-**Made with ❤️ by the SmartPredict Team**
+<p align="center">
+  <strong>Made with ❤️ by the SmartPredict Team</strong>
+  <br>
+  <em>Helping businesses make data-driven decisions about smartphone market trends.</em>
+</p>
 
-*Helping businesses make data-driven decisions about smartphone market trends and customer behavior.*
+<p align="center">
+  <a href="https://github.com/Mandar123454/Predictive-Modeling-for-Smartphone-Purchase-Behavior-ML">
+    <img src="https://img.shields.io/badge/⭐_Star_this_repo-If_you_found_it_helpful!-yellow?style=for-the-badge" alt="Star"/>
+  </a>
+</p>
