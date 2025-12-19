@@ -1,0 +1,545 @@
+/* ============================================
+   SMARTPREDICT LEGAL PAGES STYLES
+   Privacy Policy, Terms, Security, etc.
+   ============================================ */
+
+/* Legal Page Container */
+.legal-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0d1117 0%, #1a1f2e 50%, #0f1419 100%);
+    color: #fff;
+}
+
+/* Legal Page Header */
+.legal-header {
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+}
+
+.legal-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legal-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.legal-logo:hover {
+    transform: scale(1.02);
+}
+
+.legal-logo i {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.legal-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.legal-logo h1 span {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.back-to-dashboard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.back-to-dashboard span {
+    white-space: nowrap;
+}
+
+.back-to-dashboard:hover {
+    background: rgba(99, 102, 241, 0.25);
+    border-color: #6366f1;
+    color: #fff;
+    transform: translateX(-5px);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Legal Content */
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Page Title */
+.legal-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.legal-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fff 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.legal-title .last-updated {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.legal-title .last-updated i {
+    color: #6366f1;
+}
+
+/* Section Styles */
+.legal-section {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.legal-section:hover {
+    background: rgba(99, 102, 241, 0.05);
+    border-color: rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+.legal-section h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legal-section h2 i {
+    color: #6366f1;
+    font-size: 1.2rem;
+}
+
+.legal-section h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 25px 0 15px;
+}
+
+.legal-section p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.legal-section ul {
+    margin: 15px 0 20px;
+    padding-left: 25px;
+}
+
+.legal-section ul li {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.legal-section ul li::marker {
+    color: #6366f1;
+}
+
+.legal-section a {
+    color: #6366f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-section a:hover {
+    color: #a855f7;
+    text-decoration: underline;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(239, 68, 68, 0.15) 100%);
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+.highlight-box.success {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.highlight-box p {
+    margin: 0;
+}
+
+/* Contact Card */
+.contact-card {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: #ffffff !important;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.contact-email i {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.contact-email span {
+    color: #ffffff !important;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.contact-email:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contact Info Container */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(36, 41, 47, 0.9);
+    color: #ffffff !important;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-github span {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.contact-github:hover {
+    background: rgba(36, 41, 47, 1);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-github i {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+/* Table of Contents */
+.toc {
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 40px;
+}
+
+.toc h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toc h3 i {
+    color: #6366f1;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.toc ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.toc ul li a:hover {
+    background: rgba(99, 102, 241, 0.1);
+    color: #fff;
+}
+
+.toc ul li a::before {
+    content: '→';
+    color: #6366f1;
+    font-size: 0.8rem;
+}
+
+/* Legal Page Footer */
+.legal-page-footer {
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.legal-page-footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.legal-page-footer a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.legal-page-footer a:hover {
+    color: #a855f7;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #1a1f2e 0%, #0f1419 100%);
+    border-top: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 20px 30px;
+    z-index: 10000;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-banner.visible {
+    transform: translateY(0);
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cookie-banner-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.cookie-banner-text h4 {
+    color: #fff;
+    margin: 0 0 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cookie-banner-text h4 i {
+    color: #6366f1;
+}
+
+.cookie-banner-text p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.cookie-banner-text a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.cookie-btn.accept {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: #fff;
+}
+
+.cookie-btn.accept:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.cookie-btn.decline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cookie-btn.decline:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.cookie-btn.settings {
+    background: transparent;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #6366f1;
+}
+
+.cookie-btn.settings:hover {
+    background: rgba(99, 102, 241, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .legal-title h1 {
+        font-size: 2rem;
+    }
+    
+    .legal-section {
+        padding: 20px;
+    }
+    
+    .toc ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .cookie-banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cookie-banner-actions {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,295 @@
+/* ============================================
+   SMARTPREDICT DOCUMENTS SECTION STYLES
+   Beautiful document cards with smooth animations
+   ============================================ */
+
+/* Documents Container */
+.documents-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+/* Section Header Enhancement */
+#documents .section-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#documents .section-header h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#documents .section-header h2 i {
+    color: #6366f1;
+    font-size: 1.6rem;
+}
+
+.section-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Document Category */
+.doc-category {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.doc-category:hover {
+    background: rgba(99, 102, 241, 0.03);
+    border-color: rgba(99, 102, 241, 0.15);
+}
+
+.doc-category-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.doc-category-title i {
+    color: #6366f1;
+    font-size: 1.1rem;
+}
+
+/* Document Cards Grid */
+.doc-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Document Card Item */
+.doc-card-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.doc-card-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #6366f1, #a855f7);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.doc-card-item:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-3px) translateX(5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.doc-card-item:hover::before {
+    transform: scaleY(1);
+}
+
+/* Document Card Icon */
+.doc-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.doc-card-icon.pdf {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.doc-card-icon.ppt {
+    background: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+}
+
+.doc-card-icon.md {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.doc-card-icon.code {
+    background: rgba(99, 102, 241, 0.15);
+    color: #6366f1;
+}
+
+.doc-card-icon.notebook {
+    background: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+}
+
+.doc-card-icon.legal {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+}
+
+.doc-card-item:hover .doc-card-icon {
+    transform: scale(1.1);
+}
+
+/* Document Card Content */
+.doc-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.doc-card-content h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.doc-card-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin: 0 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Document Badge */
+.doc-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.doc-badge.ppt {
+    background: rgba(249, 115, 22, 0.2);
+    color: #f97316;
+}
+
+.doc-badge.md {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.doc-badge.code {
+    background: rgba(99, 102, 241, 0.2);
+    color: #6366f1;
+}
+
+.doc-badge.notebook {
+    background: rgba(249, 115, 22, 0.2);
+    color: #f97316;
+}
+
+.doc-badge.legal {
+    background: rgba(168, 85, 247, 0.2);
+    color: #a855f7;
+}
+
+/* Download Icon */
+.doc-download-icon {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.doc-card-item:hover .doc-download-icon {
+    color: #6366f1;
+    transform: translateX(3px);
+}
+
+/* Animation on Load */
+.doc-card-item {
+    animation: slideInUp 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.doc-cards-grid .doc-card-item:nth-child(1) { animation-delay: 0.05s; }
+.doc-cards-grid .doc-card-item:nth-child(2) { animation-delay: 0.1s; }
+.doc-cards-grid .doc-card-item:nth-child(3) { animation-delay: 0.15s; }
+.doc-cards-grid .doc-card-item:nth-child(4) { animation-delay: 0.2s; }
+.doc-cards-grid .doc-card-item:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .doc-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .doc-category {
+        padding: 20px;
+    }
+    
+    .doc-card-item {
+        padding: 15px;
+    }
+    
+    .doc-card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Nav item for Documents */
+.nav li[data-section="documents"] i {
+    color: #a855f7;
+}
+
+.nav li[data-section="documents"]:hover,
+.nav li[data-section="documents"].active {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+}
+
+.nav li[data-section="documents"].active {
+    border-left-color: #a855f7;
+}
