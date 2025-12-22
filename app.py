@@ -44,6 +44,68 @@ def status():
         }
     })
 
+# Serve documentation files (docs modal and direct links)
+@app.route('/docs/<path:filename>')
+def serve_docs(filename):
+    """Serve documentation files from repository root.
+    Matches the Dashboard implementation so deployed site can open docs.
+    """
+    parent_dir = os.path.abspath(os.path.dirname(__file__))
+
+    # Whitelist of allowed files
+    doc_paths = {
+        # Markdown / text
+        'DOCS.md': os.path.join(parent_dir, 'Project Report', 'DOCS.md'),
+        'PROJECT_OVERVIEW_ALL_IN_ONE.md': os.path.join(parent_dir, 'Project Report', 'PROJECT_OVERVIEW_ALL_IN_ONE.md'),
+        'USER_GUIDE.md': os.path.join(parent_dir, 'USER_GUIDE.md'),
+        'README.md': os.path.join(parent_dir, 'README.md'),
+        'CONTRIBUTING.md': os.path.join(parent_dir, 'CONTRIBUTING.md'),
+        'LICENSE': os.path.join(parent_dir, 'LICENSE'),
+        'SECURITY.md': os.path.join(parent_dir, 'SECURITY.md'),
+        'CODE_OF_CONDUCT.md': os.path.join(parent_dir, 'CODE_OF_CONDUCT.md'),
+        'AZURE_DEPLOY.md': os.path.join(parent_dir, 'AZURE_DEPLOY.md'),
+        'requirements.txt': os.path.join(parent_dir, 'requirements.txt'),
+        # PDFs / PPTX
+        'ML_Report_MK.pdf': os.path.join(parent_dir, 'Project Report', 'ML Report MK.pdf'),
+        'Project_MK_PPT.pptx': os.path.join(parent_dir, 'Project Report', 'Project MK PPT.pptx'),
+        'Plagiarism_Report.pdf': os.path.join(parent_dir, 'Project Report', 'Plagarism Report.pdf'),
+        # Notebooks
+        'Main_Notebook.ipynb': os.path.join(parent_dir, 'Notebook', 'Main Notebook.ipynb'),
+        'exploratory_analysis.ipynb': os.path.join(parent_dir, 'Notebook', 'exploratory_analysis.ipynb'),
+        'feature_influence_analysis.ipynb': os.path.join(parent_dir, 'Notebook', 'feature_influence_analysis.ipynb'),
+    }
+
+    target = doc_paths.get(filename)
+    if target and os.path.exists(target):
+        return send_from_directory(os.path.dirname(target), os.path.basename(target))
+
+    # LICENSE fallback to avoid modal failure
+    if filename == 'LICENSE':
+        from flask import Response
+        license_text = (
+            "MIT License\n\n"
+            "SPDX-License-Identifier: MIT\n\n"
+            "Copyright (c) 2025 Mandar123454 - Smartphone Purchase Prediction Dashboard\n\n"
+            "Permission is hereby granted, free of charge, to any person obtaining a copy\n"
+            "of this software and associated documentation files (the \"Software\"), to deal\n"
+            "in the Software without restriction, including without limitation the rights\n"
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n"
+            "copies of the Software, and to permit persons to whom the Software is\n"
+            "furnished to do so, subject to the following conditions:\n\n"
+            "The above copyright notice and this permission notice shall be included in\n"
+            "all copies or substantial portions of the Software.\n\n"
+            "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n"
+            "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n"
+            "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n"
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n"
+            "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n"
+            "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n"
+            "SOFTWARE.\n"
+        )
+        return Response(license_text, mimetype='text/plain')
+
+    return ("Document not found", 404)
+
 @app.route('/api/dashboard_data')
 def dashboard_data():
     """Get general dashboard statistics"""
