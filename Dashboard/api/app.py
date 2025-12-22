@@ -295,6 +295,54 @@ def create_app():
     def send_assets(path):
         return send_from_directory('assets', path)
     
+    # Serve documentation files from parent directory (parity with Dashboard/app.py)
+    @app.route('/docs/<path:filename>')
+    def serve_docs(filename):
+        """Serve documentation files located in the repository root and subfolders.
+        Mirrors the behavior used by the local dev app so Azure also resolves docs.
+        """
+        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+        # Allowed documents and their exact locations
+        doc_paths = {
+            # Markdown and text files
+            'DOCS.md': os.path.join(parent_dir, 'Project Report', 'DOCS.md'),
+            'PROJECT_OVERVIEW_ALL_IN_ONE.md': os.path.join(parent_dir, 'Project Report', 'PROJECT_OVERVIEW_ALL_IN_ONE.md'),
+            'USER_GUIDE.md': os.path.join(parent_dir, 'USER_GUIDE.md'),
+            'README.md': os.path.join(parent_dir, 'README.md'),
+            'CONTRIBUTING.md': os.path.join(parent_dir, 'CONTRIBUTING.md'),
+            'LICENSE': os.path.join(parent_dir, 'LICENSE'),
+            'SECURITY.md': os.path.join(parent_dir, 'SECURITY.md'),
+            'CODE_OF_CONDUCT.md': os.path.join(parent_dir, 'CODE_OF_CONDUCT.md'),
+            'AZURE_DEPLOY.md': os.path.join(parent_dir, 'AZURE_DEPLOY.md'),
+            'requirements.txt': os.path.join(parent_dir, 'requirements.txt'),
+            # PDF / PPTX assets
+            'ML_Report_MK.pdf': os.path.join(parent_dir, 'Project Report', 'ML Report MK.pdf'),
+            'Project_MK_PPT.pptx': os.path.join(parent_dir, 'Project Report', 'Project MK PPT.pptx'),
+            'Plagiarism_Report.pdf': os.path.join(parent_dir, 'Project Report', 'Plagarism Report.pdf'),
+            # Notebooks
+            'Main_Notebook.ipynb': os.path.join(parent_dir, 'Notebook', 'Main Notebook.ipynb'),
+            'exploratory_analysis.ipynb': os.path.join(parent_dir, 'Notebook', 'exploratory_analysis.ipynb'),
+            'feature_influence_analysis.ipynb': os.path.join(parent_dir, 'Notebook', 'feature_influence_analysis.ipynb'),
+        }
+
+        # Serve only whitelisted files
+        if filename in doc_paths and os.path.exists(doc_paths[filename]):
+            file_path = doc_paths[filename]
+            return send_from_directory(os.path.dirname(file_path), os.path.basename(file_path))
+
+        logger.warning(f"Document not found: {filename}")
+        return ("Document not found", 404)
+
+    # Serve legal/docs HTML pages
+    @app.route('/<page>.html')
+    def serve_html_pages(page):
+        """Serve HTML pages like privacy.html, terms.html, security.html, docs.html."""
+        allowed_pages = ['privacy', 'terms', 'security', 'docs']
+        if page in allowed_pages:
+            return render_template(f'{page}.html')
+        return ("Page not found", 404)
+    
     return app
 
 # If running directly, start the app
